@@ -1,0 +1,7 @@
+blockquote {
+  @apply .p-4 .my-8 .bg-teal-darker .text-white .italic .shadow-md;
+
+  & > p {
+    @apply .mb-0;
+  }
+}

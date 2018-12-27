@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <a href="#content" class="skip-to-content inline-block p-2 bg-white">
+      Skip To Content
+    </a>
+
+    {% include nav.html %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

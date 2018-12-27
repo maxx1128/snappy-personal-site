@@ -1,0 +1,14 @@
+- name: Max Antonucci
+  link: '/'
+
+- name: About
+  link: '/about.html'
+
+- name: Portfolio
+  link: '/portfolio.html'
+
+- name: Writing
+  link: '/writing.html'
+
+- name: Notes
+  link: '/notes.html'

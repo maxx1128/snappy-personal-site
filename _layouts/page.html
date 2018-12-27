@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header class="w-full pb-2 text-white bg-teal-darker shadow-md">
+  <div class="relative max-w-md mx-auto px-4 md:px-6 pt-2">
+    {% if page.postLabel %}
+      <span class="category-tag absolute pin-t pin-r-base ml-4 py-1 px-2 text-xxs leading-none italic border-2 border-t-0 border-orange-light rounded-b">
+        {{ page.postLabel }}
+      </span>
+    {% endif %}
+
+    <h1 class="my-4">
+      {{ page.title }}
+    </h1>
+
+    {% if page.tagline %}
+      <div class="text-1xl italic pb-4">
+        {{ page.tagline }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if page.excerpt %}
+    <p class="max-w-md px-4 md:px-6 mx-auto text-xs italic font-light">
+      {{ page.excerpt }}
+    </p>
+  {% endif %}
+</header>
+
+<article id="content" class="max-w-md mx-auto px-4 md:px-6 pb-4 pt-6 bg-white shadow-lg">
+  {{content}}
+</article>

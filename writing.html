@@ -1,0 +1,26 @@
+---
+layout: page
+title: Writing
+tagline: Musings written down for safekeeping
+---
+
+{% include drawings/large_book.svg %}
+
+<section class="card-wrapper">
+  {% for post in site.posts %}
+    <article class="card">
+      <h2 class="mt-4">
+        {% if post.external %}
+          <a href="{{ post.link }}" target="_blank" rel="noopener">
+        {% else %}
+          <a href="{{ post.url }}">
+        {% endif %}
+          {{ post.title }}
+        </a>
+      </h2>
+      <p>
+        {{ post.excerpt }}
+      </p>
+    </article>
+  {% endfor %}
+</section>

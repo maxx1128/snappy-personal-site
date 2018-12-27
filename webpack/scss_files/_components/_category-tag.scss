@@ -1,0 +1,7 @@
+.category-tag {
+  right: 1rem;
+
+  @media screen and (min-width: 800px) {
+    right: 1.5rem;
+  }
+}

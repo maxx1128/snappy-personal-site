@@ -1,0 +1,20 @@
+---
+layout: page
+title: Notes
+tagline: Personal quips and nonsensical snippets
+---
+
+{% include drawings/notes_on_wall.svg %}
+
+<section>
+  {% for note in site.notes reversed %}
+    <article class="mb-12">
+      <h2>
+        <a href="{{ note.url }}">
+          {{ note.title }}
+        </a>
+      </h2>
+      {{ note.content | markdownify }}
+    </article>
+  {% endfor %}
+</section>

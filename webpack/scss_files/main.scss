@@ -1,0 +1,13 @@
+@tailwind preflight;
+@tailwind components;
+
+@import '_generic/_global';
+@import '_generic/_text';
+@import '_generic/_images';
+
+@import '_components/_blockquote';
+@import '_components/_card';
+@import '_components/_category-tag';
+@import '_components/_content-skip';
+
+@tailwind utilities;

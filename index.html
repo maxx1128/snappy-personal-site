@@ -1,0 +1,51 @@
+---
+layout: default
+title: Homepage
+---
+
+<div class="max-w-md mx-auto p-4">
+  <div class="min-h-halfScreen pb-6 flex flex-col md:flex-row content-center items-center">
+    <img class="mb-4 md:mb-0 md:mr-4 w-full sm:w-1/2 md:w-full rounded-full" src="/assets/images/global/profile.jpg" />
+    <p class="mb-0 font-bold text-lg">
+      I’m Max Antonucci, a front-end developer living and working in New Haven, CT. Writing is most of my life, whether it’s code, words, or tweets. The rest is reading, boxing, philosophizing, and often breathing.
+    </p>
+  </div>
+
+  <section class="card-wrapper">
+    <h2>
+      Recent Writing
+    </h2>
+    {% for post in site.posts limit: 2 %}
+      <article class="card">
+        <h3 class="mt-4">
+          {% if post.external %}
+            <a href="{{ post.link }}" target="_blank" rel="noopener">
+          {% else %}
+            <a href="{{ post.url }}">
+          {% endif %}
+            {{ post.title }}
+          </a>
+        </h3>
+        <p>
+          {{ post.excerpt }}
+        </p>
+      </article>
+    {% endfor %}
+
+    <h2>
+      Recent Notes
+    </h2>
+
+    {% for note in site.notes reversed %}
+      {% if forloop.index < 4 %}
+        <article class="card">
+          <h4 class="mt-4">
+            <a href="{{ note.url }}">
+              {{ note.title }}
+            </a>
+          </h4>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </section>
+</div>
