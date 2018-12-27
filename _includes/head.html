@@ -23,14 +23,14 @@
   <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,400i,700');
   </style>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:summary" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="maxwellantonucci.com" />
@@ -47,7 +47,7 @@
   <meta property="twitter:image" content="{% if page.featured-img %}{{ page.featured-img | prepend: site.url }}{% else %}{{ "/assets/images/global/profile.jpg" | prepend: site.url }}{% endif %}"/>
   <meta name="twitter:creator" content="@Maxwell_Dev">
 
-  <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/rss.xml" title="Max Antonucci">
+  <link type="application/atom+xml" rel="alternate" href="{{ '/rss.xml' | prepend: site.url }}" title="Max Antonucci">
 
-  <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
+  <script type="text/javascript" src="/assets/js/bundle.js" charset="utf8" ></script>
 </head>
