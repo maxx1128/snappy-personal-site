@@ -4,9 +4,6 @@
 - name: About
   link: '/about.html'
 
-- name: Portfolio
-  link: '/portfolio.html'
-
 - name: Writing
   link: '/writing.html'
 
