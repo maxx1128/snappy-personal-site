@@ -4,7 +4,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
-  filename: "../_includes/main.css"
+  filename: "../../_includes/main.css"
 });
 
 const uglifyJs = new UglifyJsPlugin();

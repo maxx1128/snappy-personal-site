@@ -53,7 +53,11 @@ tiny {
 
 ol,
 ul {
-  @apply .pl-5;
+  @apply .pl-6;
+
+  @screen md {
+    @apply .pl-8;
+  }
 }
 
 li {
