@@ -1,8 +1,11 @@
-`snappy-jekyll` is a setup for making snappy static sites.
+# Personal Website
+
+This is my personal blog! Just a brief intro to who I am, all my writing, and links to my work profiles. It's built on the below tools:
 
 * Jekyll for static site generation
 * Webpack for CSS and JS asset compilation
 * Tailwind as a utility CSS framework
+* PurgeCSS to remove unneeded Tailwind classes
 * Turbolinks for performance
 
 ## Install Workflow Dependencies
@@ -15,8 +18,8 @@ $ npm -g install yarn
 ## Install Application Dependencies
 
 ```
-$ bundle
-$ yarn
+$ bundle install
+$ yarn install
 ```
 
 ## Run Build Process
