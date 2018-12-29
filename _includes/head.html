@@ -1,21 +1,35 @@
 <head>
+  {% if page.title %}
+    {% assign title = page.title | append: " - " | append: site.title %}
+  {% else %}
+    {% assign title = site.title %}
+  {% endif %}
+
+  {% if page.tagline %}
+    {% assign description = page.tagline %}
+  {% elsif page.excerpt %}
+    {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+  {% else %}
+    {% assign description = site.description %}
+  {% endif %}
+
+  {% assign featured_image = site.url | append: "/assets/images/global/profile.jpg" %}
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="shortcut icon" href="/assets/images/global/favicon.ico" />
+  <link rel="shortcut icon" href="{{ site.url | append: '/assets/images/global/favicon.ico' }}" />
 
-  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="thumbnail" content="../../img/home/bg.jpg" />
-  <meta property="og:image" content="../../img/home/bg.jpg"/>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{{ title }}</title>
+  <meta name="thumbnail" content="{{ featured_image }}" />
+  <meta property="og:image" content="{{ featured_image }}"/>
+  <meta name="description" content="{{ description }}">
   <meta name="p:domain_verify" content="0b12e07a4feaad3b7aa48fee8ecae8db"/>
+  <meta name="description" content="{{ description }}">
 
   {% if page.url == "/404.html" %}
-      <meta http-equiv="refresh" content="3; url=/">
+    <meta http-equiv="refresh" content="3; url=/">
   {% endif %}
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <style type="text/css">
     {% include main.css %}
@@ -24,30 +38,28 @@
     @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,400i,700');
   </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
-
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url | append: '/rss.xml' }}">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{{ title }}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:summary" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:description" content="{{ description }}" />
   <meta property="og:site_name" content="maxwellantonucci.com" />
-  <meta property="og:image" content="{% if page.featured-img %}{{ page.featured-img | prepend: site.url }}{% else %}{{ "/assets/images/global/profile.jpg" | prepend: site.url }}{% endif %}"/>
-  <meta property="og:image:width" content="300" />
-  <meta property="og:image:height" content="300" />
+  <meta property="og:image" content="{{ featured_image }}"/>
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="1000" />
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@Maxwell_Dev">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:summary" content="{% if page.excerpt %}{{ page.excerpt }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="twitter:image" content="{% if page.featured-img %}{{ page.featured-img | prepend: site.url }}{% else %}{{ "/assets/images/global/profile.jpg" | prepend: site.url }}{% endif %}"/>
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:summary" content="{{ description }}">
+  <meta property="twitter:image" content="{{ featured_image }}"/>
   <meta name="twitter:creator" content="@Maxwell_Dev">
 
-  <link type="application/atom+xml" rel="alternate" href="{{ '/rss.xml' | prepend: site.url }}" title="Max Antonucci">
+  <link type="application/atom+xml" rel="alternate" href="{{ site.url | append: '/rss.xml' }}" title="Max Antonucci">
 
-  <script type="text/javascript" src="/assets/js/bundle.js" charset="utf8" ></script>
+  <script type="text/javascript" src="{{ site.url | append: '/assets/js/bundle.js' }}" charset="utf8" ></script>
 </head>
