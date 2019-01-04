@@ -17,10 +17,10 @@ title : RSS Feed
   {% for post in feed %}
     <entry>
       <title type="html">{{ post.title }}</title>
-      <link href="{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
+      <link href="{{ post.url | prepend: site.url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
       <published>{{ post.date }}</published>
       <id>{{ post.url | prepend: site.url}}</id>
-      <content type="html" xml:base="{{ post.url }}"/>
+      <content type="html" xml:base="{{ post.url | prepend: site.url }}"/>
       <author><name>{{ site.author }}</name></author>
 
       {% if post.excerpt %}
