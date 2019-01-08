@@ -1,6 +1,8 @@
 ---
-date: 2018-12-16
 title: "Fundamental Attribution Coders"
+date:  2018-12-16
+excerpt: "Many priviledged coderss make a common mistake when thinking other coders should simply 'try harder.'"
+path: "/fundamental-attribution-coders/"
 ---
 
 A common mental bias I see while discussing programming is the [Fundamental Attribution Error](https://en.wikipedia.org/wiki/Attribution_bias#Fundamental_attribution_error). It means when we see things go wrong for someone, we tend to blame their internal shortcomings (being lazy) instead of external factors (having a job that drains them of most extra time and energy).
