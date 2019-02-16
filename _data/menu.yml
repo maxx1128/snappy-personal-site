@@ -7,5 +7,8 @@
 - name: Writing
   link: '/writing.html'
 
+- name: Portfolio
+  link: '/portfolio.html'
+
 - name: Notes
   link: '/notes.html'
