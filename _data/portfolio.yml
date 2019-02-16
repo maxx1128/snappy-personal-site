@@ -1,0 +1,19 @@
+- name: Ruby Newsletter
+  description: "A daily newsletter that sends me anime wallpapers every day, using Ruby to scrape the web and send the email."
+  link: https://github.com/maxx1128/ruby_anime_newsletter
+
+- name: Atomic Sass
+  description: "My custom Sass folder structure and setup for Atomic CSS frameworks."
+  link: https://github.com/maxx1128/atomic-sass
+
+- name: EmberDex
+  description: "Building an interactive PokeDex with the Pokemon API and the Ember JavaScript framework."
+  link: https://emberdex.herokuapp.com/
+
+- name: Ace Attorney Ipsum
+  description: "A lorem ipsum generator built with Ace Attorney video game quotes and Node."
+  link: http://www.aceattorneyipsum.com/
+
+- name: My Housing Matters
+  description: 'A WordPress website on housing in Syracuse, New York which I led the custom development of during a senior editing class.'
+  link: http://myhousingmatters.com/
