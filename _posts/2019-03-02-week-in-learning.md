@@ -56,7 +56,7 @@ This weekend I looked at my backlog of articles and projects to take notes on. B
 
 I tried a more gradual note-taking approach this week, sprinkling a few minutes of it whenever I could: during lulls at work, at lunch, or lounging time after dinner. I still wouldn't learn as much as I wanted, but it was a step in the right direction.
 
-The result? This week I finally added notes on [ARIA attributes](https://www.notebook.maxwellantonucci.com/notes/accessibility/AriaAttributes.html), [Visual Studio Code keyboard shortcuts](https://www.notebook.maxwellantonucci.com/notes/programming/VSCodeShortcuts.html), [mobile accessibility tips](https://www.notebook.maxwellantonucci.com/notes/accessibility/MobileDeviceAccessibility.html), and [the Ember decorator pattern from work](https://www.notebook.maxwellantonucci.com/notes/ember/DecoratorPattern.html).
+The result? This week I finally added notes on [ARIA attributes](https://maxx1128.gitbook.io/study-notebook/accessibility/ariaattributes), [Visual Studio Code keyboard shortcuts](https://maxx1128.gitbook.io/study-notebook/programming/vscodeshortcuts), [mobile accessibility tips](https://maxx1128.gitbook.io/study-notebook/accessibility/mobiledeviceaccessibility), and [the Ember decorator pattern from work](https://maxx1128.gitbook.io/study-notebook/ember/decoratorpattern).
 
 The lesson? **Savor the small note-taking victories, since they add a lot to one's knowledge and stock market value over time.**
 
