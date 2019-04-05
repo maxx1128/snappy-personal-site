@@ -1,5 +1,5 @@
 ---
-title: "Five Programming Lessons from a Journalism Major "
+title: "Five Programming Lessons from a Journalism Major"
 date: "2019-03-26"
 external: true
 link: "https://dev.to/maxwell_dev/five-programming-lessons-from-a-journalism-major-190"
