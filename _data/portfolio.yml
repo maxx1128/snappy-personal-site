@@ -1,3 +1,7 @@
+- name: Eeveelution Quiz
+  description: "A pokemon personality quiz built with, and fully tested on, the Ember.JS framework."
+  link: "https://eeveequiz.com"
+
 - name: Ruby Newsletter
   description: "A daily newsletter that sends me anime wallpapers every day, using Ruby to scrape the web and send the email."
   link: https://github.com/maxx1128/ruby_anime_newsletter
