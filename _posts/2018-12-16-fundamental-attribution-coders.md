@@ -1,7 +1,7 @@
 ---
 title: "Fundamental Attribution Coders"
 date:  2018-12-16
-excerpt: "Many priviledged coderss make a common mistake when thinking other coders should simply 'try harder.'"
+excerpt: "Many priviledged coders make a common mistake when thinking other coders should simply 'try harder.'"
 path: "/fundamental-attribution-coders/"
 ---
 
