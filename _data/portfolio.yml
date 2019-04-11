@@ -1,3 +1,7 @@
+- name: Anime Quote Image Maker
+  description: "This Pen uses a Quote API and a custom API endpoint I made so you can easily makes lots of different quote images with anime artwork!"
+  link: "https://codepen.io/max1128/full/VNPxOJ"
+
 - name: Eeveelution Quiz
   description: "A pokemon personality quiz built with, and fully tested on, the Ember.JS framework."
   link: "https://eeveequiz.com"
