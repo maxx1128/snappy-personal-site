@@ -2,18 +2,22 @@
 layout: page
 title: Notes
 tagline: Personal quips and nonsensical snippets
+no_wrapper: true
 ---
 
-{% include drawings/notes_on_wall.svg %}
+<div class="p-4 mb-4 shadow-md bg-white">
+  {% include drawings/notes_on_wall.svg %}
+</div>
 
 <section>
   {% for note in site.notes reversed %}
-    <article class="mb-12">
-      <h2>
+    <article class="card">
+      <h2 class="mt-4">
         <a href="{{ note.url }}">
           {{ note.title }}
         </a>
       </h2>
+
       {{ note.content | markdownify }}
     </article>
   {% endfor %}

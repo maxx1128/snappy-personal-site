@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<header class="w-full pb-2 text-white bg-teal-darker shadow-md">
-  <div class="relative max-w-md mx-auto px-4 md:px-6 pt-2">
+<header class="w-full pb-2 px-4 text-white bg-teal-dark shadow-md">
+  <div class="relative max-w-md mx-auto pt-2">
     {% if page.postLabel %}
-      <span class="category-tag absolute pin-t pin-r-base ml-4 py-1 px-2 text-xxs leading-none italic border-2 border-t-0 border-orange-light rounded-b">
+      <span class="category-tag absolute pin-t pin-r ml-4 py-1 px-2 text-xxs leading-none italic border-2 border-t-0 border-orange-light rounded-b">
         {{ page.postLabel }}
       </span>
     {% endif %}
@@ -22,12 +22,12 @@ layout: default
   </div>
 
   {% if page.excerpt %}
-    <p class="max-w-md px-4 md:px-6 mx-auto text-xs italic font-light">
+    <p class="max-w-md mx-auto text-xs italic font-light">
       {{ page.excerpt }}
     </p>
   {% endif %}
 </header>
 
-<article id="content" class="w-full max-w-md mx-auto px-4 md:px-6 pb-4 pt-6 bg-white shadow-lg">
+<article id="content" class="w-full max-w-md mx-auto {% unless page.no_wrapper %}px-4 py-6 xl:px-6 xl:my-6 bg-white shadow-lg{% else %}md:px-4 md:my-4 xl:px-0{% endunless %}">
   {{content}}
 </article>

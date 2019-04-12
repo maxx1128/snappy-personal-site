@@ -47,8 +47,9 @@ let colors = {
   'orange': '#f6993f',
   'orange-light': '#faad63',
 
-  'teal-dark': '#0078e0',
-  'teal-darker': '#005661',
+  'teal': '1a6771',
+  'teal-dark': '#005661',
+  'teal-darker': '#003c44',
 }
 
 module.exports = {

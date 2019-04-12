@@ -1,6 +1,14 @@
-<div class="bg-black">
-  <nav class="max-w-md mx-auto px-2 md:px-4">
-    <ul class="list-reset flex flex-wrap mb-0 text-xs content-end">
+<div class="bg-teal-darker text-white shadow-lg z-10">
+  <nav class="flex flex-col max-w-md mx-auto">
+    <div class="hidden md:flex items-center py-2 px-2 md:px-4">
+      <img class="nav__logo mr-4 rounded-full" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
+
+      <p class="my-0 text-sm italic">
+        {{site.description}}
+      </p>
+    </div>
+
+    <ul class="nav__main-menu list-reset flex flex-wrap md:flex-col mb-0 md:my-4 text-xs">
       {% for menu_item in site.data.menu %}
         {% if menu_item.link == page.url %}
           {% assign active_page = true %}
@@ -16,9 +24,19 @@
           {% assign current_page = false %}
         {% endif %}
 
-        <li class="inline-block mb-0 px-2 py-1 {% if forloop.first == true %}mr-auto{% endif %}">
-          <a class="text-white {% if active_page %}font-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}">
+        <li class="inline-block mb-0 text-center">
+          <a class="block p-2 text-white {% if active_page %}font-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
             {{ menu_item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <ul class="list-reset flex flex-wrap md:flex-col mt-auto mb-0 text-xs">
+      {% for social in site.data.social %}
+        <li class="inline-block mb-0 p-2 text-center">
+          <a class="text-white" href="{{ social.url }}" target="_blank" rel="noopener">
+            {{ social.name }}
           </a>
         </li>
       {% endfor %}

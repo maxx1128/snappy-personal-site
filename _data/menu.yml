@@ -1,4 +1,4 @@
-- name: Max Antonucci
+- name: Homepage
   link: '/'
 
 - name: About
@@ -12,3 +12,7 @@
 
 - name: Notes
   link: '/notes.html'
+
+- name: Study Notebook
+  link: 'https://maxx1128.gitbook.io/study-notebook/'
+  external: true
