@@ -25,6 +25,9 @@ title: Homepage
     </h2>
     {% for post in site.posts limit: 2 %}
       <article class="card">
+        {% if post.image %}
+          <img src="/assets/images/featured/{{ post.image }}" alt="">
+        {% endif %}
         <h3 class="mt-4">
           {% if post.external %}
             <a href="{{ post.link }}" target="_blank" rel="noopener">

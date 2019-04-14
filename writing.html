@@ -9,6 +9,9 @@ tagline: Musings written down for safekeeping
 <section class="card-wrapper">
   {% for post in site.posts %}
     <article class="card">
+      {% if post.image %}
+        <img src="/assets/images/featured/{{ post.image }}" alt="">
+      {% endif %}
       <h2 class="mt-4">
         {% if post.external %}
           <a href="{{ post.link }}" target="_blank" rel="noopener">
