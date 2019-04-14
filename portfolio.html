@@ -50,7 +50,10 @@ tagline: Collections of code from projects past
 
 <ul class="card-wrapper list-reset">
   {% for portfolio in site.data.portfolio %}
-    <li class="card py-4">
+    <li class="card pb-4">
+      {% if portfolio.image %}
+        <img src="/assets/images/portfolio/{{ portfolio.image }}" alt="">
+      {% endif %}
       <h4 class="mt-0">
         <a href="{{ portfolio.link }}" target="_blank" rel="noopener">{{ portfolio.name }}</a>
       </h4>
