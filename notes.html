@@ -14,7 +14,7 @@ no_wrapper: true
     <article class="card">
       <h2 class="mt-4">
         <a href="{{ note.url }}">
-          {{ note.title }}
+          {{ note.date | date: '%B %d, %Y' }}
         </a>
       </h2>
 

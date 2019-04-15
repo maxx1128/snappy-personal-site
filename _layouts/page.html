@@ -11,7 +11,11 @@ layout: default
     {% endif %}
 
     <h1 class="my-4">
-      {{ page.title }}
+      {% if page.postLabel == "Note" %}
+        {{ page.date | date: '%B %d, %Y' }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
     </h1>
 
     {% if page.tagline %}
