@@ -1,5 +1,5 @@
 ---
-title: "Eevees, Quizzes, and Singletons, Oh My! "
+title: "Eevees, Quizzes, and Singletons, Oh My!"
 date: "2019-04-05"
 external: true
 link: "https://dev.to/maxwell_dev/eevees-quizzes-and-singletons-oh-my-1blh"
