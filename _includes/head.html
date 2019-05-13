@@ -1,5 +1,7 @@
 <head>
-  {% if page.title %}
+  {% if page.postLabel == "Note" %}
+    {% assign title = page.date | date: '%B %d, %Y' | prepend: "Note on " | append: " - " | append: site.title %}
+  {% elsif page.title %}
     {% assign title = page.title | append: " - " | append: site.title %}
   {% else %}
     {% assign title = site.title %}
