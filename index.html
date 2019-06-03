@@ -21,7 +21,7 @@ title: Homepage
 <div class="max-w-md mx-auto">
   <section class="card-wrapper p-4">
     <h2>
-      <a href="/writing.html">Recent Writing</a>
+      Recent Writing
     </h2>
     {% for post in site.posts limit: 2 %}
       <article class="card">
@@ -43,8 +43,12 @@ title: Homepage
       </article>
     {% endfor %}
 
+    <small>
+      <a href="/writing.html">Read more of my blog posts.</a>
+    </small>
+
     <h2>
-      <a href="/notes.html">Recent Notes</a>
+      Recent Notes
     </h2>
 
     {% for note in site.notes reversed %}
@@ -60,5 +64,9 @@ title: Homepage
         </article>
       {% endif %}
     {% endfor %}
+
+    <small>
+      <a href="/notes.html">Read more of my notes.</a>
+    </small>
   </section>
 </div>
