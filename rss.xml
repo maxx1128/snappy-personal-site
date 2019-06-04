@@ -29,6 +29,12 @@ title : RSS Feed
       {% assign url = post.url | prepend: site.url %}
     {% endif %}
 
+    {% if post.postLabel == "Blog Post" %}
+      {% assign featured_image = site.url | append: "/assets/images/featured/" | append: post.image %}
+    {% else %}
+      {% assign featured_image = site.url | append: "/assets/images/global/profile.jpg" %}
+    {% endif %}
+
     <entry>
       <title type="html">{{ title }}</title>
       <link href="{{ url }}" rel="alternate" type="text/html" title="{{ title }}"/>
@@ -36,6 +42,12 @@ title : RSS Feed
       <id>{{ url }}</id>
       <content type="html" xml:base="{{ url }}"/>
       <author><name>{{ site.author }}</name></author>
+
+      <image>
+        <url>{{ featured_image }}</url>
+        <title>{{ title }}</title>
+        <link>{{ site.url }}</link>
+      </image>
 
       {% if post.excerpt %}
         <summary type="html">{{ post.excerpt }}</summary>

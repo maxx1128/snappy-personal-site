@@ -15,7 +15,11 @@
     {% assign description = site.description %}
   {% endif %}
 
-  {% assign featured_image = site.url | append: "/assets/images/global/profile.jpg" %}
+  {% if page.postLabel == "Blog Post" %}
+    {% assign featured_image = site.url | append: "/assets/images/featured/" | append: page.image %}
+  {% else %}
+    {% assign featured_image = site.url | append: "/assets/images/global/profile.jpg" %}
+  {% endif %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
