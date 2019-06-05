@@ -43,7 +43,7 @@ let colors = {
   'black': '#080401',
   'white': '#fbfcf7',
 
-  'teal': '1a6771',
+  'teal': '#1a6771',
   'teal-dark': '#005661',
   'teal-darker': '#003c44',
 
