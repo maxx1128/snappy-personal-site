@@ -67,3 +67,8 @@ li {
 a {
   @apply .text-blue-dark;
 }
+
+hr {
+  @apply .my-6 .bg-teal;
+  height: 3px;
+}
