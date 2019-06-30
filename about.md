@@ -12,6 +12,8 @@ I'm a front-end developer working at [SeeClickFix](https://seeclickfix.com/){:ta
 
 I also write about programming. I often write to explain tough topics, like git rebasing and functional JavaScript, in simple and weird ways, like with cupcakes or angels and mutants.
 
+In my free time I enjoy reading, boxing, making things at MakeHaven, and pondering the philosophical.
+
 ## The Personal Answer
 
 There's lots of things about myself I could write about here. But if I had to choose one that's defined my life the most, it's **writing.**
