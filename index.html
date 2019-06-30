@@ -3,17 +3,30 @@ layout: default
 title: Homepage
 ---
 
-<div class="p-4 bg-white shadow-md">
-  <div class="max-w-md mx-auto xl:px-4">
+<div class="flex items-center justify-center bg-white shadow-md md:h-screen">
+  <div class="max-w-md mx-1 md:mx-2 p-4 xl:px-8 border-l-4 border-r-4 border-teal-dark">
     <h1 class="mt-0">
       Hello Readers.
     </h1>
+
+    <p class="text-lg">
+      I’m Max Antonucci. I write code, blog posts, musings, notebooks, and someday novels.
+    </p>
+
     <p>
-      I’m Max Antonucci, a front-end developer in New Haven, CT. My code obsessions include CSS, web accessibility, design systems, and however much JavaScript my brain can handle.
+      <strong>As a programmer</strong>, I code for the front-end and pay extra attention to web accessibility.
+    </p>
+
+    <p>
+      <strong>As a writer</strong>, I like explaining tough topics in simple, weird ways. I also write about random thoughts and lessons to not forget them, and hope to self-publish a novel.
+    </p>
+
+    <p>
+      <strong>As a nerd</strong>, I read books and find new ways to gather and share anime artwork online, like in website sidebars.
     </p>
 
     <p class="mb-0">
-      I'm working at <a href="https://seeclickfix.com/" target="_blank" rel="noopener">SeeClickFix</a>, an app that helps citizens report local issues to municipal governments. You can see other work I've done at my <a href="https://github.com/maxx1128" target="_blank" rel="noopener">Github</a> and <a href="http://codepen.io/max1128/" target="_blank" rel="noopener">CodePen</a> profiles, and <a href="https://maxx1128.gitbook.io/study-notebook/" target="_blank" rel="noopener">my online notebook</a>. In my spare time I write about coding, my life, and <a href="/notes.html">random musings.</a>
+      <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist. I don't juggle chainsaws since '06.
     </p>
   </div>
 </div>
@@ -23,6 +36,7 @@ title: Homepage
     <h2>
       Recent Writing
     </h2>
+
     {% for post in site.posts limit: 2 %}
       <article class="card">
         {% if post.image %}
