@@ -4,7 +4,7 @@ title: About Me
 tagline: The story of my life, give or take a few years
 ---
 
-Who am I exactly?
+Who am I exactly? There's several ways to answer that.
 
 ## The Business Answer
 
@@ -36,6 +36,6 @@ Not the best example, but you get the idea.
 
 In the future I hope to keep writing as much as possible. Writing code, blog posts, notes, maybe even fiction. I don't use Twitter as much, but I'll write more tweets too. The only things I don't want to write are restraining orders, online comments, or erotic fanfiction. Those aside, I'll be writing until I write my will.
 
-## The Fictional Answer
+## The Fake Answer
 
-I'm the next Batman on the verge of losing everyone close to me and becoming New Haven's dark knight. I also have a third arm but I don't often take it outside my home.
+I'm the next Batman on the verge of losing everyone close to me and becoming New Haven's dark knight. I also have a third arm but I don't often take it outside.
