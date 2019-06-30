@@ -4,6 +4,16 @@ title: About Me
 tagline: The story of my life, give or take a few years
 ---
 
+Who am I exactly?
+
+## The Business Answer
+
+I'm a front-end developer working at [SeeClickFix](https://seeclickfix.com/){:target="_blank", :rel="noopener"} and living in New Haven. My focuses are CSS, JavaScript, and web accessibility.
+
+I also write about programming. I often write to explain tough topics, like git rebasing and functional JavaScript, in simple and weird ways, like with cupcakes or angels and mutants.
+
+## The Personal Answer
+
 There's lots of things about myself I could write about here. But if I had to choose one that's defined my life the most, it's **writing.**
 
 One of my main hobbies as a kid was writing fiction. I went to college to study journalism. Halfway through I started writing code instead.
@@ -23,3 +33,7 @@ I love writing, in all its forms, since it gets to the core of being alive. Our 
 Not the best example, but you get the idea.
 
 In the future I hope to keep writing as much as possible. Writing code, blog posts, notes, maybe even fiction. I don't use Twitter as much, but I'll write more tweets too. The only things I don't want to write are restraining orders, online comments, or erotic fanfiction. Those aside, I'll be writing until I write my will.
+
+## The Fictional Answer
+
+I'm the next Batman on the verge of losing everyone close to me and becoming New Haven's dark knight. I also have a third arm but I don't often take it outside my home.
