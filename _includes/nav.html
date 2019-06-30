@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <ul class="nav__main-menu list-reset flex flex-wrap md:flex-col mb-0 md:my-4 text-xs">
+    <ul class="nav__main-menu list-reset flex flex-wrap md:flex-col mb-0 md:my-4 text-xxs">
       {% for menu_item in site.data.menu %}
         {% if menu_item.link == page.url %}
           {% assign active_page = true %}
@@ -29,7 +29,7 @@
           {% assign current_page = false %}
         {% endif %}
 
-        <li class="inline-block mb-0 text-center">
+        <li class="{% if menu_item.external %}hidden md:inline-block{% else %}inline-block{% endif %} mb-0 text-center">
           <a class="block p-2 text-white {% if active_page %}font-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
             {{ menu_item.name }}
           </a>
@@ -37,7 +37,7 @@
       {% endfor %}
     </ul>
 
-    <ul class="list-reset flex flex-wrap md:flex-col mt-auto mb-0 text-xs">
+    <ul class="list-reset flex flex-wrap md:flex-col mt-auto mb-0 text-xxs">
       {% for social in site.data.social %}
         <li class="inline-block mb-0 p-2 text-center">
           <a class="text-white" href="{{ social.url }}" target="_blank" rel="noopener">
