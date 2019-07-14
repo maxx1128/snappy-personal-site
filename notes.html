@@ -10,7 +10,8 @@ no_wrapper: true
 </div>
 
 <section>
-  {% for note in site.notes reversed %}
+  {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
+  {% for note in notes %}
     <article class="card">
       <h2 class="mt-4">
         <a href="{{ note.url }}">
