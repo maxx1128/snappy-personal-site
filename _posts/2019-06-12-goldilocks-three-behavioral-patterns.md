@@ -3,6 +3,7 @@ title: "Goldilocks and the Three Behavioral Patterns - A Design Patterns Intro"
 date: "2019-06-12"
 excerpt: "A beginning coder's guide to half of the behavioral design patterns with an alternate telling of Goldilocks and the Three Bears."
 image: 'goldilocks-three-behavioral-patterns.jpg'
+tags: ['programming', 'javascript', 'Design Pattern Fairy Tales']
 ---
 
 Welcome to the second entry in my "Design Pattern Fairy Tales" series!

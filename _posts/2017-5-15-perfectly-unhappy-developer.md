@@ -6,6 +6,7 @@ excerpt      : I've found I'm not a happy person. I wouldn't have it any other w
 path         : "/perfectly-unhappy-developer/"
 featured-img : ./featured.jpg
 postType: post
+tags: ['personal']
 ---
 
 To this day, one of my favorite online articles is The Oatmeal's comic on being ["Perfectly Unhappy."](http://theoatmeal.com/comics/unhappy) For a while I wasn't sure why. Could have been his usual humor and insight was better than usual. Or I read it for the first time while in a good mood.

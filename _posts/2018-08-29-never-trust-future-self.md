@@ -5,6 +5,7 @@ icon:  edit-3
 excerpt: "Willpower is less about 'powering through' lazy moments and more about evading them with careful planning."
 path: "/never-trust-future-self/"
 postType: post
+tags: ['mental health']
 ---
 
 Lately I've been thinking about willpower, since I haven't had enough to write a real post in over a month. I wanted to blog more, but never quite found the time or energy.

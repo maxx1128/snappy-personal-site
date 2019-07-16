@@ -5,6 +5,7 @@ icon       : cast
 path       : "/outwitting-horrible-inner-voices/"
 excerpt    : "Despite being of a single mind, most people have inner voices pulling them different directions that we need to avoid."
 postType: post
+tags: ['mental health', 'personal']
 ---
 Despite being of a single mind, most people have at least one other inner voice pulling them in many different directions. One tweet I saw with an Anthony Bourdain quote sums this up well.
 

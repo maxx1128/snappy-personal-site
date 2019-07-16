@@ -6,6 +6,7 @@ excerpt      : "It's amazing how many worries vanish by thinking 'I have the ben
 path         : "/answering-to-ourselves/"
 featured-img : ./quote.jpeg
 postType: post
+tags: ['mental health', 'philosophy']
 ---
 
 It's amazing how many worries of mine vanish by thinking **"I have the benefit of not caring what they think."**

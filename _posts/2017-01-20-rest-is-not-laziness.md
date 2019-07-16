@@ -5,6 +5,7 @@ icon       : cast
 path       : "/rest-is-not-laziness/"
 excerpt    : Don't feel lazy and undeserving for taking the time to rest. One can't be productive without rest.
 postType: post
+tags: ['mental health']
 ---
 
 **Rest is not laziness. Rest is long-term productivity.**
