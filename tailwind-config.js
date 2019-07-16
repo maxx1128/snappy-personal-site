@@ -172,6 +172,7 @@ module.exports = {
   */
 
   textSizes: {
+    'xxxs': '.55rem',
     'xxs': '.75rem',
     'xs': '.875rem',
     'sm': '1rem',
@@ -519,6 +520,7 @@ module.exports = {
   */
 
   maxWidth: {
+    'none': 'none',
     'xxs': '200px',
     'xs': '20rem',
     'sm': '30rem',

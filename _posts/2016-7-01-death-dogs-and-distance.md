@@ -5,6 +5,7 @@ path:   "/death-dogs-distance/"
 excerpt: Being so close to death is terrifying, but being far away from it is even worse.
 featured-img: ./featured.png
 postType: post
+tags: ['personal']
 ---
 
 I've never been scared of death itself, only the times where it's on the horizon.

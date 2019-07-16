@@ -5,6 +5,7 @@ path:   "/language-swears-religion/"
 excerpt: "Common language influences us a lot. Could our swear words affect our beliefs?"
 featured-img: ./featured.png
 postType: post
+tags: ['philosophy']
 ---
 
 Lately I've been fascinated by language, and this led me to ask one big question: why is there so much religion in swear words?

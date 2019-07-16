@@ -4,6 +4,7 @@ date: "2019-01-19"
 excerpt: "As a coder and a writer, I've often felt inadequate with what I'm giving back to the world. But there are ways I can give back, however small they are."
 path: "/what-good-blog-post-do/"
 image: 'goodpost.png'
+tags: ['writing', 'philosophy']
 ---
 This blog post, like many others I've written, starts with an insecurity.
 

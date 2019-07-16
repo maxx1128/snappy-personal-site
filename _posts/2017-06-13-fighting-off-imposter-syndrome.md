@@ -6,6 +6,7 @@ path         : "/fighting-off-impostor-syndrome/"
 excerpt      : All web developers will fight Impostor Syndrome at some point, and find their own way to fight back.
 featured-img : ./featured.jpg
 postType: post
+tags: ['programming', 'mental health']
 ---
 
 Many things can be reliably said about almost all web developers:

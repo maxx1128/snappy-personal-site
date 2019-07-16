@@ -5,6 +5,7 @@ icon:  cast
 excerpt: "Discovering ourselves means finding activities to fuel our productivity, empathy, and sense of empathy."
 path: "/giving-birth-to-oneself/"
 postType: post
+tags: ['philosophy']
 ---
 
 One favorite summary from my online notebook is the sleazy Trump University Playbook. It wasn't fun to write most of it. In some ways it even hurt.

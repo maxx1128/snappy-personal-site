@@ -3,6 +3,7 @@ title: "A Metaphorical Introduction to Functional JavaScript"
 date: "2019-06-25"
 excerpt: "Functional JavaScript is my new favorite approach to writing JavaScript, but few introductions I found were beginner friendly. I break down the basics with angels, mutants, and demanding southern belles."
 image: 'functional-js-metaphors.jpg'
+tags: ['programming', 'javascript']
 ---
 
 Functional JavaScript isn't a tool, framework, 3rd-party addon, npm module, or anything else you'd add on. Functional Programming is an approach for writing code, and Functional JavaScript (FJS) is how to use that approach for JavaScript. Like all approaches, it has benefits and drawbacks, tradeoffs one makes, people who like and dislike it, and different lobbying groups in international governments.

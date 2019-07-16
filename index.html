@@ -34,23 +34,15 @@ title: Homepage
     </h2>
 
     {% for post in site.posts limit: 2 %}
-      <article class="card">
-        {% if post.image %}
-          <img src="/assets/images/featured/{{ post.image }}" alt="">
-        {% endif %}
-        <h3 class="mt-4">
-          {% if post.external %}
-            <a href="{{ post.link }}" target="_blank" rel="noopener">
-          {% else %}
-            <a href="{{ post.url }}">
-          {% endif %}
-            {{ post.title }}
-          </a>
-        </h3>
-        <p>
-          {{ post.excerpt }}
-        </p>
-      </article>
+      {% include card.html
+        title=post.title
+        excerpt=post.excerpt
+        image=post.image
+        external=post.external
+        link=post.link
+        url=post.url
+        tags=post.tags
+      %}
     {% endfor %}
 
     <small>
@@ -64,15 +56,15 @@ title: Homepage
     {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
     {% for note in notes %}
       {% if forloop.index < 3 %}
-        <article class="card">
-          <h3 class="mt-4">
-            <a href="{{ note.url }}">
-              {{ note.date | date: '%B %d, %Y' }}
-            </a>
-          </h3>
+        {% assign title = note.date | date: '%B %d, %Y' %}
+        {% assign content = note.content | markdownify %}
 
-          {{ note.content | markdownify }}
-        </article>
+        {% include card.html
+          title=title
+          excerpt=content
+          external=false
+          url=note.url
+        %}
       {% endif %}
     {% endfor %}
 

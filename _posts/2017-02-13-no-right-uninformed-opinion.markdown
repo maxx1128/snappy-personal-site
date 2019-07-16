@@ -5,6 +5,7 @@ icon       : cast
 path       : "/no-right-uninformed-opinion/"
 excerpt    : "Before you share an opinion on any topic, ask yourself the following questions"
 postType: post
+tags: ['mental health', 'philosophy']
 ---
 
 Before you share an opinion on any topic, ask yourself the following questions.

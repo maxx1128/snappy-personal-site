@@ -5,6 +5,7 @@ icon:  cast
 excerpt: "Is uniqueness something natural for us, or does it take work?"
 path: "/individuality-is-a-job/"
 postType: post
+tags: ['philosophy', 'mental health']
 ---
 
 Is uniqueness something natural for us, or does it take work?

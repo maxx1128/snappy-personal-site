@@ -5,6 +5,7 @@ icon:  edit-3
 path: "/dont-just-start-a-conversation/"
 excerpt: "People 'just trying to start a conversation' are never worth listening to."
 postType: post
+tags: ['philosophy', 'mental health']
 ---
 
 * "I'm just trying to start a conversation."

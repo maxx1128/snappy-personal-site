@@ -5,6 +5,7 @@ icon:  codepen
 excerpt: "Two months after redesigning my site, a big event makes me do it all over again."
 path: "/may-1st-reboot/"
 postType: post
+tags: ['programming', 'career']
 ---
 
 While chatting with my front-end developers pals online, I explained the life cycle of a front-end dev's personal website:

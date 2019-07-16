@@ -5,6 +5,7 @@ icon       : edit-3
 excerpt    : ""
 path       : "/attention-is-a-currency/"
 postType: post
+tags: ['mental health']
 ---
 
 Something I always marvel at with today's society is just how in-demand everyone's attention is. In many cases it's in more demanded, and more easily wasted, than our money.
