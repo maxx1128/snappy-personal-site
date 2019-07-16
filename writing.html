@@ -8,22 +8,14 @@ tagline: Musings written down for safekeeping
 
 <section class="card-wrapper">
   {% for post in site.posts %}
-    <article class="card">
-      {% if post.image %}
-        <img src="/assets/images/featured/{{ post.image }}" alt="">
-      {% endif %}
-      <h2 class="mt-4">
-        {% if post.external %}
-          <a href="{{ post.link }}" target="_blank" rel="noopener">
-        {% else %}
-          <a href="{{ post.url }}">
-        {% endif %}
-          {{ post.title }}
-        </a>
-      </h2>
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </article>
+    {% include card.html
+      title=post.title
+      excerpt=post.excerpt
+      image=post.image
+      external=post.external
+      link=post.link
+      url=post.url
+      tags=post.tags
+    %}
   {% endfor %}
 </section>

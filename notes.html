@@ -12,14 +12,14 @@ no_wrapper: true
 <section>
   {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
-    <article class="card">
-      <h2 class="mt-4">
-        <a href="{{ note.url }}">
-          {{ note.date | date: '%B %d, %Y' }}
-        </a>
-      </h2>
+    {% assign title = note.date | date: '%B %d, %Y' %}
+    {% assign content = note.content | markdownify %}
 
-      {{ note.content | markdownify }}
-    </article>
+    {% include card.html
+      title=title
+      excerpt=content
+      external=false
+      url=note.url
+    %}
   {% endfor %}
 </section>
