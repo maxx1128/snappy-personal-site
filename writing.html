@@ -4,7 +4,30 @@ title: Writing
 tagline: Musings written down for safekeeping
 ---
 
+{% assign all_tags = '' %}
+
+{% for tag in site.tags %}
+  {% if forloop.first == true %}
+  {% assign all_tags = all_tags | append: tag[0] %}
+  {% else %}
+    {% assign all_tags = all_tags | append: '|' | append: tag[0] %}
+  {% endif %}
+{% endfor %}
+
+{% assign all_tags_array = all_tags | split: '|' | sort %}
+
 {% include drawings/large_book.svg %}
+
+<p>
+  You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category.
+</p>
+
+{% include tags.html
+  tags=all_tags_array
+  wrapper_classes='mb-8 mx-auto max-w-md justify-center'
+  tag_classes='mb-2 bg-blue-dark'
+  link_classes='text-white text-xxs'
+%}
 
 <section class="card-wrapper">
   {% for post in site.posts %}
