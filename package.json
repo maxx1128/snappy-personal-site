@@ -1,8 +1,8 @@
 {
-  "name": "SnappyJekyll",
-  "version": "1.0.0",
+  "name": "SnappyPersonalSite",
+  "version": "2.0.0",
   "main": "index.html",
-  "repository": "Web Book Template",
+  "repository": "Personal Website built on Jekyll, Tailwind, and Turbolinks",
   "contributors": [
     "maxx1128 <maxx1128@gmail.com>"
   ],
@@ -30,6 +30,7 @@
   },
   "scripts": {
     "start": "concurrently -n jekyll,webpack \"yarn run jekyll-server\" \"yarn run webpack-watch\"",
+    "write": "yarn run jekyll-server",
     "jekyll-server": "jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
     "webpack": "webpack"
