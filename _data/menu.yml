@@ -16,6 +16,6 @@
 - name: Notes
   link: '/notes.html'
 
-- name: Study Notebook
+- name: Exocortex
   link: 'https://max-antonucci.gitbook.io/study-notebook/'
   external: true
