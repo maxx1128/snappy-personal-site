@@ -3,13 +3,15 @@ layout: default
 title: Homepage
 ---
 
-<div class="flex items-center justify-center bg-white shadow-md md:h-screen">
-  <div class="max-w-md mx-1 md:mx-2 p-4 xl:px-8 border-l-4 border-r-4 border-teal-dark">
-    <h1 class="mt-0">
+<div class="">
+  <img class="" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture"/>
+
+  <div>
+    <h1 class="">
       Hello Readers.
     </h1>
 
-    <p class="text-lg">
+    <p class="">
       I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
     </p>
 
@@ -21,55 +23,55 @@ title: Homepage
       <strong>As a writer</strong>, I like explaining tough topics in simple, weird ways. I also write about random lessons and philosophies to avoid relearning them later.
     </p>
 
-    <p class="mb-0">
+    <p>
       <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist. I don't juggle chainsaws since '06.
     </p>
   </div>
 </div>
 
-<div class="max-w-md mx-auto">
-  <section class="card-wrapper p-4">
-    <h2>
-      Recent Writing
-    </h2>
+<section class="">
+  <h2>
+    Recent Writing
+  </h2>
 
-    {% for post in site.posts limit: 2 %}
+  {% for post in site.posts limit: 2 %}
+    {% include card.html
+      title=post.title
+      excerpt=post.excerpt
+      image=post.image
+      external=post.external
+      link=post.link
+      url=post.url
+      tags=post.tags
+    %}
+  {% endfor %}
+
+  <small>
+    <a href="/writing.html">Read more of my blog posts.</a>
+  </small>
+</section>
+
+<section class="">
+  <h2>
+    Recent Notes
+  </h2>
+
+  {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
+  {% for note in notes %}
+    {% if forloop.index < 3 %}
+      {% assign title = note.date | date: '%B %d, %Y' %}
+      {% assign content = note.content | markdownify %}
+
       {% include card.html
-        title=post.title
-        excerpt=post.excerpt
-        image=post.image
-        external=post.external
-        link=post.link
-        url=post.url
-        tags=post.tags
+        title=title
+        excerpt=content
+        external=false
+        url=note.url
       %}
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
 
-    <small>
-      <a href="/writing.html">Read more of my blog posts.</a>
-    </small>
-
-    <h2>
-      Recent Notes
-    </h2>
-
-    {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
-    {% for note in notes %}
-      {% if forloop.index < 3 %}
-        {% assign title = note.date | date: '%B %d, %Y' %}
-        {% assign content = note.content | markdownify %}
-
-        {% include card.html
-          title=title
-          excerpt=content
-          external=false
-          url=note.url
-        %}
-      {% endif %}
-    {% endfor %}
-
-    <small>
-      <a href="/notes.html">Read more of my notes.</a>
-    </small>
-  </section>
-</div>
+  <small>
+    <a href="/notes.html">Read more of my notes.</a>
+  </small>
+</section>

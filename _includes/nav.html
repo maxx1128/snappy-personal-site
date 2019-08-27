@@ -1,53 +1,51 @@
-<div class="bg-teal-darker text-white shadow-lg z-10">
-  <nav class="flex flex-col mx-auto">
-    <div class="hidden md:block py-2 px-2 md:px-4">
-      <h1 class="mt-0 mb-2 text-xl text-center">
-        Max Antonucci
-      </h1>
-      <div class="flex items-center">
-        <img class="nav__logo mr-4 rounded-full" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
+<nav class="">
+  <div class="">
+    <h1 class="">
+      Max Antonucci
+    </h1>
+    <div class="">
+      <img class="" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture"/>
 
-        <p class="my-0 text-xs italic">
-          {{site.description}}
-        </p>
-      </div>
+      <p class="">
+        {{site.description}}
+      </p>
     </div>
+  </div>
 
-    <ul class="nav__main-menu list-reset flex flex-wrap md:flex-col mb-0 md:my-4 text-xxs">
-      {% for menu_item in site.data.menu %}
-        {% if menu_item.link == page.url %}
-          {% assign active_page = true %}
-          {% assign current_page = true %}
-        {% elsif page.path contains 'tag' and menu_item.link == '/writing.html' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% elsif page.path contains 'posts' and menu_item.link == '/writing.html' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% elsif page.path contains 'notes' and menu_item.link == '/notes.html' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% else %}
-          {% assign active_page = false %}
-          {% assign current_page = false %}
-        {% endif %}
+  <ul class="">
+    {% for menu_item in site.data.menu %}
+      {% if menu_item.link == page.url %}
+        {% assign active_page = true %}
+        {% assign current_page = true %}
+      {% elsif page.path contains 'tag' and menu_item.link == '/writing.html' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% elsif page.path contains 'posts' and menu_item.link == '/writing.html' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% elsif page.path contains 'notes' and menu_item.link == '/notes.html' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% else %}
+        {% assign active_page = false %}
+        {% assign current_page = false %}
+      {% endif %}
 
-        <li class="{% if menu_item.external %}hidden md:inline-block{% else %}inline-block{% endif %} mb-0 text-center">
-          <a class="block p-2 text-white {% if active_page %}font-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
-            {{ menu_item.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+      <li class="">
+        <a class="" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+          {{ menu_item.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <ul class="list-reset flex flex-wrap md:flex-col mt-auto mb-0 text-xxs">
-      {% for social in site.data.social %}
-        <li class="inline-block mb-0 p-2 text-center">
-          <a class="text-white" href="{{ social.url }}" target="_blank" rel="noopener">
-            {{ social.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+  <ul class="">
+    {% for social in site.data.social %}
+      <li class="">
+        <a class="" href="{{ social.url }}" target="_blank" rel="noopener">
+          {{ social.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

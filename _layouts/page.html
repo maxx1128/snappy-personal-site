@@ -6,15 +6,15 @@ layout: default
   {% assign banner_image = "/assets/images/featured/" | append: page.image | prepend: site.url %}
 {% endif %}
 
-<header class="{% if page.image %}header-with-image{% endif %} w-full pb-2 px-4 text-white bg-teal-dark" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
-  <div class="relative max-w-md mx-auto pt-2">
+<header class="">
+  <div class="">
     {% if page.postLabel %}
-      <span class="category-tag absolute pin-t pin-r ml-4 py-1 px-2 text-xxs leading-none italic border-2 border-t-0 border-blue-light rounded-b">
+      <span class="">
         {{ page.postLabel }}
       </span>
     {% endif %}
 
-    <h1 class="my-4">
+    <h1 class="">
       {% if page.postLabel == "Note" %}
         {{ page.date | date: '%B %d, %Y' }}
       {% else %}
@@ -23,30 +23,30 @@ layout: default
     </h1>
 
     {% if page.tagline %}
-      <div class="text-1xl italic pb-4">
+      <div class="">
         {{ page.tagline }}
       </div>
     {% endif %}
   </div>
 
   {% if page.excerpt %}
-    <p class="max-w-md mx-auto text-xs italic font-light">
+    <p class="">
       {{ page.excerpt }}
     </p>
   {% endif %}
 </header>
 
 {% if page.tags and page.postLabel != "Note" %}
-  <div class="py-2 px-4 lg:px-0 bg-blue-dark">
+  <div class="">
     {% include tags.html
       tags=page.tags
-      wrapper_classes='mb-0 mx-auto max-w-md justify-end'
-      tag_classes='mb-0 bg-white'
-      link_classes='text-xxxs'
+      wrapper_classes=''
+      tag_classes=''
+      link_classes=''
     %}
   </div>
 {% endif %}
 
-<article id="content" class="w-full max-w-md mx-auto {% unless page.no_wrapper %}px-4 py-6 xl:px-6 xl:my-6 bg-white shadow-lg{% else %}md:px-4 md:my-4 xl:px-0{% endunless %}">
+<article id="content" class="">
   {{content}}
 </article>

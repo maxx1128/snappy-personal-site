@@ -3,10 +3,10 @@
 {% assign tag_classes = include.tag_classes %}
 {% assign link_classes = include.link_classes %}
 
-<ul class="list-reset flex flex-wrap {{ wrapper_classes }}">
+<ul class="{{ wrapper_classes }}">
   {% for tag in tags %}
-    <li class="flex items-center justify-center py-1 px-2 shadow-md rounded-sm {{ tag_classes }} {% if forloop.last == false %}mr-2{% endif %}">
-      <a class="uppercase {{ link_classes }}" href="/tag/{{ tag | replace: ' ', '-'  | downcase }}">
+    <li class="{{ tag_classes }}">
+      <a href="/tag/{{ tag | replace: ' ', '-'  | downcase }}" class="{{ link_classes }}">
         {{ tag }}
       </a>
     </li>

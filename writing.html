@@ -24,12 +24,12 @@ tagline: Musings written down for safekeeping
 
 {% include tags.html
   tags=all_tags_array
-  wrapper_classes='mb-8 mx-auto max-w-md justify-center'
-  tag_classes='mb-2 bg-blue-dark'
-  link_classes='text-white text-xxs'
+  wrapper_classes=''
+  tag_classes=''
+  link_classes=''
 %}
 
-<section class="card-wrapper">
+<section class="">
   {% for post in site.posts %}
     {% include card.html
       title=post.title
