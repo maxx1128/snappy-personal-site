@@ -1,11 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-const extractSass = new ExtractTextPlugin({
-  filename: "../../_includes/main.css"
-});
 
 const uglifyJs = new UglifyJsPlugin();
 
@@ -33,31 +28,10 @@ module.exports = {
         use: {
           loader: "file-loader"
         }
-      },
-      {
-        test: /\.scss$/,
-        include: [
-          path.resolve(__dirname, 'webpack/scss_files/main.scss')
-        ],
-        use: extractSass.extract({
-          use: [{
-            loader: "css-loader",
-            options: {
-              minimize: true,
-              importLoaders: 1
-            }
-          }, {
-            loader: "postcss-loader"
-          }, {
-            loader: "sass-loader"
-          }],
-          fallback: "style-loader"
-        })
       }
     ],
   },
   plugins:[
-    uglifyJs,
-    extractSass
+    uglifyJs
   ]
 }
