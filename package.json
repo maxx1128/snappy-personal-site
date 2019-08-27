@@ -8,8 +8,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.0.1",
+    "autoprefixer": "^9.6.1",
+    "chokidar-cli": "^2.0.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^6.0.22",
+    "postcss-cli": "^6.1.3",
     "postcss-loader": "^2.1.5",
     "turbolinks": "^5.1.1"
   },
@@ -18,13 +21,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "concurrently": "^3.5.1",
-    "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
-    "style-loader": "^0.21.0",
-    "tailwindcss": "^0.5.1",
+    "node-sass": "^4.12.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^3.11.0"
   },
@@ -33,6 +31,11 @@
     "write": "yarn run jekyll-server",
     "jekyll-server": "jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "sass": "npm-run-all -p sass:*",
+    "sass:build": "npm-run-all -p sass-task:*",
+    "sass:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass:build'",
+    "sass-task:scss-compile": "node-sass --output-style compressed _sass/ -o assets/css",
+    "sass-task:autoprefixer": "postcss assets/css/*.css --use autoprefixer -d assets/css"
   }
 }
