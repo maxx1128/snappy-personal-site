@@ -27,7 +27,7 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
-    "start": "concurrently -n jekyll,webpack \"yarn run jekyll-server\" \"yarn run webpack-watch\"",
+    "start": "concurrently -n jekyll,sass \"yarn run jekyll-server\" \"yarn run sass\"",
     "write": "yarn run jekyll-server",
     "jekyll-server": "jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
