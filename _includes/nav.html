@@ -1,4 +1,8 @@
-<nav class="">
+<button hidden id="menu-toggle" aria-expanded="false" aria-label="Navigation toggle button">
+  Menu
+</button>
+
+<nav id="menu" class="menu--default">
   <div class="">
     <h1 class="">
       Max Antonucci
@@ -32,7 +36,7 @@
       {% endif %}
 
       <li class="">
-        <a class="" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+        <a class="menu__link" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
           {{ menu_item.name }}
         </a>
       </li>
