@@ -40,7 +40,7 @@
   {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="3; url=/">
   {% endif %}
-  <link rel="stylesheet" href="{{ site.url | append: '/assets/css/placeholder.css' }}">
+  <link id="css-stylesheet" rel="stylesheet" href="{{ site.url | append: '/assets/css/placeholder.css' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url | append: '/rss.xml' }}">
 
