@@ -1,5 +1,23 @@
-body {
-  color: #111;
+@import "_shared/normalize";
+@import "_shared/global";
+@import "_shared/_tools/calc";
+@import "_shared/_tools/colors";
+@import "_shared/_tools/layout";
+@import "_shared/_tools/modular-scale";
+@import "_shared/_tools/selectors";
 
-  background-color: #FCC;
+@import "_stylish/_settings/layout";
+
+@import "_shared/_tools/vars";
+
+@import "_stylish/_settings/colors";
+@import "_stylish/_settings/containers";
+@import "_stylish/_settings/grid";
+@import "_stylish/_settings/type";
+
+body {
+  color: color(mono, black);
+  font-family: type(font-family, base);
+
+  background-color: color(primary, lightest);
 }

@@ -1,0 +1,9 @@
+@import './../../_shared/_tools/calc';
+
+// Map for the breakpoints and max width
+$breakpoint-map: (
+  xs: 0px,
+  sm: rem(480px),
+  md: rem(800px),
+  max: rem(1200px)
+);
