@@ -7,22 +7,22 @@ function menu() {
     body.classList.toggle('body--collapsed-menu');
     body.classList.toggle('body--expanded-menu');
 
-    menu.classList.toggle('menu--collapsed');
-    menu.classList.toggle('menu--expanded');
+    menu.classList.toggle('nav__menu--collapsed');
+    menu.classList.toggle('nav__menu--expanded');
 
-    toggle.classList.toggle('menu-toggle--collapsed');
-    toggle.classList.toggle('menu-toggle--expanded');
+    toggle.classList.toggle('nav__toggle--collapsed');
+    toggle.classList.toggle('nav__toggle--expanded');
   }
 
   function init() {
     body.classList.remove('body--default-menu');
     body.classList.add('body--collapsed-menu');
 
-    menu.classList.remove('menu--default');
-    menu.classList.add('menu--collapsed');
+    menu.classList.remove('nav__menu--default');
+    menu.classList.add('nav__menu--collapsed');
 
     toggle.removeAttribute('hidden');
-    toggle.classList.add('menu-toggle--collapsed');
+    toggle.classList.add('nav__toggle--collapsed');
   }
 
   function setEvents() {

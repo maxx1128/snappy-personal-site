@@ -28,8 +28,8 @@ function themeSwitcher() {
   }
 
   function docReady() {
-    list = document.getElementsByClassName('themes__list')[0];
-    links = document.getElementsByClassName('themes__item');
+    list = document.getElementsByClassName('footer__themes-list')[0];
+    links = document.getElementsByClassName('footer__themes-link');
     cssLink = document.getElementById('css-stylesheet');
     init();
     setEvents();

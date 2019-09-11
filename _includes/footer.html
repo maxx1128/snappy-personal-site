@@ -1,14 +1,11 @@
-<footer>
-  <ul hidden class="themes__list">
-    <li>
-      <a href="javascript:void(0);" class="themes__item" data-theme-name="placeholder">
-        Placeholder
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0);" class="themes__item" data-theme-name="stylish">
-        Stylish
-      </a>
-    </li>
+<footer class="footer">
+  <ul hidden class="footer__themes-list">
+    {% for theme in site.data.themes %}
+      <li class="footer__themes-list-item">
+        <a href="javascript:void(0);" class="footer__themes-link" data-theme-name="{{ theme.value }}">
+          {{ theme.label }}
+        </a>
+      </li>
+    {% endfor %}
   </ul>
 </footer>

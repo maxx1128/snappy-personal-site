@@ -2,6 +2,7 @@
 layout: page
 title: Writing
 tagline: Musings written down for safekeeping
+body_class: body--posts-list
 ---
 
 {% assign all_tags = '' %}
@@ -16,23 +17,26 @@ tagline: Musings written down for safekeeping
 
 {% assign all_tags_array = all_tags | split: '|' | sort %}
 
-{% include drawings/large_book.svg %}
+<div class="writing-page__drawing drawing-svg__wrapper">
+  {% include drawings/large_book.svg %}
+</div>
 
-<p>
+<p class="writing-page__description">
   You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category.
 </p>
 
 {% include tags.html
   tags=all_tags_array
-  wrapper_classes=''
-  tag_classes=''
-  link_classes=''
+  wrapper_classes='writing-page__tags'
+  tag_classes='writing-page__tag'
+  link_classes='writing-page__link'
 %}
 
-<section class="">
+<section class="writing-page__posts">
   {% for post in site.posts %}
     {% include card.html
       title=post.title
+      wrapper_class="card--title"
       excerpt=post.excerpt
       image=post.image
       external=post.external

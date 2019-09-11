@@ -6,47 +6,45 @@ layout: default
   {% assign banner_image = "/assets/images/featured/" | append: page.image | prepend: site.url %}
 {% endif %}
 
-<header class="">
-  <div class="">
-    {% if page.postLabel %}
-      <span class="">
-        {{ page.postLabel }}
-      </span>
-    {% endif %}
+<header class="page-header">
+  {% if page.postLabel %}
+    <span class="page-header__label">
+      {{ page.postLabel }}
+    </span>
+  {% endif %}
 
-    <h1 class="">
-      {% if page.postLabel == "Note" %}
-        {{ page.date | date: '%B %d, %Y' }}
-      {% else %}
-        {{ page.title }}
-      {% endif %}
-    </h1>
-
-    {% if page.tagline %}
-      <div class="">
-        {{ page.tagline }}
-      </div>
+  <h1 class="page-header__title">
+    {% if page.postLabel == "Note" %}
+      {{ page.date | date: '%B %d, %Y' }}
+    {% else %}
+      {{ page.title }}
     {% endif %}
-  </div>
+  </h1>
+
+  {% if page.tagline %}
+    <div class="page-header__tagline">
+      {{ page.tagline }}
+    </div>
+  {% endif %}
 
   {% if page.excerpt %}
-    <p class="">
+    <p class="page-header__excerpt">
       {{ page.excerpt }}
     </p>
   {% endif %}
 </header>
 
 {% if page.tags and page.postLabel != "Note" %}
-  <div class="">
+  <div class="page__tags">
     {% include tags.html
       tags=page.tags
-      wrapper_classes=''
-      tag_classes=''
-      link_classes=''
+      wrapper_classes='page-header__tags'
+      tag_classes='page-header__tag'
+      link_classes='page-header__link'
     %}
   </div>
 {% endif %}
 
-<article id="content" class="">
+<article id="content" class="page__article">
   {{content}}
 </article>

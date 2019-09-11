@@ -5,6 +5,7 @@ layout: page
   {% for post in site.tags[page.tag] %}
     {% include card.html
       title=post.title
+      wrapper_class="card--tags"
       excerpt=post.excerpt
       image=post.image
       external=post.external

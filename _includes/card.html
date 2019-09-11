@@ -1,4 +1,5 @@
 {% assign title = include.title %}
+{% assign wrapper_class = include.wrapper_class %}
 {% assign excerpt = include.excerpt %}
 {% assign image = include.image %}
 {% assign external = include.external %}
@@ -6,32 +7,32 @@
 {% assign link = include.link %}
 {% assign tags = include.tags %}
 
-<article class="">
+<article class="card {{ wrapper_class }}">
   {% if image %}
-    <img class="">
+    <img class="card__image">
   {% endif %}
 
-  <div class="">
-    <h3 class="">
+  <header class="card__header">
+    <h3 class="card__title">
       {% if external %}
-        <a href="{{ link }}" target="_blank" rel="noopener">
+        <a class="card__title-link" href="{{ link }}" target="_blank" rel="noopener">
       {% else %}
-        <a href="{{ url }}">
+        <a class="card__title-link" href="{{ url }}">
       {% endif %}
         {{ title }}
       </a>
     </h3>
-    <p>
+    <p class="card__excerpt">
       {{ excerpt }}
     </p>
-  </div>
+  </header>
 
   {% if tags %}
     {% include tags.html
       tags=tags
-      wrapper_classes=''
-      tag_classes=''
-      link_classes=''
+      wrapper_classes='card__tags'
+      tag_classes='card__tags'
+      link_classes='card__links'
     %}
   {% endif %}
 </article>

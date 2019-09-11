@@ -2,14 +2,14 @@
 layout: page
 title: Notes
 tagline: Personal quips and nonsensical snippets
-no_wrapper: true
+body_class: body--notes-list
 ---
 
-<div class="">
+<div class="notes-page__drawing drawing-svg__wrapper">
   {% include drawings/notes_on_wall.svg %}
 </div>
 
-<section>
+<section class="notes-page__notes">
   {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
     {% assign title = note.date | date: '%B %d, %Y' %}
@@ -17,6 +17,7 @@ no_wrapper: true
 
     {% include card.html
       title=title
+      wrapper_class="card--note"
       excerpt=content
       external=false
       url=note.url

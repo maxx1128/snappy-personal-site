@@ -3,10 +3,10 @@
 {% assign tag_classes = include.tag_classes %}
 {% assign link_classes = include.link_classes %}
 
-<ul class="{{ wrapper_classes }}">
+<ul class="tags {{ wrapper_classes }}">
   {% for tag in tags %}
-    <li class="{{ tag_classes }}">
-      <a href="/tag/{{ tag | replace: ' ', '-'  | downcase }}" class="{{ link_classes }}">
+    <li class="tags__list-item {{ tag_classes }}">
+      <a href="/tag/{{ tag | replace: ' ', '-'  | downcase }}" class="tags__link {{ link_classes }}">
         {{ tag }}
       </a>
     </li>

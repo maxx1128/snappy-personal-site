@@ -21,3 +21,11 @@ body {
 
   background-color: color(primary, lightest);
 }
+
+.drawing-svg__fill {
+  fill: color(primary, dark);
+
+  &:nth-of-type(odd) {
+    fill: color(secondary, dark);
+  }
+}

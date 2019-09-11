@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
 
-  <body id="body" class="body--default-menu">
+  <body id="body" class="body--default-menu {% if page.tags and page.postLabel != 'Note' %}body--post{% elsif page.postLabel == 'Note' %}body--note{% endif %} {{page.body_class}}">
     <a href="#content" class="">
       Skip To Content
     </a>

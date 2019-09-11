@@ -1,42 +1,46 @@
 ---
 layout: default
 title: Homepage
+body_class: body--homepage
 ---
 
-<div class="">
-  <img class="" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture"/>
+<div class="home__banner">
+  <img class="home__banner-image" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture"/>
 
-  <div>
-    <h1 class="">
+  <div class="home__banner-text">
+    <h1 class="home__banner-title">
       Hello Readers.
     </h1>
 
-    <p class="">
-      I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
-    </p>
+    <div class="home__banner-description">
+      <p>
+        I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
+      </p>
 
-    <p>
-      <strong>As a programmer</strong>, I code for the front-end and focus on JavaScript and web accessibility.
-    </p>
+      <p>
+        <strong>As a programmer</strong>, I code for the front-end and focus on JavaScript and web accessibility.
+      </p>
 
-    <p>
-      <strong>As a writer</strong>, I like explaining tough topics in simple, weird ways. I also write about random lessons and philosophies to avoid relearning them later.
-    </p>
+      <p>
+        <strong>As a writer</strong>, I like explaining tough topics in simple, weird ways. I also write about random lessons and philosophies to avoid relearning them later.
+      </p>
 
-    <p>
-      <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist. I don't juggle chainsaws since '06.
-    </p>
+      <p>
+        <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist. I don't juggle chainsaws since '06.
+      </p>
+    </div>
   </div>
 </div>
 
-<section class="">
-  <h2>
+<section class="home__writing">
+  <h2 class="home__writing-title">
     Recent Writing
   </h2>
 
   {% for post in site.posts limit: 2 %}
     {% include card.html
       title=post.title
+      wrapper_class="home__writing-card"
       excerpt=post.excerpt
       image=post.image
       external=post.external
@@ -46,13 +50,13 @@ title: Homepage
     %}
   {% endfor %}
 
-  <small>
+  <small class="home__writing-read-more">
     <a href="/writing.html">Read more of my blog posts.</a>
   </small>
 </section>
 
-<section class="">
-  <h2>
+<section class="home__notes">
+  <h2 class="home__notes-title">
     Recent Notes
   </h2>
 
@@ -64,6 +68,7 @@ title: Homepage
 
       {% include card.html
         title=title
+        wrapper_class="home__notes-card"
         excerpt=content
         external=false
         url=note.url
@@ -71,7 +76,7 @@ title: Homepage
     {% endif %}
   {% endfor %}
 
-  <small>
+  <small class="home__notes-read-more">
     <a href="/notes.html">Read more of my notes.</a>
   </small>
 </section>

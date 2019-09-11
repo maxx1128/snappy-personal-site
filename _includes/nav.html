@@ -1,22 +1,26 @@
-<button hidden id="menu-toggle" aria-expanded="false" aria-label="Navigation toggle button">
-  Menu
+<button
+  hidden
+  id="menu-toggle"
+  class="nav__toggle"
+  aria-expanded="false"
+  aria-label="Navigation toggle button">
+    Menu
 </button>
 
-<nav id="menu" class="menu--default">
-  <div class="">
-    <h1 class="">
+<nav id="menu" class="nav__menu nav__menu--default">
+  <div class="nav__meta">
+    <h1 class="nav__meta-title">
       Max Antonucci
     </h1>
-    <div class="">
-      <img class="" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture"/>
 
-      <p class="">
-        {{site.description}}
-      </p>
-    </div>
+    <img class="nav__meta-image" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture"/>
+
+    <p class="nav__meta-description">
+      {{site.description}}
+    </p>
   </div>
 
-  <ul class="">
+  <ul class="nav__links">
     {% for menu_item in site.data.menu %}
       {% if menu_item.link == page.url %}
         {% assign active_page = true %}
@@ -35,18 +39,18 @@
         {% assign current_page = false %}
       {% endif %}
 
-      <li class="">
-        <a class="menu__link" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+      <li class="nav__link-item">
+        <a class="nav__link" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
           {{ menu_item.name }}
         </a>
       </li>
     {% endfor %}
   </ul>
 
-  <ul class="">
+  <ul class="nav__social-links">
     {% for social in site.data.social %}
-      <li class="">
-        <a class="" href="{{ social.url }}" target="_blank" rel="noopener">
+      <li class="nav__social-link-item">
+        <a class="nav__social-link" href="{{ social.url }}" target="_blank" rel="noopener">
           {{ social.name }}
         </a>
       </li>
