@@ -51,7 +51,7 @@ It doesn't matter if the abuser is shouting or crying as much as the victim. If 
 
 Knowing this is crucial when it comes to stopping verbal abuse.
 
-### 3) There's Easy Ways to Handle Verbal Abuse
+### 3) There are Ways to Handle Verbal Abuse
 
 **Stopping verbal abuse isn't about beating the abuser in a verbal fight. It's about defusing things before they start.**
 
@@ -72,7 +72,7 @@ As long as the premise is directly addressed in a calm way, it can go a long way
 
 #### Use Neutral Language to Change the Subject
 
-This is like to the last trick, also using neutral language and focused on the hidden premise. **They both steer the topic away from a personal attack to an abstract conversation.**
+This is like the last trick, also using neutral language and focused on the hidden premise. **They both steer the topic away from a personal attack to an abstract conversation.**
 
 A common way to frame this is starting the sentence with something like "Isn't it interesting how..." This makes it easy to come up with a few more responses to the last attack.
 
@@ -86,7 +86,7 @@ This neutral language does two things. It stops the personal attack, and pivots 
 
 #### Use the Boring Baroque Response
 
-Some abusers will try and bulldoze over the above moves and keep attacking. More often they'll ask a question but not care about the answer - they only ask to get a reaction. If they keep attacking, one response is to **give a neutral response that's as long and boring as possible.** If they force the victim's have, the victim can show the abuser it won't be fun. It'll be a tedious waste of time. Elgin calls this the "Boring Baroque Response."
+Some abusers will try and bulldoze over the above moves and keep attacking. More often they'll ask a question but not care about the answer - they only ask to get a reaction. If they keep attacking, one response is to **give a neutral response that's as long and boring as possible.** If they force the victim's hand, the victim can show the abuser it won't be fun. It'll be a tedious waste of time. Elgin calls this the "Boring Baroque Response."
 
 Pretend the abuser from the above example keeps attacking about smoking habits. The victim start a long anecdote about what they've read on smoking, addiction, or whatever. The key is still neutral language and expression. Most abusers will tire and give up.
 
@@ -98,8 +98,8 @@ If someone knows a relentless verbal abuser, that's a sign of a bad relationship
 
 ### Don't Discount Verbal Abuse
 
-It's easy to dismiss or ignore verbal abuse as people "being too sensitive" or "letting people get to them." To that, I call bullshit. We don't see the damage verbal abuse does, but it's still serious. If anything, that's why we should take it _more seriously_. It's harder to recognize, even when it's happening to us.
+It's easy to dismiss or ignore verbal abuse as people "being too sensitive" or "letting people get to them." To that, I call bullshit. **We don't see the damage verbal abuse does, but it's still serious.** If anything, that's why we should take it _more seriously_. It's harder to recognize, even when it's happening to us.
 
 Some people rarely deal with verbal abuse, others on a day-to-day basis. Regardless of when and how much, knowing how to handle it is important. It shows we can't let people push our buttons, waste our time, and damage us just to feel powerful. We don't need to play their games or feed their hostility.
 
-Most of all, know that everyone has the power to handle and avoid it. If you're fluent in one language, you already have the tools you need. Learning the details on verbal abuse is a small push in the right direction. Verbal abuse is about others using language to make us feel weak. Stopping it is realizing we can always use our own to see we're still strong.
+Most of all, **know that everyone has the power to handle and avoid it.** If you're fluent in one language, you already have the tools you need. Learning the details on verbal abuse is a small push in the right direction. Verbal abuse is about others using language to make us feel weak. Stopping it is realizing we can always use our own to see we're still strong.
