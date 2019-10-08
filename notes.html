@@ -12,13 +12,9 @@ no_wrapper: true
 <section>
   {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
-    {% assign title = note.date | date: '%B %d, %Y' %}
-    {% assign content = note.content | markdownify %}
-
-    {% include card.html
-      title=title
-      excerpt=content
-      external=false
+    {% include note.html
+      date=note.date
+      content=note.content
       url=note.url
     %}
   {% endfor %}

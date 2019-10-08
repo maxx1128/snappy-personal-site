@@ -56,13 +56,9 @@ title: Homepage
     {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
     {% for note in notes %}
       {% if forloop.index < 3 %}
-        {% assign title = note.date | date: '%B %d, %Y' %}
-        {% assign content = note.content | markdownify %}
-
-        {% include card.html
-          title=title
-          excerpt=content
-          external=false
+        {% include note.html
+          date=note.date
+          content=note.content
           url=note.url
         %}
       {% endif %}

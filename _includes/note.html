@@ -1,0 +1,13 @@
+{% assign date = include.date | date: '%B %d, %Y' %}
+{% assign content = include.content | markdownify %}
+{% assign url = include.url %}
+
+<article class="px-4 py-px md:px-6 mb-10 border-l-4 border-teal-dark">
+  <h3 class="mt-4">
+    <a href="{{ url }}">
+      {{ date }}
+    </a>
+  </h3>
+
+  {{ content }}
+</article>
