@@ -1,0 +1,7 @@
+.makehaven-image {
+  flex: 0 1 50%;
+
+  @screen sm {
+    flex-basis: 33%;
+  }
+}
