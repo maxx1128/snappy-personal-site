@@ -1,7 +1,8 @@
 ---
 layout: page
+no-max-width: true
 ---
-<section>
+<section class="card-layout">
   {% for post in site.tags[page.tag] %}
     {% include card.html
       title=post.title

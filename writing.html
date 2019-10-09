@@ -2,6 +2,7 @@
 layout: page
 title: Writing
 tagline: Musings written down for safekeeping
+no-max-width: true
 ---
 
 {% assign all_tags = '' %}
@@ -16,20 +17,22 @@ tagline: Musings written down for safekeeping
 
 {% assign all_tags_array = all_tags | split: '|' | sort %}
 
-{% include drawings/large_book.svg %}
+<div class="resp-max-width">
+  {% include drawings/large_book.svg %}
 
-<p>
-  You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category.
-</p>
+  <p>
+    You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category.
+  </p>
 
-{% include tags.html
-  tags=all_tags_array
-  wrapper_classes='mb-8 mx-auto justify-center'
-  tag_classes='mb-2 bg-blue-dark'
-  link_classes='text-white text-xxs'
-%}
+  {% include tags.html
+    tags=all_tags_array
+    wrapper_classes='mb-8 mx-auto justify-center'
+    tag_classes='mb-2 bg-blue-dark'
+    link_classes='text-white text-xxs'
+  %}
+</div>
 
-<section>
+<section class="card-layout">
   {% for post in site.posts %}
     {% include card.html
       title=post.title
