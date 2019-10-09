@@ -20,3 +20,11 @@ nav {
     overflow-y: hidden;
   }
 }
+
+.resp-max-width {
+  @apply .max-w-md;
+
+  @screen xxl {
+    @apply .max-w-lg;
+  }
+}

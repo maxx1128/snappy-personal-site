@@ -6,8 +6,8 @@ layout: default
   {% assign banner_image = "/assets/images/featured/" | append: page.image | prepend: site.url %}
 {% endif %}
 
-<header class="{% if page.image %}header-with-image{% endif %} w-full pb-2 px-4 text-white bg-teal-dark" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
-  <div class="relative max-w-md mx-auto pt-2">
+<header class="{% if page.image %}header-with-image{% endif %} w-full pb-2 text-white bg-teal-dark" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+  <div class="relative resp-max-width mx-auto pt-2 px-4 md:px-6">
     {% if page.postLabel %}
       <span class="category-tag absolute pin-t pin-r ml-4 py-1 px-2 text-xxs leading-none italic border-2 border-t-0 border-blue-light rounded-b">
         {{ page.postLabel }}
@@ -30,7 +30,7 @@ layout: default
   </div>
 
   {% if page.excerpt %}
-    <p class="max-w-md mx-auto text-xs italic font-light">
+    <p class="resp-max-width px-4 md:px-6 mx-auto text-xs italic font-light">
       {{ page.excerpt }}
     </p>
   {% endif %}
@@ -40,13 +40,13 @@ layout: default
   <div class="py-2 px-4 lg:px-0 bg-blue-dark">
     {% include tags.html
       tags=page.tags
-      wrapper_classes='mb-0 mx-auto max-w-md justify-end'
+      wrapper_classes='mb-0 mx-auto resp-max-width justify-end'
       tag_classes='mb-0 bg-white'
       link_classes='text-xxxs'
     %}
   </div>
 {% endif %}
 
-<article id="content" class="w-full max-w-md mx-auto {% unless page.no_wrapper %}px-4 py-6 xl:px-6 xl:my-6 bg-white shadow-lg{% else %}md:px-4 md:my-4 xl:px-0{% endunless %}">
+<article id="content" class="w-full resp-max-width mx-auto p-4 md:px-6 lg:mt-4">
   {{content}}
 </article>

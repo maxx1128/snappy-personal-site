@@ -47,7 +47,7 @@ let colors = {
   'teal-dark': '#005661',
   'teal-darker': '#003c44',
 
-  'blue-light': '#00b2ff',
+  'blue-light': '#e3fbfc',
   'blue-dark': '#1621A6'
 }
 
@@ -93,6 +93,7 @@ module.exports = {
     'md': '800px',
     'lg': '1000px',
     'xl': '1200px',
+    'xxl': '1400px'
   },
 
 
@@ -458,6 +459,7 @@ module.exports = {
     '48': '12rem',
     '64': '16rem',
     'full': '100%',
+    'half-screen': '55vh',
     'screen': '100vh'
   },
 
