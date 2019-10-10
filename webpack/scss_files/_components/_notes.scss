@@ -1,0 +1,62 @@
+$note-colors: (
+  1: (
+    color: #01FF70,
+    background-color: #001F3F
+  ),
+  2: (
+    color: #5c0139,
+    background-color: #7FDBFF
+  ),
+  3: (
+    color: #FFDC00,
+    background-color: #85144B
+  ),
+  4: (
+    color: #222023,
+    background-color: #71f0c6
+  ),
+  5: (
+    color: #fafaf1,
+    background-color: #31739C
+  ),
+  6: (
+    color: #001F3F,
+    background-color: #FF4136
+  ),
+  7: (
+    color: #EEBDEE,
+    background-color: #314173
+  )
+);
+
+@mixin note-colors($text, $bg) {
+  color: $text;
+  background-color: $bg;
+
+  a {
+    color: mix(white, $text, 30%);
+  }
+
+  blockquote {
+    color: $bg;
+    background-color: $text;
+
+    a {
+      color: mix(black, $bg, 30%);
+    }
+  }
+}
+
+@each $index, $styles in $note-colors {
+  $text: map-get($styles, color);
+  $bg: map-get($styles, background-color);
+  $length: length($note-colors);
+
+  .note:nth-of-type(#{$length}n+#{$index}) {
+    @include note-colors($text, $bg);
+  }
+
+  .note:nth-of-type(#{$length}n+#{$index + $length}) {
+    @include note-colors($bg, $text);
+  }
+}
