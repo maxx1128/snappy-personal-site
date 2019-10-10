@@ -2,12 +2,11 @@
 layout: page
 title: Notes
 tagline: Personal quips and nonsensical snippets
-no_wrapper: true
+no-max-width: true
+no-padding: true
 ---
 
-{% include drawings/notes_on_wall.svg %}
-
-<section>
+<section id="notes">
   {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
     {% include note.html
