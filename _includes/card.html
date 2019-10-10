@@ -7,13 +7,13 @@
 {% assign link = include.link %}
 {% assign tags = include.tags %}
 
-<article class="mb-10 shadow-lg border-l-4 border-teal-dark bg-blue-light">
+<article class="card shadow-lg border-l-4 border-teal-dark bg-blue-light">
   {% if image %}
     <img class="max-w-none" src="/assets/images/{{ image_subpath }}/{{ image }}" alt="">
   {% endif %}
 
-  <div class="px-4 py-px">
-    <h3 class="mt-4">
+  <div class="mt-auto px-4 py-px">
+    <h3 class="card__header mt-4">
       {% if external %}
         <a href="{{ link }}" target="_blank" rel="noopener">
       {% else %}
@@ -22,7 +22,7 @@
         {{ title }}
       </a>
     </h3>
-    <p>
+    <p class="card__excerpt">
       {{ excerpt }}
     </p>
   </div>
@@ -30,7 +30,7 @@
   {% if tags %}
     {% include tags.html
       tags=tags
-      wrapper_classes='p-2 bg-blue-dark border-l-4 border-blue-light justify-end'
+      wrapper_classes='card__tags p-2 bg-blue-dark justify-end'
       tag_classes='mb-0 bg-white'
       link_classes='text-xxxs'
     %}

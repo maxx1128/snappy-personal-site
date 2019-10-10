@@ -3,5 +3,5 @@ layout: tags
 title: "Tag: JavaScript"
 tagline: One of my favorite coding languages that's slowly eating the Internet
 tag: javascript
-no_wrapper: true
+no-max-width: true
 ---

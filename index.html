@@ -4,7 +4,7 @@ title: Homepage
 ---
 
 <div class="flex items-center justify-center p-4 bg-white shadow-md md:h-half-screen">
-  <div class="resp-max-width p-4 md:px-6 border-l-4 border-r-4 border-teal-dark">
+  <div class="resp-max-width border-l-4 border-r-4 border-teal-dark">
     <h1 class="mt-0">
       Hello Readers.
     </h1>
@@ -27,45 +27,45 @@ title: Homepage
   </div>
 </div>
 
-<div class="resp-max-width mx-auto">
-  <section class="px-4 md:px-6">
-    <h2>
-      Recent Writing
-    </h2>
+<h2 class="resp-max-width">
+  Recent Writing
+</h2>
 
-    {% for post in site.posts limit: 2 %}
-      {% include card.html
-        title=post.title
-        excerpt=post.excerpt
-        image=post.image
-        external=post.external
-        link=post.link
-        url=post.url
-        tags=post.tags
+<section class="card-layout mb-4">
+  {% for post in site.posts limit: 3 %}
+    {% include card.html
+      title=post.title
+      excerpt=post.excerpt
+      image=post.image
+      external=post.external
+      link=post.link
+      url=post.url
+      tags=post.tags
+    %}
+  {% endfor %}
+</section>
+
+<div class="resp-max-width">
+  <small>
+    <a href="/writing.html">Read more of my blog posts.</a>
+  </small>
+
+  <h2>
+    Recent Notes
+  </h2>
+
+  {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
+  {% for note in notes %}
+    {% if forloop.index < 3 %}
+      {% include note.html
+        date=note.date
+        content=note.content
+        url=note.url
       %}
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
 
-    <small>
-      <a href="/writing.html">Read more of my blog posts.</a>
-    </small>
-
-    <h2>
-      Recent Notes
-    </h2>
-
-    {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
-    {% for note in notes %}
-      {% if forloop.index < 3 %}
-        {% include note.html
-          date=note.date
-          content=note.content
-          url=note.url
-        %}
-      {% endif %}
-    {% endfor %}
-
-    <small>
-      <a href="/notes.html">Read more of my notes.</a>
-    </small>
-  </section>
+  <small>
+    <a href="/notes.html">Read more of my notes.</a>
+  </small>
 </div>

@@ -22,7 +22,11 @@ nav {
 }
 
 .resp-max-width {
-  @apply .max-w-md;
+  @apply .max-w-md .mx-auto .p-4;
+
+  @screen md {
+    @apply .px-6
+  }
 
   @screen xxl {
     @apply .max-w-lg;
