@@ -1,6 +1,10 @@
 blockquote {
   @apply .p-4 .my-8 .bg-teal-darker .text-white .italic .shadow-md;
 
+  a {
+    @apply .text-blue-light;
+  }
+
   & > p {
     @apply .mb-0;
   }
