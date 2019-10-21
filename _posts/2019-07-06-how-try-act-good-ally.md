@@ -3,7 +3,7 @@ title: "Nine Ways I (Try to) Act as a Tech Ally"
 date: "2019-07-06"
 excerpt: "I don't consider myself a tech ally, but have several ways I try to act as one."
 image: 'good-ally.jpg'
-tags: ['programming', 'personal']
+tags: ['programming', 'personal', 'tough stuff']
 ---
 
 I want to start this post by saying I don't consider myself a tech ally, and I'm not claiming to be in this post. I'd also prefer if no one said I was, even if they really believe it. [I agree with this post that allyship is something you do instead of become](https://dev.to/yechielk/im-yechiel-kalmenson-and-im-not-an-ally-3n7h), and claiming to be one would make me complacent.
@@ -78,7 +78,11 @@ Thankfully once I learned what gaslighting was, it was much easier to avoid doin
 
 #### Don't dismiss concerns out of hand
 
-This can include saying they're "too sensitive," they "can't take a joke," or are simply saying things to "get attention." In order of why those are stupid: being sensitive isn't a bad trait if your joke didn't make others laugh then the joke-teller is at fault, and if someone really wanted attention there are better ways than engaging with an angry passerby on Twitter.
+This can include saying they're "too sensitive," they "can't take a joke," or are simply saying things to "get attention." In order of why those are stupid:
+
+1. Being sensitive isn't a bad trait.
+2. If your joke didn't make others laugh then the joke-teller is at fault.
+3. If someone really wanted attention there are better ways than engaging with an angry passerby on Twitter.
 
 Even if I don't fully agree with or understand someone's concern, that doesn't mean I can't listen and take it seriously.
 
@@ -140,7 +144,7 @@ Being a decent human being and helping those with less privilege should be a bas
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Reply Guy #4: COOKIE MANSTER<br><br>He’s such a nice guy.<br><br>(He might actually be a nice guy, which makes it hard to call this out. So here’s a tweet to help.) <a href="https://twitter.com/hashtag/9ReplyGuys?src=hash&amp;ref_src=twsrc%5Etfw">#9ReplyGuys</a><br>[tagging co-author <a href="https://twitter.com/shrewshrew?ref_src=twsrc%5Etfw">@shrewshrew</a>] <a href="https://t.co/DwVG1jBGV8">pic.twitter.com/DwVG1jBGV8</a></p>&mdash; Scott Barolo (@sbarolo) <a href="https://twitter.com/sbarolo/status/1037778658595942400?ref_src=twsrc%5Etfw">September 6, 2018</a></blockquote>
 
-I can't pretend I don't have the impulse to do this. There are times when I speak up about something and will frequently wonder if it got good reception. But I'm slowly getting better at recognizing and avoiding that impulse. That's why I lead this post by asking that no commented on whether I was a good ally or not so that impulse wouldn't come into play when writing this.
+I can't pretend I don't have the impulse to do this. There are times when I speak up about something and will frequently wonder if it got good reception. But I'm slowly getting better at recognizing and avoiding that impulse. That's why I lead this post by asking that no one comment on whether I was a good ally or not. That way the impulse wouldn't come into play when writing this.
 
 That's not to say I should push away any positive responses. If others want to thank or befriend me for something, that's great! But it's because they choose to, not because I felt I was owed it. [I shouldn't tell them to feel grateful or ask for something in return.](https://geekfeminism.wikia.org/wiki/Cookie_mentions)
 
