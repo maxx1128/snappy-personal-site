@@ -12,7 +12,7 @@
     <img class="max-w-none" src="/assets/images/{{ image_subpath }}/{{ image }}" alt="">
   {% endif %}
 
-  <div class="mt-auto px-4 py-px">
+  <div class="{% if tags %}mt-auto{% endif %} px-4 py-px">
     <h3 class="card__header mt-4">
       {% if external %}
         <a href="{{ link }}" target="_blank" rel="noopener">
