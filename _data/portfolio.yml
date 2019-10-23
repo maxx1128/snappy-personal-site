@@ -18,15 +18,20 @@
   link: https://codepen.io/max1128/pen/VdyJmd
   image: vigenere-encryption.png
 
-- name: Hypnotic Spiral
-  description: "CSS keyframe animations are all it takes to make an elegant black and white spiral of curves."
-  link: https://codepen.io/max1128/pen/xEOLmg
-  image: hypnotic-spiral.png
+- name: Freeman's Mind Ipsum
+  description: "A simple Lorem Ipsum generator built from create-react-app and a collection of Freeman's Mind quotes."
+  link: "https://freemansmindipsum.com/"
+  image: freemans-mind-ipsum.png
 
 - name: Ruby Newsletter
   description: "A daily newsletter that sends me anime wallpapers every day, using Ruby to scrape the web and send the email."
   link: https://github.com/maxx1128/ruby_anime_newsletter
   image: ruby-newsletter.png
+
+- name: Hypnotic Spiral
+  description: "CSS keyframe animations are all it takes to make an elegant black and white spiral of curves."
+  link: https://codepen.io/max1128/pen/xEOLmg
+  image: hypnotic-spiral.png
 
 - name: Monty Hall Dilemma
   description: "The Monty Hall Dilemma is a classic logic puzzle, recreated here with Vue.JS."
