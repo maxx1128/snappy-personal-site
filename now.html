@@ -58,7 +58,7 @@ tagline: Everything I'm doing right now, added right after it happens
   In my spare time I often visit <a href="https://www.makehaven.org/" target="_blank">MakeHaven</a> to work on craft and art projects. Most involve laser and vinyl cutting, although I'm starting to include more art materials like acryllics. I enjoy it since hands-on work is a nice break from coding and writing, and is a fun way to express myself and my love of anime artwork. The MakeHaven community is also amazing and supportive to all its makers.
 </p>
 
-<ul class="flex flex-wrap mb-2 list-reset">
+<ul class="flex mb-2 flex-col sm:flex-row sm:flex-wrap items-center list-reset">
   {% for item in site.data.makehavenItems %}
     <li class="gallery-image p-2 mb-0">
         <img src="/assets/images/now/makehaven/{{ item.filename }}" alt="{{ item.altText }}">
