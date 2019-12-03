@@ -4,6 +4,7 @@ date: "2019-07-08"
 excerpt: "After weeks of looking for a workable approach, I finally build a Node Twitter bot to automatically share anime quote artwork."
 image: 'twitter-bot.jpg'
 tags: ['programming', 'javascript', 'anime']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=947559'
 ---
 
 A few months ago I tweeted this absolutely true statement.
@@ -106,5 +107,3 @@ Making a bot like this has been a far-off goal of mine for a long time, and maki
 Now I can kick back and enjoy it doing this work for me. At least until the cycle repeats and I get another idea that both improves my programming skills, indulges my love of anime, and costs me some sleep in the process.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;The privilege of a lifetime is being who you are.&quot;<br><br>~ Joseph Campbell <a href="https://t.co/O1TtaPc82M">pic.twitter.com/O1TtaPc82M</a></p>&mdash; Anime Quote Image Bot (@AnimeQuoteImage) <a href="https://twitter.com/AnimeQuoteImage/status/1147810469291483136?ref_src=twsrc%5Etfw">July 7, 2019</a></blockquote>
-
-_[Cover image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=947559)._

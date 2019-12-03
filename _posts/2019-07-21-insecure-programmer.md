@@ -4,6 +4,7 @@ date: "2019-07-21"
 excerpt: "Being insecure about my career and skills likely won't change anytime soon. Finding the positives is something I can do now."
 image: 'insecure-programmer.jpg'
 tags: ['programming', 'personal', 'mental health']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1545946'
 ---
 
 [The 2019 Codeland conference](https://codelandconf.com/) is tomorrow. Amid the excitement, I've been thinking about my career.
@@ -39,5 +40,3 @@ I'm insecure and terrified, but painfully, I'm seeing it as a strength. It keeps
 Are these insecure feelings worth it at a manageable level? High enough to push me forward, but low enough to not paralyze me? Is it worth the struggle?
 
 I don't know the answer to that. But unfortunately, **I don't see the feeling going away anytime soon. So I better learn how to manage it regardless.**
-
-_[Cover image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=1545946)._

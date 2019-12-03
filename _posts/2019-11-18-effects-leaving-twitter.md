@@ -4,6 +4,7 @@ date: "2019-11-18"
 excerpt: "I've (mostly) left Twitter for over two weeks. The effects have ranged from good, amazing, and later on, horrible."
 image: 'effects-twitter-leaving.jpg'
 tags: ['tough stuff', 'writing']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2664375'
 ---
 
 Nearly two weeks ago I chose to unplug from Twitter. Since then, aside from cross-posts, and content I see from my Feedbin, I've spent virtually no time directly on Twitter sites.
@@ -96,5 +97,3 @@ I'm not the first person to get away from Twitter, and not the first to see the 
 **30) Still trying to not give it such control.** Even knowing all this, it's not easy to break such habits.
 
 **31) Still trying.** Still trying, still trying, still trying, still trying, still trying...
-
-_[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=2664375)_

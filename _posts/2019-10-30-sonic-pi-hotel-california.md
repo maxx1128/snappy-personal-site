@@ -4,6 +4,7 @@ date: "2019-10-30"
 excerpt: "Sonic Pi is an amazing music synth tool for turning code into melodies. I break it back in by breaking down a remix of Hotel California's chords."
 image: 'sonic-pi-hotel-california.jpg'
 tags: ['ruby', 'sonic pi']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1904822'
 ---
 
 I love writing all kinds of code - CSS, JavaScript, Ember, hacks to domestic and foreign restaurant databases, and Ruby. But one type of code I love and too often overlook is for [Sonic Pi](https://sonic-pi.net/). It's the open-source tool that turns Ruby-esque code into music. Yes, actual music, as you can see below.
@@ -224,5 +225,3 @@ I like how this song came out, but this is a relatively simple Sonic Pi project.
 All this shows how Sonic Pi offers both ease of use and lots of depth to explore, so it's fun for new and veteran coders. I plan to make more compositions in the future, and hope you all will too!
 
 **[If you want to support the next version of Sonic Pi and keep the app free, consider donating to its Patreon page!](https://www.patreon.com/samaaron)**
-
-_[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=1904822)_

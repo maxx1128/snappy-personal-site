@@ -4,6 +4,7 @@ date: "2019-07-24"
 excerpt: "A beginning coder's guide to the other half of behavioral design patterns with an alternate telling of Snow White and the Seven Dwarves."
 image: 'snow-white-behavioral.jpeg'
 tags: ['programming', 'javascript', 'Design Pattern Fairy Tales']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=745684'
 ---
 
 Welcome to the third entry in my “Design Pattern Fairy Tales” series! It aims to explain design patterns in a more accessible way - that is, fairy tale metaphors.
@@ -508,5 +509,3 @@ In all these scenarios, we see the Chain of Responsibility carry out its logic n
 There's only one post left in this explanatory fairy tale that looks at structural patterns. As fun as this series has been to write, I'm also looking forward to saving the programming princess and close the book on the repo of this tale. So stick around for the last entry!
 
 _To Be Continued..._
-
-_[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=745684)_

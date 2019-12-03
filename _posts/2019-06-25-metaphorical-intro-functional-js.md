@@ -4,6 +4,7 @@ date: "2019-06-25"
 excerpt: "Functional JavaScript is my new favorite approach to writing JavaScript, but few introductions I found were beginner friendly. I break down the basics with angels, mutants, and demanding southern belles."
 image: 'functional-js-metaphors.jpg'
 tags: ['programming', 'javascript']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2196900'
 ---
 
 Functional JavaScript isn't a tool, framework, 3rd-party addon, npm module, or anything else you'd add on. Functional Programming is an approach for writing code, and Functional JavaScript (FJS) is how to use that approach for JavaScript. Like all approaches, it has benefits and drawbacks, tradeoffs one makes, people who like and dislike it, and different lobbying groups in international governments.
@@ -331,5 +332,3 @@ A final note on FJS: it's a style of writing JavaScript that exists on a spectru
 FJS can be tough to grasp, as you can tell by the number of links I reference for extra reading. But understanding these four topics will help you build a solid foundation for learning more. This is what holds true for me since they made everything click into place for every other article I read on FJS. Hopefully, this post can do the same for anyone else looking to learn and use it.
 
 _If you really want to go deeper into FJS, I recommend [Kyle Simpson's book "Functional-Light JS."](https://github.com/getify/Functional-Light-JS) It goes into much deeper detail on functional programming and JavaScript, and you can read it for free on Github!_
-
-_Cover image courtesy of [SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=2196900)._

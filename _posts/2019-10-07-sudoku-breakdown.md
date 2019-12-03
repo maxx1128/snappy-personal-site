@@ -4,6 +4,7 @@ date: "2019-10-07"
 excerpt: "A CodeWars challenge had me checking if Sudoku puzzles were solved correctly or not. I break down my solution using functional JavaScript"
 image: 'sudoku-javascript.png'
 tags: ['javascript']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1355200'
 ---
 
 A favorite CodeWars challenge of mine is the ever-wonderful "check my sudoku" puzzle. It starts with a large array of arrays representing a completed Sudoku puzzle. You need to function that checks if it's correct or not. It's complex yet understandable and requires a good amount of creativity.
@@ -314,5 +315,3 @@ Boom! You can [see my completed `checkSudoku` function in all its glory in this 
 ## Conclusion
 
 Not much more to write here other than I hope you enjoyed reading this breakdown. Writing it was tough but fun. There's always a big gap between "understanding" and "explaining" solution." **But crossing that gap helps improve understanding and memory for future code challenges.** Writing this even helped me further improve the function (like naming variables better). Here's hoping I can write more breakdowns like this later.
-
-_[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=1355200)_

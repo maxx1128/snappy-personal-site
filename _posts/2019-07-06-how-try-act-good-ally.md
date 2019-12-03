@@ -4,6 +4,7 @@ date: "2019-07-06"
 excerpt: "I don't consider myself a tech ally, but have several ways I try to act as one."
 image: 'good-ally.jpg'
 tags: ['programming', 'personal', 'tough stuff']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2502431'
 ---
 
 I want to start this post by saying I don't consider myself a tech ally, and I'm not claiming to be in this post. I'd also prefer if no one said I was, even if they really believe it. [I agree with this post that allyship is something you do instead of become](https://dev.to/yechielk/im-yechiel-kalmenson-and-im-not-an-ally-3n7h), and claiming to be one would make me complacent.
@@ -165,5 +166,3 @@ It's also not up to the ally to determine if they're an ally or not. It's up to 
 So I don't consider myself an ally and don't think I have much of a right to. But I try to act as one and make fewer mistakes as I go.
 
 That's all I can really do, and if I can improve things even a little, I won't have many regrets.
-
-_[Cover image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=2502431)_
