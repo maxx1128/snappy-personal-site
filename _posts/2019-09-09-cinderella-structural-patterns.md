@@ -4,6 +4,7 @@ date: "2019-09-09"
 excerpt: "A beginning coder's guide to structural design patterns with an alternate telling of Cinderella."
 image: 'cinderella-structural.jpeg'
 tags: ['programming', 'javascript', 'Design Pattern Fairy Tales']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2510905'
 ---
 
 Welcome to the fourth entry in my “Design Pattern Fairy Tales” series! It aims to explain design patterns in a more accessible way - that is, fairy tale metaphors.
@@ -497,5 +498,3 @@ The final lesson I'll share here is one I shared at the very start. I had an inc
 So if this series worked well for you, use the trick for learning more in the future! Learn Ember by comparing it to a chocolate factory or giant fighting robot. Understand React hooks with evil AIs or some kids in a magical wardrobe. Use whatever works best, and maybe even write about it afterward :)
 
 With that, I close the book on this story. _And they all coded happily ever after._
-
-_[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=2510905)_

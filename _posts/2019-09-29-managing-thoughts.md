@@ -4,6 +4,7 @@ date: "2019-09-29"
 excerpt: "We live with our thoughts every day, so it's important to not let them drive us down a wrong path."
 image: 'managing-thoughts.jpeg'
 tags: ['mental health']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2554146'
 ---
 
 We live with our thoughts all the time, and a surprising amount of time, they wind up being our worst enemy. Thoughts can be like horrible bullies when they get bad. They're hovering over us, know exactly what buttons to push, and on bad days they insult our mother. Now thoughts are for the obvious tasks of knowing and understanding things. But they can cause as much (if not more) to distract, mislead, or manipulate us down a bad path.
@@ -69,5 +70,3 @@ I hope you find all the above tricks useful. But the most important thing here i
 But we build our identities on so much more: our actions, morals, emotions, decisions, and many others. **Thoughts are the one we're most aware of, even though they're arguably the smallest piece.** We forget most thoughts the next day. They're pointless observations or random ideas popping up from our subconscious. It's why most people don't share their every waking thought on Twitter. They know most people wouldn't care to read them, including themselves. I have dozens of journals of daily thoughts going back to high school. Even I rarely care about my past thoughts.
 
 Realizing how little our thoughts affect our identities takes away a lot of their power and makes them easier to manage. It turns them from a bully to that quiet friend that sometimes shares great insights. In short, it helps them start working with us more than against us.
-
-_[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=2554146)_

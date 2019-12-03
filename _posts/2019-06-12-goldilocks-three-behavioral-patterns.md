@@ -4,6 +4,7 @@ date: "2019-06-12"
 excerpt: "A beginning coder's guide to half of the behavioral design patterns with an alternate telling of Goldilocks and the Three Bears."
 image: 'goldilocks-three-behavioral-patterns.jpg'
 tags: ['programming', 'javascript', 'Design Pattern Fairy Tales']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2692747'
 ---
 
 Welcome to the second entry in my "Design Pattern Fairy Tales" series!
@@ -545,5 +546,3 @@ Papa Bear finds himself reaching for an unfamiliar clock and putting on a quiet 
 This post marks the halfway point of this design patterns and fairy tales series. There's still the remaining behavioral and structural patterns along the way. But soon we shall slay the design pattern dragons and save the programming princess in the coding company castle!
 
 _To Be Continued..._
-
-[Cover Image courtesy of SafeBooru.org](https://safebooru.org/index.php?page=post&s=view&id=2692747)

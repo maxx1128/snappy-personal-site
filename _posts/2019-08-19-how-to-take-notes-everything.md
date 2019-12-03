@@ -4,6 +4,7 @@ date: "2019-08-19"
 excerpt: "Find the approach to taking consistent notes on books and articles to accelerate your learning."
 image: 'how-take-notes-everything.png'
 tags: ['writing', 'career']
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2815426'
 ---
 
 I've done lots of writing lately, but almost none of it has gone towards blog posts. Instead, it's gone towards my online notebook, now called the more badass-sounding [Exocortex](https://max-antonucci.gitbook.io/study-notebook/). I've read of it being called a "knowledge notebook" or a "personal wiki," which mean the same but aren't as badass.
@@ -102,5 +103,3 @@ I'm not going to pretend taking notes is the best way to learn. That book I refe
 It could only be a few books a year. Choose the right ones and devote a little time to reading and note-taking. It brings an exponential return on investment in the end. Unless you're not a book person (in which case don't you _dare_ speak to me), there aren't any real arguments against it.
 
 So find some good content and start building a personal wiki! _Just don't call it an Exocortex, since I've already claimed that name._
-
-[Cover Image courtesy of SafeBooru.org.](https://safebooru.org/index.php?page=post&s=view&id=2815426)
