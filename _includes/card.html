@@ -18,9 +18,11 @@
         {{ title }}
       </a>
     </h3>
-    <p class="card__excerpt">
-      {{ excerpt }}
-    </p>
+    {% if excerpt %}
+      <p class="card__excerpt">
+        {{ excerpt }}
+      </p>
+    {% endif %}
   </div>
 
   {% if tags %}
