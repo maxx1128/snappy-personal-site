@@ -23,12 +23,11 @@
     "purgecss": "^1.4.1"
   },
   "scripts": {
-    "build": "yarn prod",
     "dev": "npm-run-all -p write sass:dev",
-    "prod": "npm-run-all -p build-placeholder sass:prod",
+    "prod": "npm-run-all -p build sass:prod",
 
     "write": "jekyll serve --incremental --watch",
-    "build-placeholder": "jekyll build",
+    "build": "jekyll build",
 
     "sass:dev": "npm-run-all -p sass sass-dev:*",
     "sass:prod": "npm-run-all -p sass sass-prod:*",
