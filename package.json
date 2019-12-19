@@ -23,14 +23,14 @@
     "purgecss": "^1.4.1"
   },
   "scripts": {
-    "dev": "npm-run-all -p write sass:dev",
-    "prod": "npm-run-all -p build sass:prod",
+    "dev": "yarn write && yarn sass:dev",
+    "prod": "yarn build && yarn sass:prod",
 
     "write": "jekyll serve --incremental --watch",
     "build": "jekyll build",
 
-    "sass:dev": "npm-run-all -p sass sass-dev:*",
-    "sass:prod": "npm-run-all -p sass sass-prod:*",
+    "sass:dev": "yarn sass && npm-run-all -p sass-dev:**",
+    "sass:prod": "yarn sass && npm-run-all -p sass-prod:*",
     "sass": "node-sass --output-style compressed _sass/ -o assets/css",
     "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'",
     "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
