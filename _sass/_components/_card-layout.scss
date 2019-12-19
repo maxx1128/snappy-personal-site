@@ -1,0 +1,30 @@
+.card-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  margin: spacing(2) 0 spacing();
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  box-shadow: inset 0 0 0 1000px rgba(227, 251, 252, 0.91), container(box-shadow, 2);
+}
+
+.card__header {
+  font-size: type(font-size, h4);
+}
+
+@include larger-than(lg) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card__tags {
+    margin-top: auto;
+  }
+}

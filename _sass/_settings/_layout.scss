@@ -1,0 +1,43 @@
+@import "../_tools/calc";
+
+// All layout variables, such as spacing, layering, and others. Not grid ones, which refer to screen sizes and dimensions.
+
+// For pulling specific spacing values
+// Can be used for margins or padding
+@function spacing($space: 4) {
+  @if map-has-key($spacing-map, $space) {
+    @return map-get($spacing-map, $space);
+  }
+}
+
+// For pulling z-index values
+@function z-index($index: 'default') {
+  @if map-has-key($z-layers, $index) {
+    @return map-get($z-layers, $index);
+  }
+}
+
+$g-base-spacing: rem(16px);
+
+$spacing-map: (
+  none : 0,
+  0    : 0,
+  px   : 1px,
+  1    : decimal-round(($g-base-spacing / 4), 2),
+  2    : decimal-round(($g-base-spacing / 2), 2),
+  3    : decimal-round(($g-base-spacing * 0.75), 2),
+  4    : decimal-round($g-base-spacing, 2),
+  5    : decimal-round(($g-base-spacing * 1.25), 2),
+  6    : decimal-round(($g-base-spacing * 1.5), 2),
+  8    : decimal-round(($g-base-spacing * 2), 2),
+  10   : decimal-round(($g-base-spacing * 2.5), 2),
+  12   : decimal-round(($g-base-spacing * 3), 2)
+);
+
+$z-layers: (
+  bottomless-pit: -9999,
+  default: 1,
+  dropdown: 3000,
+  overlay: 4000,
+  modal: 4001
+);

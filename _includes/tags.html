@@ -5,8 +5,8 @@
 
 <ul class="list-reset flex flex-wrap mb-0 {{ wrapper_classes }}">
   {% for tag in tags %}
-    <li class="flex items-center justify-center py-1 px-2 shadow-md rounded-sm {{ tag_classes }} {% if forloop.last == false %}mr-2{% endif %}">
-      <a class="uppercase {{ link_classes }}" href="/tag/{{ tag | replace: ' ', '-'  | downcase }}">
+    <li class="flex flex-align-center flex-justify-center py-1 px-2 box-shadow-1 border-radius-small {{ tag_classes }} {% if forloop.last == false %}mr-2{% endif %}">
+      <a class="upper {{ link_classes }}" href="/tag/{{ tag | replace: ' ', '-'  | downcase }}">
         {{ tag }}
       </a>
     </li>

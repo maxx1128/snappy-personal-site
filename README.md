@@ -22,8 +22,20 @@ $ bundle install
 $ yarn install
 ```
 
-## Run Build Process
+## Run the Dev Environment
+
+This runs a basic Sass compilation and Jekyll build, watching for changes on both sides.
 
 ```
-$ yarn start
+$ yarn dev
+$ yarn write     # Only compile and watch Jekyll
+$ yarn sass:dev  # Only compile and watch Sass
+```
+
+## Build for Production
+
+This builds Jekyll and a production-ready version of the styles without watching for changes. The server should run this command before hosting the files.
+
+```
+$ yarn prod
 ```

@@ -1,19 +1,19 @@
-<div class="bg-teal-darker text-white shadow-lg z-10">
-  <nav class="flex flex-col mx-auto">
-    <div class="hidden md:block py-2 px-2 md:px-4">
-      <h1 class="mt-0 mb-2 text-lg text-center">
+<div class="bg-teal-darker text-mono-white box-shadow-2 z-default">
+  <nav class="flex flex-column mx-auto">
+    <div class="hidden-md-down py-2 px-2 md--px-4">
+      <h1 class="mt-0 mb-2 text-h6 text-center">
         Max Antonucci
       </h1>
-      <div class="flex items-center">
-        <img class="nav__logo mr-4 rounded-full" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
+      <div class="flex flex-align-center">
+        <img class="nav__logo mr-4 border-radius-full" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
 
-        <p class="my-0 text-xxs italic">
+        <p class="my-0 text-tiny italic">
           {{site.description}}
         </p>
       </div>
     </div>
 
-    <ul class="nav__main-menu list-reset flex flex-wrap md:flex-col mb-0 md:my-4 text-xxs">
+    <ul class="nav__main-menu list-reset flex flex-wrap md--flex-column mb-0 md--my-4 text-tiny">
       {% for menu_item in site.data.menu %}
         {% if menu_item.link == page.url %}
           {% assign active_page = true %}
@@ -32,18 +32,18 @@
           {% assign current_page = false %}
         {% endif %}
 
-        <li class="{% if menu_item.external %}hidden md:inline-block{% else %}inline-block{% endif %} mb-0 text-center">
-          <a class="block p-2 text-white {% if active_page %}font-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+        <li class="{% if menu_item.external %}hidden md--inline-block{% else %}inline-block{% endif %} mb-0 text-center">
+          <a class="block p-2 text-mono-white {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
             {{ menu_item.name }}
           </a>
         </li>
       {% endfor %}
     </ul>
 
-    <ul class="list-reset flex flex-wrap md:flex-col mt-auto mb-0 text-xxs">
+    <ul class="list-reset flex flex-wrap md--flex-column mt-auto mb-0 text-tiny">
       {% for social in site.data.social %}
         <li class="inline-block mb-0 p-2 text-center">
-          <a class="text-white" href="{{ social.url }}" target="_blank" rel="noopener">
+          <a class="text-mono-white" href="{{ social.url }}" target="_blank" rel="noopener">
             {{ social.name }}
           </a>
         </li>
