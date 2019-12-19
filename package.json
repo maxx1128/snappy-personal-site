@@ -23,11 +23,18 @@
     "purgecss": "^1.4.1"
   },
   "scripts": {
-    "build": "jekyll build",
-    "start": "concurrently -n jekyll,webpack \"yarn run jekyll-server\" \"yarn run webpack-watch\"",
-    "write": "yarn run jekyll-server",
-    "jekyll-server": "jekyll serve --incremental --watch",
-    "webpack-watch": "webpack -w",
-    "webpack": "webpack"
+    "build": "yarn prod",
+    "dev": "npm-run-all -p write sass:dev",
+    "prod": "npm-run-all -p build-placeholder sass:prod",
+
+    "write": "jekyll serve --incremental --watch",
+    "build-placeholder": "jekyll build",
+
+    "sass:dev": "npm-run-all -p sass sass-dev:*",
+    "sass:prod": "npm-run-all -p sass sass-prod:*",
+    "sass": "node-sass --output-style compressed _sass/ -o assets/css",
+    "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'",
+    "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
+    "sass-prod:purgecss": "purgecss --css assets/css/*.css --content _site/**/**/*.html --out assets/css"
   }
 }
