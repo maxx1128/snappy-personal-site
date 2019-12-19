@@ -23,17 +23,17 @@ no-max-width: true
   <p>
     I don't often focus on big projects, but still have a few I host and want to show off. Just know some of them are older and not reflective of my current skills.
   </p>
-</div>
 
-<section class="card-layout">
-  {% for portfolio in site.data.portfolio %}
-    {% include card.html
-      title=portfolio.name
-      excerpt=portfolio.description
-      image_subpath="portfolio"
-      image=portfolio.image
-      external=true
-      link=portfolio.link
-    %}
-  {% endfor %}
-</section>
+  <section class="card-layout">
+    {% for portfolio in site.data.portfolio %}
+      {% include card.html
+        title=portfolio.name
+        excerpt=portfolio.description
+        image_subpath="portfolio"
+        image=portfolio.image
+        external=true
+        link=portfolio.link
+      %}
+    {% endfor %}
+  </section>
+</div>

@@ -3,13 +3,13 @@ layout: default
 title: Homepage
 ---
 
-<div class="flex items-center justify-center p-4 bg-white shadow-md md:h-half-screen">
+<div class="flex flex-align-center flex-justify-center p-4 bg-mono-white box-shadow-1 md--h-half-screen">
   <div class="resp-max-width border-l-4 border-r-4 border-teal-dark">
     <h1 class="mt-0">
       Hello Readers.
     </h1>
 
-    <p class="text-lg">
+    <p class="text-h6">
       I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
     </p>
 
@@ -27,25 +27,25 @@ title: Homepage
   </div>
 </div>
 
-<h2 class="resp-max-width">
-  Recent Writing
-</h2>
-
-<section class="card-layout mb-4">
-  {% for post in site.posts limit: 5 %}
-    {% include card.html
-      title=post.title
-      excerpt=post.excerpt
-      image=post.image
-      external=post.external
-      link=post.link
-      url=post.url
-      tags=post.tags
-    %}
-  {% endfor %}
-</section>
-
 <div class="resp-max-width">
+  <h2>
+    Recent Writing
+  </h2>
+
+  <section class="card-layout mb-4">
+    {% for post in site.posts limit: 4 %}
+      {% include card.html
+        title=post.title
+        excerpt=post.excerpt
+        image=post.image
+        external=post.external
+        link=post.link
+        url=post.url
+        tags=post.tags
+      %}
+    {% endfor %}
+  </section>
+
   <small>
     <a href="/writing.html">Read more of my blog posts.</a>
   </small>
@@ -68,7 +68,7 @@ title: Homepage
   {% endfor %}
 </section>
 
-<div class="resp-max-width">
+<div class="resp-max-width py-4">
   <small>
     <a href="/notes.html">Read more of my notes.</a>
   </small>

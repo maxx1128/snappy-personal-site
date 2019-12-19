@@ -1,0 +1,20 @@
+
+.border-a { border: 1px solid color(mono, black); }
+.border-t { border-top: 1px solid color(mono, black); }
+.border-r { border-right: 1px solid color(mono, black); }
+.border-b { border-bottom: 1px solid color(mono, black); }
+.border-l { border-left: 1px solid color(mono, black); }
+
+@each $palette, $swatches in $color-map {
+  @each $label, $color in $swatches {
+    .border-#{$palette}-#{$label} { border-color: $color; }
+  }
+}
+
+@each $label, $length in $spacing-map {
+  .border-a-w-#{$label} { border-width: $length; }
+  .border-t-w-#{$label} { border-top-width: $length; }
+  .border-r-w-#{$label} { border-right-width: $length; }
+  .border-b-w-#{$label} { border-bottom-width: $length; }
+  .border-l-w-#{$label} { border-left-width: $length; }
+}

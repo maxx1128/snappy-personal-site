@@ -1,5 +1,4 @@
-css/main.css
-js/bundle.js
+assets/css/
 _site
 .jekyll-metadata
 .sass-cache

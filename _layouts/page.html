@@ -8,41 +8,43 @@ layout: default
   {% assign banner_image = false %}
 {% endif %}
 
-<header class="{% if page.image %}header-with-image{% endif %} w-full pb-2 text-white bg-teal-dark" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
-  <div class="relative resp-max-width">
-    {% if page.postLabel %}
-      <span class="category-tag absolute pin-t pin-r ml-4 py-1 px-2 text-xxs leading-none italic border-2 border-t-0 border-blue-light rounded-b">
-        {{ page.postLabel }}
-      </span>
-    {% endif %}
-
-    <h1 class="my-4">
-      {% if page.postLabel == "Note" %}
-        {{ page.date | date: '%B %d, %Y' }}
-      {% else %}
-        {{ page.title }}
+<header class="{% if page.image %}header-with-image{% endif %} width-100 pb-2 text-mono-white bg-teal-dark" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+  <div class="resp-max-width">
+    <div class="relative py-4">
+      {% if page.postLabel %}
+        <span class="category-tag absolute ml-4 py-1 px-2 text-tiny italic">
+          {{ page.postLabel }}
+        </span>
       {% endif %}
-    </h1>
 
-    {% if page.tagline %}
-      <div class="text-1xl italic">
-        {{ page.tagline }}
-      </div>
+      <h1 class="mt-0">
+        {% if page.postLabel == "Note" %}
+          {{ page.date | date: '%B %d, %Y' }}
+        {% else %}
+          {{ page.title }}
+        {% endif %}
+      </h1>
+
+      {% if page.tagline %}
+        <div class="text-1xl italic">
+          {{ page.tagline }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if page.excerpt and page.excerpt != '' %}
+      <p class="py-0 md--py-0 text-small italic font-weight-light">
+        {{ page.excerpt }}
+      </p>
     {% endif %}
   </div>
-
-  {% unless page.excerpt == '' %}
-    <p class="resp-max-width py-0 md:py-0 text-xs italic font-light">
-      {{ page.excerpt }}
-    </p>
-  {% endunless %}
 </header>
 
 {% if page.tags and page.postLabel != "Note" %}
   <div class="bg-blue-dark">
-    <div class="resp-max-width flex justify-between py-2 px-4 md:px-6">
+    <div class="resp-max-width flex flex-justify-between py-2 px-4 md--px-6">
       {% if page.featured_image_link %}
-        <a rel="noopener" class="text-white hidden md:inline-block" href="{{ page.featured_image_link }}" target="_blank">
+        <a rel="noopener" class="text-mono-white hidden md--inline-block" href="{{ page.featured_image_link }}" target="_blank">
           <tiny>
             Featured image courtesy of this page.
           </tiny>
@@ -51,18 +53,14 @@ layout: default
 
       {% include tags.html
         tags=page.tags
-        wrapper_classes='mb-0 ml-auto justify-end'
-        tag_classes='mb-0 bg-white'
-        link_classes='text-xxxs'
+        wrapper_classes='mb-0 ml-auto flex-justify-end'
+        tag_classes='mb-0 bg-mono-white'
+        link_classes='text-tiny'
       %}
     </div>
   </div>
 {% endif %}
 
-<article id="content" class="w-full {% unless page.no-padding %}p-4 md:px-6 lg:mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width mx-auto{% endunless %}">
+<article id="content" class="width-100 {% unless page.no-padding %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width mx-auto{% endunless %}">
   {{content}}
-
-  {% include share-buttons.html
-    image=banner_image
-  %}
 </article>

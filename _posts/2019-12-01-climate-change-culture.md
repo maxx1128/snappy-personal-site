@@ -18,7 +18,7 @@ There's an endless list of things embedded in today's lifestyles we couldn't liv
 
 But we all like these things too much. We see them as the normal and take them for granted. We don't want to give them up, even partially. I'm no exception to this - I was raised on them and am just as addicted. They're products of the industrial age - embedded in our cultures of productivity, consumption, and constant growth.
 
-## Culture is the Root of Climate change
+## Culture is the Root of Climate Change
 
 Changing these cultural values is the foundation of any long-term, meaningful action against climate change. But culture isn't easy to change, especially when most people pushing back, in denial, or just apathetic. Some for their interests, and some for their addictions. Hardly anyone knows how to change to a life without all these things and on such short notice.
 
