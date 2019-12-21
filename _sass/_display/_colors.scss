@@ -5,10 +5,10 @@
     .bg-contrast-#{$palette}-#{$label} { @include contra-color($color); }
     .text-#{$palette}-#{$label} { color: $color; }
 
-    .bg-contrast-#{$palette}-#{$label}:hover {
+    .bg-contrast-#{$palette}-#{$label}--hover {
       @include hovers() { @include contra-color($color); }
     }
-    .text-#{$palette}-#{$label}:hover {
+    .text-#{$palette}-#{$label}--hover {
       @include hovers() { color: $color; }
     }
   }
