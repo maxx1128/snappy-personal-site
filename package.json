@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "concurrently -n jekyll, \"yarn write\" \"yarn sass:dev\"",
-    "prod": "yarn build",
+    "prod": "yarn build && yarn sass:prod",
     "write": "jekyll serve --incremental --watch",
     "build": "jekyll build",
     "sass:dev": "yarn sass && npm-run-all sass-dev:*",
