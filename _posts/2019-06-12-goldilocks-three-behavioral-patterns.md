@@ -36,7 +36,7 @@ class BearBike {
 }
 ```
 
-The `BearBike` class accepts the bear's for deciding the resistance. The actual algorithm, however, isn't there. It's passed to the bike in order to get the resistance as a `strategy`.
+The `BearBike` class accepts the bear's algorithms for deciding the resistance. The actual algorithm, however, isn't there. It's passed to the bike in order to get the resistance as a `strategy`.
 
 They realize this is the Strategy design pattern, where **the needed algorithm(s) are kept separate from the object and passed in.** This gives the bears greater control over calculating the bike's resistance, letting them write and manage the algorithms separately. They can be used here, and in any other classes they want!
 
