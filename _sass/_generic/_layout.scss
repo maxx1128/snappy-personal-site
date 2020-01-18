@@ -5,7 +5,7 @@ body {
   @include larger-than(md) {
     height: 100vh;
     overflow-y: hidden;
-    grid-template-columns: 235px 1fr;
+    grid-template-columns: 200px 1fr;
   }
 }
 
