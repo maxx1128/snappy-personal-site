@@ -8,9 +8,9 @@ layout: default
   {% assign banner_image = false %}
 {% endif %}
 
-<header class="{% if page.image %}header-with-image{% endif %} width-100 pb-2 text-mono-white bg-teal-dark" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+<header class="{% if page.image %}header-with-image{% else %}header-without-image{% endif %} width-100 pb-2 text-mono-white" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="resp-max-width">
-    <div class="relative py-4">
+    <div class="relative pt-8">
       {% if page.postLabel %}
         <span class="category-tag absolute ml-4 py-1 px-2 text-tiny italic">
           {{ page.postLabel }}
