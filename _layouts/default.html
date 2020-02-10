@@ -15,4 +15,11 @@
 
     <script type="text/javascript" src="{{ site.url | append: '/assets/js/shuffleNotes.js' }}" charset="utf8" ></script>
   </body>
+
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/serviceworker.js')
+        .catch((error) => console.error('Failed to register service worker', error));
+    }
+  </script>
 </html>
