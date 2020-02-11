@@ -33,6 +33,6 @@ nav {
   }
 
   @include larger-than(xxl) {
-    max-width: breakpoing(lg);
+    max-width: breakpoint(lg);
   }
 }
