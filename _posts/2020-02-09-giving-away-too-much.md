@@ -4,7 +4,7 @@ date: "2020-02-09"
 excerpt: "Selfishness can be bad in many contexts, but embracing it in the right away is one of the most selfless things we can (and should) do."
 image: 'giving-too-much.png'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2353876'
-tags: ['productivity', 'mental health']
+tags: ['mental health']
 ---
 
 Self-care pops up in my conversations a lot, especially among web developers. I think it's out of necessity due to [what American culture does to burn out the youth](https://www.buzzfeednews.com/article/annehelenpetersen/millennials-burnout-generation-debt-work), but that's for another day.
