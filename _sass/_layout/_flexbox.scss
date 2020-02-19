@@ -1,10 +1,10 @@
-.flex { display: flex; }
 .inline-flex { display: inline-flex; }
 
 .flex-item { flex: 1 1 auto; }
 .flex-nogrow { flex-grow: 0; }
 
 @each $bp-label, $bp in $breakpoint-map {
+  @include rsp-class($bp, $bp-label, 'flex') { display: flex; }
   @include rsp-class($bp, $bp-label, 'flex-wrap') { flex-wrap: wrap; }
   @include rsp-class($bp, $bp-label, 'flex-nowrap') { flex-wrap: nowrap; }
   @include rsp-class($bp, $bp-label, 'flex-row') { flex-direction: row; }
