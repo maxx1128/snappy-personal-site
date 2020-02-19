@@ -1,5 +1,5 @@
 
-const version         = 'V0.01',
+const version         = 'V0.02',
       staticCacheName = `${version}staticfiles`;
 
 addEventListener('install', installEvent => {
@@ -21,7 +21,8 @@ addEventListener('install', installEvent => {
         // Need to Cache
         return staticCache.addAll([
           '/assets/css/main.css',
-          '/assets/images/navs/1.jpg'
+          '/assets/images/navs/1.jpg',
+          '/assets/js/mobileMenu.js'
         ]);
       })
   );

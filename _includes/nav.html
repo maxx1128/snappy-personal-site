@@ -1,5 +1,5 @@
 <div class="bg-teal-darker text-mono-white box-shadow-2 z-default">
-  <nav class="flex flex-column mx-auto">
+  <nav id="navigation" class="flex flex-column mx-auto">
     <div class="hidden-md-down p-2 md--px-3 text-center">
       <h1 class="mt-0 mb-2 text-h6">
         Max Antonucci
@@ -9,7 +9,11 @@
       </p>
     </div>
 
-    <ul class="nav__main-menu list-reset flex flex-wrap md--flex-column mb-0 md--my-4 text-tiny">
+    <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu">
+      Menu
+    </button>
+
+    <ul id="navigation-menu" class="nav__main-menu list-reset flex flex-wrap md--flex-column mb-0 md--my-4">
       {% for menu_item in site.data.menu %}
         {% if menu_item.link == page.url %}
           {% assign active_page = true %}
@@ -36,7 +40,7 @@
       {% endfor %}
     </ul>
 
-    <ul class="list-reset flex flex-wrap md--flex-column mt-auto mb-0 text-tiny">
+    <ul class="list-reset hidden-md-down md--flex flex-wrap flex-column mt-auto mb-0 text-tiny">
       {% for social in site.data.social %}
         <li class="inline-block mb-0 p-2 text-center">
           <a class="text-mono-white" href="{{ social.url }}" target="_blank" rel="noopener">
