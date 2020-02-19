@@ -6,5 +6,53 @@ nav {
 }
 
 .nav__main-menu {
+  font-size: type(font-size, small);
+}
+
+.nav__main-menu,
+.nav__toggle-menu {
   background-color: rgba(#005661, 0.75);
+}
+
+.nav__toggle-menu {
+  display: none;
+
+  font-size: type(font-size, small);
+
+  border-width: 0;
+}
+
+.navigation--with-js {
+  .nav__toggle-menu {
+    display: block;
+    padding: spacing();
+    margin-left: auto;
+
+    text-align: right;
+    color: color(mono, white);
+    font-weight: type(font-weight, bold);
+    font-style: italic;
+
+    cursor: pointer;
+
+    @include larger-than(md) {
+      display: none;
+    }
+  }
+
+  .nav__main-menu {
+    flex-direction: column;
+
+    font-size: type(font-size, large);
+
+    @include larger-than(md) {
+      font-size: type(font-size, small);
+    }
+  }
+
+  .nav__main-menu--collapsed {
+    @include smaller-than(md) {
+      display: none;
+    }
+  }
 }
