@@ -10,16 +10,6 @@ pagination:
   per_page: 14
 ---
 
-<div class="resp-max-width py-4 md--py-12">
-  <p>
-    There's lots of notes to read through. You can shuffle the order below to mix things up.
-  </p>
-
-  <button id="shuffle_notes" class="py-2 px-4 bg-contrast-teal-dark bg-contrast-teal-darker--hover text-small text-mono-white border-radius-small border-a-w-none cursor">
-    Shuffle Notes Order
-  </button>
-</div>
-
 <section id="notes">
   {% assign notes = paginator.posts | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
