@@ -4,6 +4,10 @@ title: Notes
 tagline: Personal quips and nonsensical snippets
 no-max-width: true
 no-padding: true
+pagination:
+  enabled: true
+  collection: notes
+  per_page: 14
 ---
 
 <div class="resp-max-width py-4 md--py-12">
@@ -17,7 +21,7 @@ no-padding: true
 </div>
 
 <section id="notes">
-  {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
+  {% assign notes = paginator.posts | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
     {% include note.html
       date=note.date
@@ -26,3 +30,9 @@ no-padding: true
     %}
   {% endfor %}
 </section>
+
+<div class="resp-max-width">
+  {% include paginationlinks.html
+    paginator=paginator
+  %}
+</div>
