@@ -6,6 +6,7 @@ body {
   padding: 0;
   min-height: 100vh;
 
+  font-weight: type(font-weight, base);
   font-family: type(font-family);
   color: color(mono, black);
 

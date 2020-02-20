@@ -7,6 +7,7 @@ h6 {
   line-height: strip-unit(type(line-height, tight));
   margin: spacing(10) 0 spacing();
   font-family: 'Montserrat', sans-serif;
+  font-weight: type(font-weight, header);
 }
 
 tiny {
@@ -61,6 +62,10 @@ ul {
   @include larger-than(md) {
     padding-left: spacing(8);
   }
+}
+
+strong {
+  font-weight: type(font-weight, bold);
 }
 
 li {
