@@ -1,7 +1,7 @@
 ---
 layout: tags
 title: "Tag: Programming"
-tagline: All posts relating to coding and it's neverending puzzles I make a living off of
+tagline: All posts relating to coding and its puzzles I make a living from
 tag: programming
 no-max-width: true
 ---
