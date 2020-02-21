@@ -1,12 +1,8 @@
 # Personal Website
 
-This is my personal blog! Just a brief intro to who I am, all my writing, and links to my work profiles. It's built on the below tools:
+This is my personal blog! Just a brief intro to who I am, all my writing, and links to my work profiles. It's built on Jekyll, my favorite static site generator. It relies on NPM scripts to compile CSS and serve the the Jekyll files.
 
-* Jekyll for static site generation
-* Webpack for CSS and JS asset compilation
-* Tailwind as a utility CSS framework
-* PurgeCSS to remove unneeded Tailwind classes
-* Turbolinks for performance
+A previous version used Turbolinks and TailwindCSS, but I stripped them out to cut down on external dependencies. Now it's my own Sass setup and a custom service worker.
 
 ## Install Workflow Dependencies
 
