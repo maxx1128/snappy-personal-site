@@ -3,7 +3,7 @@ layout: page
 no-max-width: true
 ---
 <section class="resp-max-width card-layout">
-  {% for post in site.tags[page.tag] %}
+  {% for post in paginator.posts %}
     {% include card.html
       title=post.title
       excerpt=post.excerpt
@@ -14,4 +14,8 @@ no-max-width: true
       tags=post.tags
     %}
   {% endfor %}
+
+  {% include paginationlinks.html
+    paginator=paginator
+  %}
 </section>

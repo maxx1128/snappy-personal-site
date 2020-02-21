@@ -18,13 +18,19 @@
         {% if menu_item.link == page.url %}
           {% assign active_page = true %}
           {% assign current_page = true %}
-        {% elsif page.path contains 'tag' and menu_item.link == '/writing.html' %}
+        {% elsif page.path contains 'posts' and menu_item.link == '/writing/' %}
           {% assign active_page = true %}
           {% assign current_page = false %}
-        {% elsif page.path contains 'posts' and menu_item.link == '/writing.html' %}
+        {% elsif page.url contains '/writing/' and menu_item.link contains '/writing/' %}
           {% assign active_page = true %}
           {% assign current_page = false %}
-        {% elsif page.path contains 'notes' and menu_item.link == '/notes.html' %}
+        {% elsif page.url contains 'tag' and menu_item.link == '/writing/' %}
+          {% assign active_page = true %}
+          {% assign current_page = false %}
+        {% elsif page.path contains 'notes' and menu_item.link == '/notes/' %}
+          {% assign active_page = true %}
+          {% assign current_page = false %}
+        {% elsif page.url contains '/notes/' and menu_item.link contains '/notes/' %}
           {% assign active_page = true %}
           {% assign current_page = false %}
         {% else %}

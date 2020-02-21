@@ -1,0 +1,28 @@
+---
+layout: page
+title: Notes
+tagline: Personal quips and nonsensical snippets
+no-max-width: true
+no-padding: true
+pagination:
+  enabled: true
+  collection: notes
+  per_page: 14
+---
+
+<section id="notes">
+  {% assign notes = paginator.posts | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
+  {% for note in notes %}
+    {% include note.html
+      date=note.date
+      content=note.content
+      url=note.url
+    %}
+  {% endfor %}
+</section>
+
+<div class="resp-max-width">
+  {% include paginationlinks.html
+    paginator=paginator
+  %}
+</div>

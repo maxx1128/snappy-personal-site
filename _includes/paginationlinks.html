@@ -1,0 +1,40 @@
+{% assign current_pagination_path = page.url | split: 'index.html' %}
+{% assign relative_pagination_path = current_pagination_path[0] %}
+
+{% if paginator.total_pages > 1 %}
+  <ul class="pagination list-reset flex flex-column sm--flex-row flex-align-center py-2 text-tiny">
+    <span class="flex py-2 sm--mr-auto">
+      {% if paginator.first_page and paginator.first_page_path != relative_pagination_path %}
+        <li class="m-0">
+          <a class="py-2 px-3 bg-blue-dark no-underline text-mono-white border-radius-base box-shadow-1" href="{{ paginator.first_page_path | prepend: site.baseurl }}">Newest</a>
+        </li>
+      {% endif %}
+    </span>
+
+    <span class="flex py-2">
+      {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <li class="m-1">
+              {% if page.url == trail.path %}
+                <span class="pagination__dot-link box-shadow-1 bg-blue-dark text-mono-white border-radius-circle flex-center" aria-label="Current page: {{ trail.num }}">
+                  {{ trail.num }}
+                </span>
+              {% else %}
+                <a class="pagination__dot-link no-underline box-shadow-1 border-radius-circle flex-center" href="{{ trail.path | prepend: site.baseurl }}" aria-label="{{trail.title}}">
+                  {{ trail.num }}
+                </a>
+              {% endif %}
+          </li>
+        {% endfor %}
+      {% endif %}
+    </span>
+
+    <span class="flex py-2 sm--ml-auto">
+      {% if paginator.last_page and paginator.last_page_path != relative_pagination_path %}
+        <li class="m-0">
+          <a class="py-2 px-3 bg-blue-dark no-underline text-mono-white border-radius-base box-shadow-1" href="{{ paginator.last_page_path | prepend: site.baseurl }}">Oldest</a>
+        </li>
+      {% endif %}
+    </span>
+  </ul>
+{% endif %}

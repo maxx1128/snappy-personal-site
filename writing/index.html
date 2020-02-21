@@ -3,6 +3,8 @@ layout: page
 title: Writing
 tagline: Musings written down for safekeeping
 no-max-width: true
+pagination:
+  enabled: true
 ---
 
 {% assign all_tags = '' %}
@@ -32,7 +34,7 @@ no-max-width: true
   %}
 
   <section class="card-layout">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       {% include card.html
         title=post.title
         excerpt=post.excerpt
@@ -44,4 +46,8 @@ no-max-width: true
       %}
     {% endfor %}
   </section>
+
+  {% include paginationlinks.html
+    paginator=paginator
+  %}
 </div>
