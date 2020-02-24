@@ -28,3 +28,44 @@
     margin-top: auto;
   }
 }
+
+@supports (display: grid) {
+  .card-layout {
+    display: grid;
+    grid-gap: spacing();
+    grid-template-columns: 1fr;
+    grid-auto-flow: dense;
+  }
+
+  .card {
+    margin: 0;
+    grid-column: span 1;
+  }
+
+  @include larger-than(lg) {
+    .card-layout {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card:nth-of-type(5n+1) {
+      grid-column: span 2;
+    }
+  }
+
+  @include larger-than(xxl) {
+    .card-layout {
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    }
+
+    .card {
+      &:nth-of-type(5n+1) {
+        grid-column: span 3;
+      }
+
+      &:nth-of-type(5n+2),
+      &:nth-of-type(5n+5) {
+        grid-column: span 2;
+      }
+    }
+  }
+}

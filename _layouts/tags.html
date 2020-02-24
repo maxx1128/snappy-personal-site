@@ -14,8 +14,10 @@ no-max-width: true
       tags=post.tags
     %}
   {% endfor %}
+</section>
 
+<div class="resp-max-width">
   {% include paginationlinks.html
     paginator=paginator
   %}
-</section>
+</div>
