@@ -33,7 +33,7 @@ title: Homepage
   </h2>
 
   <section class="card-layout mb-4">
-    {% for post in site.posts limit: 4 %}
+    {% for post in site.posts limit: 5 %}
       {% include card.html
         title=post.title
         excerpt=post.excerpt
@@ -47,7 +47,7 @@ title: Homepage
   </section>
 
   <small>
-    <a href="/writing.html">Read more of my blog posts.</a>
+    <a href="/writing/">Read more of my blog posts.</a>
   </small>
 
   <h2>
@@ -58,7 +58,7 @@ title: Homepage
 <section id="notes">
   {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
-    {% if forloop.index < 4 %}
+    {% if forloop.index < 3 %}
       {% include note.html
         date=note.date
         content=note.content
@@ -70,6 +70,6 @@ title: Homepage
 
 <div class="resp-max-width py-4">
   <small>
-    <a href="/notes.html">Read more of my notes.</a>
+    <a href="/notes/">Read more of my notes.</a>
   </small>
 </div>

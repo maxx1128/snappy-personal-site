@@ -6,9 +6,10 @@
 {% assign url = include.url %}
 {% assign link = include.link %}
 {% assign tags = include.tags %}
+{% assign background_image = "background-image: url('/assets/images/" | append: image_subpath | append: "/" | append: image | append: "');" %}
 
-<article class="card box-shadow-2 bg-blue-light" {% if image %}style="background-image: url('/assets/images/{{ image_subpath }}/{{ image }}'); box-shadow:inset 0 0 0 1000px rgba(227,251,252,0.91),0 .25rem .5rem rgba(8,4,1,0.14),0 0 .5rem rgba(8,4,1,0.22);"{% endif %}>
-  <div class="px-4 py-px">
+<article class="card box-shadow-2 bg-blue-light" {% if image %}style="{{ background_image }} box-shadow:inset 0 0 0 1000px rgba(227,251,252,0.91),0 .25rem .5rem rgba(8,4,1,0.14),0 0 .5rem rgba(8,4,1,0.22);"{% endif %}>
+  <div class="card__body px-4 py-px">
     <h3 class="card__header mt-4">
       {% if external %}
         <a href="{{ link }}" target="_blank" rel="noopener">
@@ -18,8 +19,13 @@
         {{ title }}
       </a>
     </h3>
+
+    {% if image %}
+      <div class="card__banner" style="{{ background_image }}"></div>
+    {% endif %}
+
     {% if excerpt %}
-      <p class="card__excerpt">
+      <p class="card__excerpt mt-auto">
         {{ excerpt }}
       </p>
     {% endif %}

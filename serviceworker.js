@@ -1,5 +1,5 @@
 
-const version         = 'V0.02',
+const version         = 'V0.03',
       staticCacheName = `${version}staticfiles`;
 
 addEventListener('install', installEvent => {
@@ -12,10 +12,10 @@ addEventListener('install', installEvent => {
           'about.html',
           '404.html',
           'index.html',
-          'notes.html',
+          'notes/index.html',
           'now.html',
           'work.html',
-          'writing.html'
+          'writing/index.html'
         ]);
 
         // Need to Cache
