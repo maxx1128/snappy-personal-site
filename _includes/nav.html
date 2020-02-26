@@ -1,16 +1,16 @@
 <nav id="navigation" class="flex flex-column mx-auto text-mono-white bg-mono-black">
   <div class="resp-max-width py-2 flex flex-column">
     <h1 class="my-0 mr-4 text-h6">
-        Max Antonucci
-      </h1>
-      <p class="my-0 text-tiny italic">
-        {{site.description}}
-      </p>
-    </div>
+      Max Antonucci
+    </h1>
+    <p class="my-0 text-tiny italic">
+      {{site.description}}
+    </p>
+  </div>
 
-    <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu">
-      Menu
-    </button>
+  <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu">
+    Menu
+  </button>
 
   <div class="nav__main-menu-wrapper">
     <ul id="navigation-menu" class="nav__main-menu resp-max-width list-reset flex flex-wrap md--flex-justify-between mb-0">
@@ -45,15 +45,5 @@
         </li>
       {% endfor %}
     </ul>
-
-    <ul class="list-reset hidden-md-down md--flex flex-wrap flex-column mt-auto mb-0 text-tiny">
-      {% for social in site.data.social %}
-        <li class="inline-block mb-0 p-2 text-center">
-          <a class="text-mono-white" href="{{ social.url }}" target="_blank" rel="noopener">
-            {{ social.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+  </div>
+</nav>

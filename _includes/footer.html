@@ -1,0 +1,16 @@
+<footer class="bg-teal-darker">
+  <div class="resp-max-width">
+    <h3 class="my-0 py-4 text-right text-mono-white text-h5">
+      Find more of me on the interwebs at:
+    </h3>
+    <ul class="list-reset flex flex-column md--flex-row flex-justify-end mb-0 pb-2 text-small">
+      {% for social in site.data.social %}
+        <li class="inline-block mb-0 p-2 text-right {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %}">
+          <a class="text-mono-white" href="{{ social.url }}" target="_blank" rel="noopener">
+            {{ social.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer>
