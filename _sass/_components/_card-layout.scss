@@ -60,6 +60,14 @@
     grid-column: span 1;
   }
 
+  .card__banner {
+    display: block;
+  }
+
+  .card__banner + .card__excerpt {
+    margin-top: spacing();
+  }
+
   @include larger-than(lg) {
     .card-layout {
       grid-template-columns: repeat(2, 1fr);
@@ -76,15 +84,14 @@
     }
 
     .card {
-      &:nth-of-type(5n+1),
-      &:nth-of-type(5n+2),
-      &:nth-of-type(5n+5) {
+      &:nth-of-type(5n+3),
+      &:nth-of-type(5n+4) {
         .card__banner {
-          display: block;
+          display: none;
         }
 
         .card__banner + .card__excerpt {
-          margin-top: spacing();
+          margin-top: 0;
         }
       }
 
