@@ -1,7 +1,6 @@
-<div class="bg-teal-darker text-mono-white box-shadow-2 z-default">
-  <nav id="navigation" class="flex flex-column mx-auto">
-    <div class="hidden-md-down p-2 md--px-3 text-center">
-      <h1 class="mt-0 mb-2 text-h6">
+<nav id="navigation" class="flex flex-column mx-auto text-mono-white bg-mono-black">
+  <div class="resp-max-width py-2 flex flex-column">
+    <h1 class="my-0 mr-4 text-h6">
         Max Antonucci
       </h1>
       <p class="my-0 text-tiny italic">
@@ -13,7 +12,8 @@
       Menu
     </button>
 
-    <ul id="navigation-menu" class="nav__main-menu list-reset flex flex-wrap md--flex-column mb-0 md--my-4">
+  <div class="nav__main-menu-wrapper">
+    <ul id="navigation-menu" class="nav__main-menu resp-max-width list-reset flex flex-wrap md--flex-justify-between mb-0">
       {% for menu_item in site.data.menu %}
         {% if menu_item.link == page.url %}
           {% assign active_page = true %}
@@ -39,7 +39,7 @@
         {% endif %}
 
         <li class="inline-block mb-0 text-center">
-          <a class="block p-2 text-mono-white {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+          <a class="block p-2 text-mono-white {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
             {{ menu_item.name }}
           </a>
         </li>
