@@ -3,8 +3,8 @@ layout: default
 title: Homepage
 ---
 
-<div class="flex flex-align-center flex-justify-center py-4 bg-topography--dark box-shadow-1 md--h-half-screen">
-  <div class="resp-max-width border-l-4 border-r-4 border-teal-dark">
+<div class="py-4 text-mono-white bg-topography--dark box-shadow-1">
+  <div class="resp-max-width">
     <h1 class="mt-0">
       Hello Readers.
     </h1>
@@ -46,9 +46,11 @@ title: Homepage
     {% endfor %}
   </section>
 
-  <small>
-    <a href="/writing/">Read more of my blog posts.</a>
-  </small>
+  <div class="text-right">
+    <small>
+      <a href="/writing/">Read more of my blog posts.</a>
+    </small>
+  </div>
 
   <h2>
     Recent Notes
@@ -68,7 +70,7 @@ title: Homepage
   {% endfor %}
 </section>
 
-<div class="resp-max-width py-4">
+<div class="resp-max-width py-4 text-right">
   <small>
     <a href="/notes/">Read more of my notes.</a>
   </small>
