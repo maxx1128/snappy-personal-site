@@ -1,42 +1,11 @@
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  @include larger-than(md) {
-    height: 100vh;
-    overflow-y: hidden;
-    grid-template-columns: 200px 1fr;
-  }
-}
-
-main {
-  max-height: 100vh;
-  overflow-y: scroll;
-}
-
-nav {
-  @include larger-than(md) {
-    height: 100vh;
-    overflow-y: hidden;
-  }
-}
-
 .resp-max-width {
+  width: 100%;
   margin: 0 auto;
   padding-right: spacing();
   padding-left: spacing();
   max-width: breakpoint(md);
 
-  @include larger-than(md) {
-    padding-right: spacing(6);
-    padding-left: spacing(6);
-  }
-
-  @include larger-than(xxl) {
+  @include larger-than(xl) {
     max-width: breakpoint(lg);
-  }
-
-  @include larger-than(xxxl) {
-    max-width: breakpoint(xl);
   }
 }
