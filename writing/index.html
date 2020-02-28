@@ -32,21 +32,23 @@ pagination:
     tag_classes='mb-2 bg-blue-dark'
     link_classes='text-mono-white text-tiny'
   %}
+</div>
 
-  <section class="card-layout">
-    {% for post in paginator.posts %}
-      {% include card.html
-        title=post.title
-        excerpt=post.excerpt
-        image=post.image
-        external=post.external
-        link=post.link
-        url=post.url
-        tags=post.tags
-      %}
-    {% endfor %}
-  </section>
+<section class="resp-max-width card-layout">
+  {% for post in paginator.posts %}
+    {% include card.html
+      title=post.title
+      excerpt=post.excerpt
+      image=post.image
+      external=post.external
+      link=post.link
+      url=post.url
+      tags=post.tags
+    %}
+  {% endfor %}
+</section>
 
+<div class="resp-max-width">
   {% include paginationlinks.html
     paginator=paginator
   %}

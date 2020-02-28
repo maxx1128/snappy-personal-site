@@ -78,9 +78,9 @@
     }
   }
 
-  @include larger-than(xxl) {
+  @include larger-than(xl) {
     .card-layout {
-      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .card {
@@ -107,6 +107,12 @@
       &:nth-of-type(5n+5) {
         grid-column: span 2;
       }
+    }
+  }
+
+  @include larger-than(xxl) {
+    .card-layout {
+      max-width: breakpoint(xl);
     }
   }
 }
