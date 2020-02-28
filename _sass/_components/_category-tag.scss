@@ -3,9 +3,7 @@
   right: 1rem;
 
   border: 2px solid color(blue, light);
-  border-top-width: 0;
-  border-bottom-right-radius: spacing(2);
-  border-bottom-left-radius: spacing(2);
+  border-radius: spacing(2);
 
   @include larger-than(md) {
     right: 1.5rem;
