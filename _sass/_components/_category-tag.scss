@@ -2,7 +2,7 @@
   top: 0;
   right: 1rem;
 
-  border: 2px solid color(blue, light);
+  border: 2px solid color(primary, light);
   border-radius: spacing(2);
 
   @include larger-than(md) {

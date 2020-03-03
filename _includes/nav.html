@@ -8,11 +8,11 @@
     </p>
   </div>
 
-  <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu bg-teal-dark">
+  <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu bg-primary-dark">
     Menu
   </button>
 
-  <div class="nav__main-menu-wrapper bg-teal-dark">
+  <div class="nav__main-menu-wrapper bg-primary-dark">
     <ul id="navigation-menu" class="nav__main-menu resp-max-width list-reset flex flex-wrap md--flex-justify-between mb-0">
       {% for menu_item in site.data.menu %}
         {% if menu_item.link == page.url %}

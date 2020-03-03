@@ -10,7 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(227, 251, 252, 0.91), container(box-shadow, 2);
+  box-shadow: inset 0 0 0 1000px rgba(tint(color(primary, light), 55%), 0.88), container(box-shadow, 2);
 }
 
 .card__body {

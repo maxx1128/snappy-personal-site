@@ -7,19 +7,17 @@
 
 // Map for storing all color variables
 $color-map: (
-  teal: (
-    base: #1a6771,
-    dark: #005661,
-    darker: #00444d,
+  primary: (
+    light: #46AFB9,
+    dark: #184C51,
   ),
 
-  blue: (
-    light: #e3fbfc,
-    dark: #1621A6
+  action: (
+    dark: #810413
   ),
 
   mono: (
-    black: #080401,
-    white: #fbfcf7
+    black: #1C2340,
+    white: #F4FFFD
   ),
 );
