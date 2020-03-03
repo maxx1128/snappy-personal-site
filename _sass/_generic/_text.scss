@@ -6,7 +6,7 @@ h5,
 h6 {
   line-height: strip-unit(type(line-height, tight));
   margin: spacing(10) 0 spacing();
-  font-family: 'Montserrat', sans-serif;
+  font-family: type(font-family, header);
   font-weight: type(font-weight, header);
 }
 
@@ -73,12 +73,12 @@ li {
 }
 
 a {
-  color: color(blue, dark);
+  color: color(action, dark);
 }
 
 hr {
   height: 3px;
   margin: spacing(6) 0;
 
-  background-color: color(teal);
+  background-color: color(primary, dark);
 }

@@ -8,7 +8,7 @@
 {% assign tags = include.tags %}
 {% assign background_image = "background-image: url('/assets/images/" | append: image_subpath | append: "/" | append: image | append: "');" %}
 
-<article class="card box-shadow-2 {% if image %}bg-blue-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
+<article class="card box-shadow-2 {% if image %}bg-primary-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
   <div class="card__body px-4 py-px">
     <h3 class="card__header mt-4">
       {% if external %}
@@ -34,7 +34,7 @@
   {% if tags %}
     {% include tags.html
       tags=tags
-      wrapper_classes='card__tags p-2 bg-blue-dark flex-justify-end'
+      wrapper_classes='card__tags p-2 bg-action-dark flex-justify-end'
       tag_classes='mb-0 bg-mono-white'
       link_classes='text-xtiny'
     %}

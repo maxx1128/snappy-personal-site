@@ -1,7 +1,3 @@
-$background-bg: color(teal, darker);
-
-$darkened-base: shade(color(teal), 12.5%);
-
 @mixin make-topography-bg($background, $foreground) {
   $foreground-string: str-replace(to-string($foreground), '#', '');
 
@@ -10,9 +6,9 @@ $darkened-base: shade(color(teal), 12.5%);
 }
 
 .bg-topography--dark {
-  @include make-topography-bg(color(teal, darker), shade(color(teal), 12.5%));
+  @include make-topography-bg(color(primary, dark), tint(color(primary, dark), 15%));
 }
 
 .bg-topography--light {
-  @include make-topography-bg(color(blue, light), color(teal, darker));
+  @include make-topography-bg(color(primary, light), color(primary, dark));
 }

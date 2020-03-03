@@ -1,31 +1,38 @@
 $note-colors: (
+  // Vaporeon
   1: (
-    color: #01FF70,
-    background-color: #001F3F
+    color: #104a62,
+    background-color: #83deff
   ),
+  // Jolteon
   2: (
-    color: #5c0139,
-    background-color: #7FDBFF
+    color: #ffff8b,
+    background-color: #836a29
   ),
+  // Flareon
   3: (
-    color: #FFDC00,
-    background-color: #85144B
+    color: #C52B3D,
+    background-color: #ffeea4
   ),
+  // Espeon
   4: (
-    color: #222023,
-    background-color: #71f0c6
-  ),
-  5: (
-    color: #fafaf1,
-    background-color: #31739C
-  ),
-  6: (
-    color: #001F3F,
-    background-color: #FF4136
-  ),
-  7: (
     color: #EEBDEE,
     background-color: #314173
+  ),
+  // Umbreon
+  5: (
+    color: #414152,
+    background-color: #eed552
+  ),
+  // Glaceon
+  6: (
+    color: #415a6a,
+    background-color: #94e6ee
+  ),
+  // Leafeon
+  7: (
+    color: #eed59c,
+    background-color: #31625a
   )
 );
 

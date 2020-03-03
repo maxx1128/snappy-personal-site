@@ -4,7 +4,8 @@
 
 .nav__main-menu-wrapper {
   @include larger-than(md) {
-    background: linear-gradient(90deg, color(teal, darker) 0%, color(teal) 25%, color(teal, darker) 50%, color(teal) 75%, color(teal, darker) 100%);
+    $lighter-bg: tint(color(primary, dark), 17.5%);
+    background: linear-gradient(90deg, color(primary, dark) 0%, $lighter-bg 25%, color(primary, dark) 50%, $lighter-bg 75%, color(primary, dark) 100%);
   }
 }
 
