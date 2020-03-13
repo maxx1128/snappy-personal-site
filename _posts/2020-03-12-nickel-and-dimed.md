@@ -39,7 +39,7 @@ There are even more factors that worsen this.
 * High rent of housing costs are such high priority they can chip away at other important expenses. Buying a better yet pricer medication is pointless if you have to live in your car afterward.
 * Many people split smaller living spaces among more people. This can create an endless variety of other problems with roommates and neighbors.
 
-This adds up to the most important part of life, a place to live, can take a ton away from everything else.
+This adds up to the most important part of life, a place to live, pulling too many resources from everything else.
 
 ### Greater Health Costs
 
