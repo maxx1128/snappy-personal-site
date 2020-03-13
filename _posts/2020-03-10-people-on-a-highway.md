@@ -1,5 +1,10 @@
 ---
-date: 2020-03-10
+title: "Watching Others on the Highway"
+date: "2020-03-10"
+excerpt: "Watching cars pass on a highway captures one of the most important, if also the most damaging, mental shortcuts our minds make."
+image: 'highway.jpg'
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2928945'
+tags: ['philosophy']
 ---
 
 You ever stand close enough to a highway to see each car going by? They go by so fast and we spare only a passing thought for each one. Each one is a person in a car, not worth any more thought.
