@@ -1,14 +1,13 @@
-img,
-.drawing-svg {
+img {
   height: auto;
   width: 100%;
   max-width: 100%;
 }
 
-.drawing-svg {
+.illustration {
   display: block;
+  width: 100%;
   height: auto;
-  max-width: 17.5rem;
-  max-height: 10rem;
-  margin: 0 auto 1rem;
+  max-width: rem(500px);
+  margin: 0 auto;
 }

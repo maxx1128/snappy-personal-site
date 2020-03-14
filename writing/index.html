@@ -20,18 +20,18 @@ pagination:
 {% assign all_tags_array = all_tags | split: '|' | sort %}
 
 <div class="resp-max-width">
-  {% include drawings/large_book.svg %}
-
   <p>
     You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category.
   </p>
 
   {% include tags.html
     tags=all_tags_array
-    wrapper_classes='mb-8 mx-auto flex-justify-center'
+    wrapper_classes='mx-auto flex-justify-center'
     tag_classes='mb-2 bg-action-dark'
     link_classes='text-mono-white text-tiny'
   %}
+
+  <img class="illustration" src="/assets/images/eastwood/knitting-words.png" alt="" />
 </div>
 
 <section class="resp-max-width card-layout">
