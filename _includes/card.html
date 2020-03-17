@@ -1,4 +1,5 @@
 {% assign title = include.title %}
+{% assign date = include.date %}
 {% assign excerpt = include.excerpt %}
 {% assign image = include.image %}
 {% assign image_subpath = include.image_subpath | default: "featured" %}
@@ -10,7 +11,10 @@
 
 <article class="card box-shadow-2 {% if image %}bg-primary-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
   <div class="card__body px-4 py-px">
-    <h3 class="card__header mt-4">
+    <tiny class="block mt-2 mb-0 italic">
+      {{ date | date: '%B %d, %Y' }}
+    </tiny>
+    <h3 class="card__header mt-2">
       {% if external %}
         <a href="{{ link }}" target="_blank" rel="noopener">
       {% else %}
