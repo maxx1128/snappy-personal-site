@@ -6,6 +6,7 @@ no-max-width: true
   {% for post in paginator.posts %}
     {% include card.html
       title=post.title
+      date=post.date
       excerpt=post.excerpt
       image=post.image
       external=post.external

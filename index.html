@@ -36,6 +36,7 @@ title: Homepage
     {% for post in site.posts limit: 5 %}
       {% include card.html
         title=post.title
+        date=post.date
         excerpt=post.excerpt
         image=post.image
         external=post.external
