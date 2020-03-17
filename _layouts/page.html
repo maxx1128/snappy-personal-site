@@ -8,6 +8,12 @@ layout: default
   {% assign banner_image = false %}
 {% endif %}
 
+{% if page.date and page.postLabel != "Note" %}
+  {% assign has_date = true %}
+{% else %}
+  {% assign has_date = false %}
+{% endif %}
+
 <header class="{% if page.image %}header-with-image{% else %}bg-topography--dark{% endif %} width-100 py-3 text-mono-white" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="resp-max-width">
     <div class="relative py-4">
@@ -17,7 +23,13 @@ layout: default
         </span>
       {% endif %}
 
-      <h1 class="mt-4">
+      {% if has_date %}
+        <small class="block mt-4 mb-0 font-weight-bold">
+          {{ page.date | date: '%B %d, %Y' }}
+        </small>
+      {% endif %}
+
+      <h1 class="{% if has_date %}mt-0{% else %}mt-4{% endif %}">
         {% if page.postLabel == "Note" %}
           {{ page.date | date: '%B %d, %Y' }}
         {% else %}
