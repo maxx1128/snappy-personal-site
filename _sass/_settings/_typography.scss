@@ -36,7 +36,7 @@ $typography-map: (
     h6: decimal-round(modular-scale(0), 2),
     large: decimal-round(modular-scale(0), 2),
     p: decimal-round(modular-scale(0), 2),
-    small: decimal-round(modular-scale(-1), 2),
+    small: decimal-round(modular-scale(-1.25), 2),
     tiny: decimal-round(modular-scale(-2), 2),
     xtiny: decimal-round(modular-scale(-3), 2)
   ),
