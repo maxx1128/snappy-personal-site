@@ -5,6 +5,7 @@ no-max-width: true
 <section class="resp-max-width card-layout">
   {% for post in paginator.posts %}
     {% include card.html
+      class="card--layout-item"
       title=post.title
       date=post.date
       excerpt=post.excerpt

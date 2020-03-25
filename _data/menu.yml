@@ -13,6 +13,9 @@
 - name: Notes
   link: '/notes/'
 
+- name: Celebrations
+  link: '/celebrations.html'
+
 - name: Exocortex
   link: 'https://max-antonucci.gitbook.io/study-notebook/'
   external: true

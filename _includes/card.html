@@ -2,14 +2,14 @@
 {% assign date = include.date %}
 {% assign excerpt = include.excerpt %}
 {% assign image = include.image %}
-{% assign image_subpath = include.image_subpath | default: "featured" %}
+{% assign image_subpath = "featured" %}
 {% assign external = include.external %}
 {% assign url = include.url %}
 {% assign link = include.link %}
 {% assign tags = include.tags %}
 {% assign background_image = "background-image: url('/assets/images/" | append: image_subpath | append: "/" | append: image | append: "');" %}
 
-<article class="card box-shadow-2 {% if image %}bg-primary-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
+<article class="card card--layout-item box-shadow-2 {% if image %}bg-primary-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
   <div class="card__body px-4 py-px">
     <tiny class="block mt-2 mb-0 italic">
       {{ date | date: '%B %d, %Y' }}
