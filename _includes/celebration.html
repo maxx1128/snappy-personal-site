@@ -1,0 +1,37 @@
+{% assign title = include.title %}
+{% assign date = include.date %}
+{% assign type = include.type %}
+{% assign type_class = type | replace: ' ', '-' | downcase | prepend: 'celebrations-layout__item--' %}
+{% assign description = include.description %}
+{% assign link = include.link %}
+{% assign image = include.image %}
+{% assign image_subpath = "celebrations" %}
+{% assign background_image = "background-image: url('/assets/images/" | append: image_subpath | append: "/" | append: image | append: "');" %}
+
+<article class="celebration celebrations-layout__item {{ type_class }} pt-4 px-4 xl--pb-4 flex flex-column relative" style="{{ background_image }}">
+  <tiny class="block mb-2 italic">
+    {{ date | date: '%B %d, %Y' }}
+  </tiny>
+
+  {% if link %}
+    <a href="{{ link }}" target="_blank" rel="noopener">
+  {% endif %}
+
+  <h3 class="mt-0 text-h6">
+    {{ title }}
+  </h3>
+
+  {% if link %}
+    </a>
+  {% endif %}
+
+  <div class="celebrations__image flex-item" style="{{ background_image }}"></div>
+
+  <p class="my-2 text-small">
+    {{ description }}
+  </p>
+
+  <div class="celebration__type py-1 px-4 text-xtiny text-center italic hidden-xl-down">
+    {{ type }}
+  </div>
+</article>
