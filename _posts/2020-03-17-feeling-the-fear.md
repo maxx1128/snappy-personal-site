@@ -7,7 +7,7 @@ featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=312338
 tags: ['mental health', 'coronavirus']
 ---
 
-Last night I dreamt my apartment had an intruder in my apartment. I never saw their face, only small glimpses of them. Their feet as they moved around a door, a shadow when they snuck in a closet, and the small sound of their footsteps. I had my hands up like a boxer, ready to beat them down if I found them.
+Last night I dreamt my apartment had an intruder. I never saw their face, only small glimpses of them. Their feet as they moved around a door, a shadow when they snuck in a closet, and the small sound of their footsteps. I had my hands up like a boxer, ready to beat them down if I found them.
 
 But I never did. I only felt anxiety and adrenaline chasing a ghost. I woke up before catching them and still felt so much tension I couldn't move. I wound up staying awake in bed until my alarm went off.
 
