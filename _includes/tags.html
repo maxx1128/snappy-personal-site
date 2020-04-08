@@ -3,9 +3,9 @@
 {% assign tag_classes = include.tag_classes %}
 {% assign link_classes = include.link_classes %}
 
-<ul class="list-reset flex flex-wrap mb-0 {{ wrapper_classes }}">
+<ul class="list-reset flex flex-wrap mb-0 flex-align-start {{ wrapper_classes }}">
   {% for tag in tags %}
-    <li class="flex flex-align-center flex-justify-center py-1 px-2 box-shadow-1 border-radius-small {{ tag_classes }} {% if forloop.last == false %}mr-2{% endif %}">
+    <li class="flex flex-align-center flex-justify-center py-1 px-2 my-1 box-shadow-1 border-radius-small {{ tag_classes }} {% if forloop.last == false %}mr-2{% endif %}">
       <a class="upper {{ link_classes }}" href="/tag/{{ tag | replace: ' ', '-'  | downcase }}">
         {{ tag }}
       </a>
