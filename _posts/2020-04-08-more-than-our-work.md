@@ -1,7 +1,7 @@
 ---
 title: "We Are More Than Our Work"
 date: "2020-04-08"
-excerpt: "In a culture hyperfocused on productivity and economics, we should remember humans are more than these. Especially when a pandemic takes them away."
+excerpt: "In a culture hyperfocused on productivity and economics, we should remember humans are more than their work. Especially when a pandemic takes it away."
 image: 'more-than-our-work.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2608680'
 tags: ['tough stuff', 'mental health', 'coronavirus']
