@@ -162,37 +162,13 @@ end
 
 Now any book record can call `book.is_new?`. It will check if that book record's `created_by` date falls within the last month. I ended the method name with a question mark to show it returns a simple boolean without changing anything.
 
-The example of finding books with the same author is perfect for another method. We can query all the books in the database, finding each with the same author, and push our current book out of the array.
+The example of finding books with the same author is perfect for another method. We can query all the books in the database that have the same author while excluding our own.
 
 ```ruby
 def by_same_author
   Books
     .where(author: author)
-    .reject { |book| book.id == id }
-end
-```
-
-### Methods to Update Data
-
-What about a method that can update the model's ebook status?
-
-```ruby
-def ebook_status!(status)
-  update ebook_version: status
-end
-```
-
-This method shows us methods can take arguments like any other method, and change the record data if needed. So calling `ebook_status!(true)` tells the record it has an ebook status. This method is marked with a bang operator at the end to show it modifies data.
-
-We can refactor this method to be simpler though. It's clearer to break this into two methods without arguments.
-
-```ruby
-def add_ebook!
-  update ebook_version: true
-end
-
-def remove_ebook!
-  update ebook_version: false
+    .where.not(id: id)
 end
 ```
 
@@ -220,11 +196,11 @@ def self.available
 end
 ```
 
-Adding `self` identifies this as a **class method,** meaning it can be called on the `Books` class and not just specific book records. So we can call `Books.available` without needing to get a specific record first.
+Adding `self` identifies this as a **class method,** meaning it can be called on the `Book` class and not just specific book records. So we can call `Book.available` without needing to get a specific record first.
 
 ## Scopes
 
-That last method for finding available books works, but can be fine-tuned. Rails already has a tool for limiting queries to a cleaner, more specific scope. That tool is, fittingly enough, `scope`.
+That last method for finding available books works, but can be fine-tuned. Rails already has a tool for limiting queries in a cleaner way less prone to bugs. That tool is, fittingly enough, `scope`. Any time you run a `where` query in a class method, it's a good idea to use `scope` instead.
 
 Adding this scope to our `Book` class is as simple as this:
 
@@ -246,42 +222,38 @@ scope :available_related_books -> (genres) {
 }
 ```
 
-After taking a group of genre objects as an argument, it only picks available books that have at least one genre in common. We'd pass the needed argument when calling it, like with `Books.available_related_books([array, of, genres])`.
+After taking a group of genre objects as an argument, it only picks available books that have at least one genre in common. We'd pass the needed argument when calling it, like with `Book.available_related_books([array, of, genres])`.
 
 But you'll notice we're duplicating code from the `available` scope. They both even have the word "available" in their names, which is a red flag. A rule of thumb with any code is each method or function doing one thing and doing it well. So let's split these scopes apart.
 
 ```ruby
 scope :available -> { where(available: true) }
 scope :same_genre -> (genres) {
-  Books.all
-    .select { |book|
-      common_genres = book.genres & genres
-      common_genres.length > 0
-    }
+  joins(:genres).where(genres: {id: genres.ids})
 }
 ```
 
-Now we can use these separately or together if we want to. To get all available books of the same genre, we would use `Books.same_genre([array, of, genres]).available`.
+Now we can use these separately or together if we want to. To get all available books of the same genre, we would use `Book.same_genre([array, of, genres]).available`.
 
 For some extra fun, let's get fancier. Say each book's web page has an "also consider checking out" section. It has a list of five random, available books similar to the featured one. We can use these scopes in a method to give us exactly what we need.
 
 ```ruby
-def others_to_consider
-  Books
-    .where.not(id)
+scope :related_items -> (id, num) {
+  where.not(id)
     .available
-    .same_genre(genres)
-    .sample(5)
+    .order("random()")
+    .limit(num)
+}
 end
 ```
 
-This method makes use of our custom methods, our scopes, and some basic Ruby to keep all this logic readable, separated, and in a convenient place. Now each book record can call `book.others_to_consider` for a random list of five related books.
+This method makes use of our custom methods, our scopes, and some basic Ruby to keep all this logic readable, separated, and in a convenient place. Now we can call `Book.related_items(id, 5)` for a random list of five related books.
 
 ## Validations
 
 A final but no less important part of models are validations. They came up when defining database schemas, such as making sure important fields aren't empty. But this only works for simpler validations and often won't be enough. If our library app allowed books with duplicated ISBNs or no genres, things would fall apart fast. That's why good validation keeping out bad data is essential anywhere.
 
-So ActiveRecord makes it easy to add simple or complex validations. Validations can get quite complex depending on the data, and you could use a method like `validates_with` to keep all your validations in another class. I'm going to stick with simpler ones here.
+So ActiveRecord makes it easy to add simple or complex validations. Validations can get quite complex depending on the data, and you could use a method like `validates_with` to separate your validations logic into another class. I'm going to stick with simpler ones here.
 
 Let's go back to our two examples, as ActiveRecord has some built-in validation helpers for these cases. For our ISBNs, we can use the `uniqueness` helper.
 
