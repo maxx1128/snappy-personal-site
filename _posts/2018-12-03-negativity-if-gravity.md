@@ -1,10 +1,7 @@
 ---
 title: "Negativity is Like Gravity"
 date:  2018-12-03
-icon:  cast
 excerpt: "My mind's first reaction is often negative, and I try to work around these carefully so they don't pull me down."
-path: "/negativity-is-like-gravity/"
-postType: post
 tags: ['mental health']
 ---
 

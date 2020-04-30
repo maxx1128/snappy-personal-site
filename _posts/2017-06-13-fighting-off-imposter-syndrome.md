@@ -1,11 +1,8 @@
 ---
 title        : "Fighting off Impostor Syndrome"
 date         : 2017-06-21
-categories   : programming
-path         : "/fighting-off-impostor-syndrome/"
 excerpt      : All web developers will fight Impostor Syndrome at some point, and find their own way to fight back.
-featured-img : ./featured.jpg
-postType: post
+image : fighting-off-imposter-syndrome.jpg
 tags: ['programming', 'mental health']
 ---
 

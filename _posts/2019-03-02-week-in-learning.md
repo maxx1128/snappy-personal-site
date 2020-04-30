@@ -2,7 +2,6 @@
 title: "My Week in Lessons for 3/1"
 date: "2019-03-01"
 excerpt: "My first (of hopefully many) weekly lessons learned covers brittle tests, complex components, stupid questions, and existential emotions."
-path: "week-in-learning-3-1-2019"
 tags: ['programming']
 ---
 

@@ -1,10 +1,7 @@
 ---
 title      : "You Have no Right to an Uninformed Opinion"
 date       : 2017-02-13
-icon       : cast
-path       : "/no-right-uninformed-opinion/"
 excerpt    : "Before you share an opinion on any topic, ask yourself the following questions"
-postType: post
 tags: ['mental health', 'philosophy']
 ---
 

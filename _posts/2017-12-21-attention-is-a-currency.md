@@ -1,10 +1,7 @@
 ---
 title      : "Your Attention is a Currency"
 date       : 2017-12-21
-icon       : edit-3
-excerpt    : ""
-path       : "/attention-is-a-currency/"
-postType: post
+excerpt    : "Today our attention is in more demanded, and more easily wasted, than our money."
 tags: ['mental health']
 ---
 

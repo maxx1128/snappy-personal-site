@@ -1,10 +1,7 @@
 ---
 title: "Three Lessons From a Luxury Vacation"
 date:  2018-09-30
-icon:  edit-3
 excerpt: "Three useful lessons taken away from my first, and possibly last, actual luxury vacation"
-path: "/three-lessons-luxury-vacation/"
-postType: post
 tags: ['personal']
 ---
 

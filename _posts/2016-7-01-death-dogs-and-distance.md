@@ -1,10 +1,8 @@
 ---
 title:  "Death, Dogs, and Distance"
 date:   2016-07-01
-path:   "/death-dogs-distance/"
 excerpt: Being so close to death is terrifying, but being far away from it is even worse.
-featured-img: ./featured.png
-postType: post
+image: death-dogs-distance.png
 tags: ['personal', 'tough stuff']
 ---
 

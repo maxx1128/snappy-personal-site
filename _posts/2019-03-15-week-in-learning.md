@@ -2,7 +2,6 @@
 title: "My 3/15 Week in Lessons: Embrace the Play"
 date: "2019-03-15"
 excerpt: "This week was learning about balance - balance of work and play, and balance of explore and exploit."
-path: "week-in-learning-3-15-2019"
 tags: ['programming']
 ---
 
