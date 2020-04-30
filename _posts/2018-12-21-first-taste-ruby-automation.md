@@ -1,7 +1,6 @@
 ---
 title: "My First Taste of Ruby Task Automation in 22 Lines"
 date: "2018-12-21"
-link: "https://dev.to/maxwell_dev/my-first-taste-of-ruby-task-automation-in-22-lines-3gib"
 excerpt: "Automation has always been a sensitive spot in my coding career, but I finally took a solid first step."
 image: 'rubyautomation.png'
 tags: ['ruby', 'programming']
@@ -52,7 +51,7 @@ The end result would be markdown files like this:
 title: "You Can Be a Casual Blogger"
 date: "2018-11-05"
 external: true
-link: "https://dev.to/maxwell_dev/you-can-be-a-casual-blogger-ff0"
+
 excerpt: "Seeing so many professional writers emerge on Dev.To has helped me see, and  accept, my casual blogger habits."
 ---
 
