@@ -1,9 +1,9 @@
 (function() {
   const PostData = window.PostData || {};
 
-  setRawData = data => PostData.raw = data;
+  const setRawData = data => PostData.raw = data;
 
-  setInternalData = (data) => {
+  const setInternalData = (data) => {
     PostData.internal = data.filter(item => !item.link);
   };
 

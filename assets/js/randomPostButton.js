@@ -1,5 +1,5 @@
 (function() {
-  const posts = window.PostData.raw,
+  const posts = window.PostData.internal,
         randomPost = posts[Math.floor(Math.random() * posts.length)],
         linkElement = document.getElementById('random-link');
 
