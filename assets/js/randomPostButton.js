@@ -9,6 +9,7 @@
     if (randomPost.link) {
       linkElement.setAttribute('href', randomPost.link);
       linkElement.setAttribute('target', '_blank');
+      linkElement.setAttribute('rel', 'noopener');
     } else {
       linkElement.setAttribute('href', randomPost.url);
     }
