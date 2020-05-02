@@ -1,10 +1,7 @@
 ---
 title: "Three Lessons about Verbal Abuse"
 date:  2018-05-18
-icon:  edit-3
 excerpt: "Verbal abuse shouldn't be dismissed as silly or unimportant. There's easy ways to recognize and handle it."
-path: "/3-lessons-about-verbal-abuse/"
-postType: post
 tags: ['mental health', 'tough stuff']
 ---
 

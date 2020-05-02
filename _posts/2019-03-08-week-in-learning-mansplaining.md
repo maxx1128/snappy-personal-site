@@ -2,7 +2,6 @@
 title: "My 3/8 Week in Lessons: Please Mansplain that to Me"
 date: "2019-03-08"
 excerpt: "This weeks lessons cover how men can avoid mansplaining, avoiding JavaScript Data Mutation, making smaller PRs, and not being a jerk on International Womens Day."
-path: "week-in-learning-3-8-2019"
 tags: ['programming']
 ---
 
@@ -44,7 +43,7 @@ Once upon a few days ago, I was writing a test with some tricky requirements. I 
 
 Sounds simple, right? Make an adjusted copy of some data, save the original, and make sure the component's output matches the original. These were the data variables I worked with:
 
-{% highlight javascript %}
+```javascript
 const DATA_STUB = {
   changes: {
     user: 'maxwell',
@@ -70,26 +69,26 @@ const fakeImages = [
     'image':'flowers.jpg'
   }
 ];
-{% endhighlight %}
+```
 
 As with all otherwise simple things, JavaScript screws things up.
 
 My first attempt went something like this:
 
-{% highlight javascript %}
+```javascript
 const DATA_STUB_WITH_EXTRAS = DATA_STUB;
 DATA_STUB_WITH_EXTRAS.changes.images = DATA_STUB_WITH_EXTRAS.changes.images.concat(fakeImages);
-{% endhighlight %}
+```
 
 Think this works? Turns out it doesn't! JavaScript variables store a reference to the passed in value, not a separate copy. So making changes to that variable changed the original. Then it can't be tested right and the test fails! A better solution that avoids this uses spread operators!
 
-{% highlight javascript %}
+```javascript
 const DATA_STUB_WITH_EXTRAS = {
   'changes': {
     'images': [ ...DATA_STUB.changes.images, ...fakeImages]
   }
 };
-{% endhighlight %}
+```
 
 The spread operator essentially takes an array and outputs each value as if listing them as individual values. This lets you do many things, including cleanly combining two arrays like so. [I recommend this article for learning more about what spread operators can do](https://zendev.com/2018/05/09/understanding-spread-operator-in-javascript.html).
 

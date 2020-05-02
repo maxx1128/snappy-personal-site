@@ -2,7 +2,6 @@
 title: "Any Circle Can Be a Square"
 date: 2019-02-01
 excerpt: "Look at anything from a narrow enough perspective, and it can be whatever your mind wants."
-path: "/any-circle-can-be-square/"
 tags: ['philosophy']
 ---
 

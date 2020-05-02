@@ -1,10 +1,7 @@
 ---
 title      : "Rest is not Laziness"
 date       : 2017-01-20
-icon       : cast
-path       : "/rest-is-not-laziness/"
 excerpt    : Don't feel lazy and undeserving for taking the time to rest. One can't be productive without rest.
-postType: post
 tags: ['mental health']
 ---
 

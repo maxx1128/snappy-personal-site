@@ -15,13 +15,21 @@
 
     {% include footer.html %}
 
-    <script type="text/javascript" src='/assets/js/mobileMenu.js' charset="utf8" ></script>
+    <script type="text/javascript" src="/assets/js/getPostData.js" charset="utf8" ></script>
+    {% include gatherposts.html %}
+    <script>
+      const postData = document.getElementById("post-data").innerHTML;
+      window.PostData.init(JSON.parse(postData));
+    </script>
+
+    <script type="text/javascript" src="/assets/js/mobileMenu.js" charset="utf8" ></script>
+    <script type="text/javascript" src="/assets/js/randomPostButton.js" charset="utf8" ></script>
   </body>
 
   <script>
     if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/serviceworker.js')
-        .catch((error) => console.error('Failed to register service worker', error));
+      navigator.serviceWorker.register("/serviceworker.js")
+        .catch((error) => console.error("Failed to register service worker", error));
     }
   </script>
 </html>

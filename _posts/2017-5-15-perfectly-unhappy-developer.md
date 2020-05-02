@@ -1,11 +1,8 @@
 ---
 title        : "How to be a Perfectly Unhappy Developer"
 date         : 2017-05-16
-categories   : personal philosophy
 excerpt      : I've found I'm not a happy person. I wouldn't have it any other way.
-path         : "/perfectly-unhappy-developer/"
-featured-img : ./featured.jpg
-postType: post
+image : perfectly-unhappy-developer.png
 tags: ['personal']
 ---
 
@@ -13,7 +10,7 @@ To this day, one of my favorite online articles is The Oatmeal's comic on being 
 
 But I've found the real reason: I'm not a happy person either.
 
-![Staring down at shattered glass.](/assets/images/posts/perfectly-unhappy-developer/featured.png)
+![Staring down at shattered glass.](/assets/images/posts/perfectly-unhappy-developer/glass.png)
 
 This doesn't mean I'm miserable or don't like my life. But the parts of my life I enjoy the most don't fit common definitions of happiness.
 

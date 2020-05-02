@@ -1,11 +1,11 @@
 
-const version         = 'V0.03',
+const version         = 'V0.04',
       staticCacheName = `${version}staticfiles`;
 
 addEventListener('install', installEvent => {
   skipWaiting();
   installEvent.waitUntil(
-    caches.open(staticCacheNameName)
+    caches.open(staticCacheName)
       .then(staticCache => {
         // Nice to Cache
         staticCache.addAll([
@@ -14,7 +14,7 @@ addEventListener('install', installEvent => {
           'index.html',
           'notes/index.html',
           'now.html',
-          'work.html',
+          'celebrations.html',
           'writing/index.html'
         ]);
 

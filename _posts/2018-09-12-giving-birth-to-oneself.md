@@ -1,10 +1,7 @@
 ---
 title: "How to Give Birth to Oneself"
 date:  2018-09-12
-icon:  cast
 excerpt: "Discovering ourselves means finding activities to fuel our productivity, empathy, and sense of empathy."
-path: "/giving-birth-to-oneself/"
-postType: post
 tags: ['philosophy']
 ---
 
