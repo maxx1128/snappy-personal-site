@@ -3,6 +3,8 @@ title      : "Outwitting our Horrible Voices"
 date       : 2017-12-06
 excerpt    : "Despite being of a single mind, most people have inner voices pulling them different directions that we need to avoid."
 tags: ['mental health', 'personal']
+image: horrible-inner-voices.jpeg
+featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2575698
 ---
 Despite being of a single mind, most people have at least one other inner voice pulling them in many different directions. One tweet I saw with an Anthony Bourdain quote sums this up well.
 

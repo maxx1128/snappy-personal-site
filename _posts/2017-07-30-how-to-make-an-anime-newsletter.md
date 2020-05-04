@@ -3,6 +3,8 @@ title: "How to Make an Anime Newsletter"
 date: "2017-07-30"
 excerpt: "For my first web project that wasn't a website, I broke down a goal that involved Node, scheduled functions, the Twitter API, and a feed of anime wallpapers."
 tags: ['programming', 'anime', 'javascript']
+image: make-anime-newsletter.jpeg
+featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2994659'
 ---
 Like most of my Node projects, my most recent one began with a bizarre thought: *Can I email myself cool anime wallpapers each morning?*
 

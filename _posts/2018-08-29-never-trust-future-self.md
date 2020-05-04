@@ -3,6 +3,8 @@ title: "Never Trust Your Future Self"
 date:  2018-08-29
 excerpt: "Willpower is less about 'powering through' lazy moments and more about evading them with careful planning."
 tags: ['mental health']
+image: never-trust-future-self.png
+featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2923847
 ---
 
 Lately I've been thinking about willpower, since I haven't had enough to write a real post in over a month. I wanted to blog more, but never quite found the time or energy.

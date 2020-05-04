@@ -3,6 +3,8 @@ title: "How to Refactor an Anime Newsletter"
 date: "2018-01-28"
 excerpt: "I revisit my first real Node program to refactor it with more ES6 syntax, asynchronous functions, and anime wallpaper feeds."
 tags: ['programming', 'anime']
+image: refactor-anime-newsletter.jpg
+featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=1255005
 ---
 As a junior dev, I've embraced the bizarre feeling of reading old code. It's a mix of disgust over how _bad_ I used to be, and joy over how bad I _used_ to be. This happens most with JavaScript, due to all the time I've spent writing and improving with it.
 

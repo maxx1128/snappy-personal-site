@@ -3,6 +3,8 @@ title: "Three Helpful Rules for Junior Devs"
 date: "2017-08-28"
 excerpt: "Part of being a junior dev is controlling the overwhelming pressure I put on myself to learn as much as possible."
 tags: ['career']
+image: helpful-rules-junior-devs.jpeg
+featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2930844
 ---
 
 Much as I love coding, being a junior developer has often felt horrible. For so much of it, the following questions (if not more) have been crowding my mind:

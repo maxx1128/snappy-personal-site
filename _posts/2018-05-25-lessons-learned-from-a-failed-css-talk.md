@@ -3,6 +3,8 @@ title: "Lessons Learned from a Failed CSS Talk"
 date: "2018-05-25"
 excerpt: "Despite confidence in my 'Maintainble CSS' talk, a lack of focus made it go long. Here's how I don't plan to repeat those mistakes."
 tags: ['css']
+image: failed-css-talk.jpeg
+featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2975149
 ---
 It was a relatively crowded local meetup. I was giving a talk on maintainable CSS, and many people were interested. I'd done my research, made my slides, and practiced. I felt confident.
 

@@ -3,6 +3,8 @@ title: "Dissecting my Ruby Project Skeleton"
 date: "2019-01-15"
 excerpt: "My project skeleton is a base starting point for simple, vanilla Ruby creations. I examine how the basic parts work together for fellow Ruby newbies."
 tags: ['ruby', 'programming']
+image: ruby-skeleton.jpeg
+featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2915924
 ---
 [As I wrote on this very site, I recently got my first real taste of Ruby's server-side power](https://dev.to/maxwell_dev/my-first-taste-of-ruby-task-automation-in-22-lines-3gib
 ). It's to the point I'm missing my bedtime due to Ruby tinkering, not reading manga or listening to "Wait Wait Don't Tell Me" on NPR.
