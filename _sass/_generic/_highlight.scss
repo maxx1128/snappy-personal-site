@@ -1,27 +1,35 @@
 $highlight-bg: #272822;
 
-code.highlighter-rouge {
-  padding: 3px 4px 0px;
-
+// All code
+.highlighter-rouge {
   color: color(mono, white);
 
   background-color: $highlight-bg;
 }
 
+// inline code
+code.highlighter-rouge {
+  padding: 3px 4px;
+
+  font-size: type(font-size, p)  * 0.8;
+}
+
+// block code wrapper
 .highlight {
   margin-bottom: spacing();
 }
 
+// block code
 .highlight pre {
-  padding: spacing(6);
+  margin: 0;
+  padding: spacing(4);
   max-width: 100%;
 
-  color: color(mono, white);
-
-  background-color: $highlight-bg;
+  font-size: type(font-size, small);
 
   overflow-x: scroll;
 }
+
 .highlight .hll { background-color: $highlight-bg; }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
