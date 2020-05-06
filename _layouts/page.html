@@ -18,18 +18,12 @@ layout: default
   <div class="resp-max-width">
     <div class="relative py-4">
       {% if page.postLabel %}
-        <span class="category-tag absolute ml-4 py-1 px-2 text-tiny italic">
-          {{ page.postLabel }}
-        </span>
-      {% endif %}
-
-      {% if has_date %}
-        <small class="block mt-4 mb-0 font-weight-bold">
-          {{ page.date | date: '%B %d, %Y' }}
+        <small class="block mb-2 font-weight-bold">
+          {{ page.postLabel }}{% if has_date %} from {{ page.date | date: '%B %d, %Y' }}{% endif %}
         </small>
       {% endif %}
 
-      <h1 class="{% if has_date %}mt-0{% else %}mt-4{% endif %}">
+      <h1 class="my-0">
         {% if page.postLabel == "Note" %}
           {{ page.date | date: '%B %d, %Y' }}
         {% else %}
@@ -38,14 +32,14 @@ layout: default
       </h1>
 
       {% if page.tagline %}
-        <div class="text-1xl italic">
+        <p class="mb-0 mt-2 text-1xl italic">
           {{ page.tagline }}
-        </div>
+        </p>
       {% endif %}
     </div>
 
     {% if page.excerpt and page.excerpt != '' %}
-      <p class="py-0 md--py-0 text-small italic font-weight-light">
+      <p class="py-0 mt-4 mb-2 text-small italic font-weight-light">
         {{ page.excerpt }}
       </p>
     {% endif %}
