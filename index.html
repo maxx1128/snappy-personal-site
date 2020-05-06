@@ -31,28 +31,28 @@ title: Homepage
   <h2>
     Recent Writing
   </h2>
+</div>
 
-  <section class="card-layout mb-4">
-    {% for post in site.posts limit: 5 %}
-      {% include card.html
-        class="card--layout-item"
-        title=post.title
-        date=post.date
-        excerpt=post.excerpt
-        image=post.image
-        external=post.external
-        link=post.link
-        url=post.url
-        tags=post.tags
-      %}
-    {% endfor %}
-  </section>
+<section class="resp-max-width card-layout mb-4">
+  {% for post in site.posts limit: 5 %}
+    {% include card.html
+      class="card--layout-item"
+      title=post.title
+      date=post.date
+      excerpt=post.excerpt
+      image=post.image
+      external=post.external
+      link=post.link
+      url=post.url
+      tags=post.tags
+    %}
+  {% endfor %}
+</section>
 
-  <div class="text-right">
-    <small>
-      <a href="/writing/">Read more of my blog posts.</a> <a class="hidden" id="random-link">Or read a completely random blog post.</a>
-    </small>
-  </div>
+<div class="resp-max-width pt-4">
+  <p class="mb-0">
+    <a href="/writing/">Read more of my blog posts.</a> <a class="hidden" id="random-link">Or read a completely random blog post.</a>
+  </p>
 
   <h2>
     Recent Notes
