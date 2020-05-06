@@ -15,8 +15,32 @@ code.highlighter-rouge {
 }
 
 // block code wrapper
-.highlight {
+div.highlighter-rouge {
+  position: relative;
   margin-bottom: spacing();
+
+  border-radius: spacing(2);
+  box-shadow: container(box-shadow, 1);
+
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: spacing(1);
+    right: spacing(2);
+    width: 8px;
+    height: 8px;
+
+    background-color: color(action, dark);
+    border-radius: 100%;
+  }
+
+  &::after {
+    right: spacing(5);
+    background-color: color(primary, light);
+  }
 }
 
 // block code
@@ -26,6 +50,8 @@ code.highlighter-rouge {
   max-width: 100%;
 
   font-size: type(font-size, small);
+
+  border-top: spacing(4) solid #c5c5d0;
 
   overflow-x: scroll;
 }
