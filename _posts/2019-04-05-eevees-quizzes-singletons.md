@@ -52,9 +52,9 @@ progress: computed('quiz.progress', function() {
 This `progress` value is then passed into the `progress-bar` component. It uses it as the "width" of how far the Eevee has gone across the screen.
 
 ```hbs
-<div style="width: {{progress}}%" class="eq-progress-bar__fill">
+{% raw %}<div style="width: {{progress}}%" class="eq-progress-bar__fill">
   <img class="eq-progress-bar__image" src={{runningGIFPath}} alt="" />
-</div>
+</div>{% endraw %}
 ```
 
 The service makes it easy to get the following (adorable) effect.
@@ -76,8 +76,7 @@ export default Controller.extend({
 The service knows if it's finished and who the winner is, so it passes those to the application controller. The application template uses this to change the navigation. Here, `completed` and `winner` are the values pulled from the service.
 
 ```hbs
-{% raw %}
-<li class="eq-nav__list-item" data-test="Nav-QuizLink">
+{% raw %}<li class="eq-nav__list-item" data-test="Nav-QuizLink">
   <strong>
     {{#if completed}}
       {{link-to 'See Your Results' 'results.pokemon' winner class="eq-nav__link"}}
@@ -85,8 +84,7 @@ The service knows if it's finished and who the winner is, so it passes those to 
       {{link-to 'Take the Quiz!' 'quiz' class="eq-nav__link"}}
     {{/if}}
   </strong>
-</li>
-{% endraw %}
+</li>{% endraw %}
 ```
 
 Linking services to templates like this are part of why they're great for managing state. I do the same for telling users when they're resuming the quiz, or marking their result in the results page. Ember lets you connect them together in a quick and seamless way.

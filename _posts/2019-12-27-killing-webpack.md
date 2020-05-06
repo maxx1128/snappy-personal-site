@@ -62,7 +62,7 @@ The big obstacle was I wanted to compile Sass for both development and productio
 
 First, let's get the basic compilation task done for a quick win. This script gathers all the Sass files from the `_sass/` directory and puts the result in my `assets/css` folder.
 
-```javascript
+```json
 {
  "sass": "node-sass --output-style compressed _sass/ -o assets/css"
 }
@@ -70,7 +70,7 @@ First, let's get the basic compilation task done for a quick win. This script ga
 
 The development Sass only has one script to add to that, so I tackled that next. I used a `sass-` namespace to categorize (and recognize) it as another Sass task. It looks at all the files in my `_sass` folder and, if one changes, runs the basic Sass script again.
 
-```javascript
+```json
 {
  "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'"
 }
@@ -83,7 +83,7 @@ Both production tasks are then run on the compiled CSS in `assets/css`.
 1. `sass-prod:autoprefixer` is for production, and uses `postcss` to add needed browser prefixes.
 2. `sass-prod:purgecss` is also for production. It checks my CSS against the compiled Jekyll site in `_site` and removes unused classes.
 
-```javascript
+```json
 {
  "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
  "sass-prod:purgecss": "purgecss --css assets/css/*.css --content _site/**/**/*.html --out assets/css"
@@ -94,7 +94,7 @@ Next is running the right scripts together. This is where the colons in the name
 * `sass:dev` compiles it and watches for changes
 * `sass:prod` tidies it up for the server.
 
-```javascript
+```json
 {
  "sass:dev": "yarn sass && npm-run-all -p sass-dev:*",
  "sass:prod": "yarn sass && npm-run-all -p sass-prod:*"
@@ -109,7 +109,7 @@ I also need scripts to handle turning my Jekyll setup into a batch of static HTM
 
 `write` is like `sass:dev`, watching for site changes and recompiling when needed. `build` only makes it once to place it on the server.
 
-```javascript
+```json
 {
  "write": "jekyll serve --incremental --watch",
  "build": "jekyll build"
@@ -119,7 +119,7 @@ I also need scripts to handle turning my Jekyll setup into a batch of static HTM
 
 The last step is grouping these scripts in some basic `dev` and `prod` tasks.
 
-```javascript
+```json
 {
  "dev": "concurrently -n jekyll, \"yarn write\" \"yarn sass:dev\"",
  "prod": "yarn build && yarn sass:prod"
@@ -132,7 +132,7 @@ You may notice I used `concurrently` here instead of `npm-run-all`. The former i
 
 With all that, I have finished the perfect crime. Webpack is gone, NPM scripts are running in their place, and my clothes have minimal bloodstains. The trail has gone cold (aside from this blog where I confess it all). You can see the final crime scene with the finished scripts below.
 
-```javascript
+```json
 "scripts": {
  "dev": "concurrently -n jekyll, \"yarn write\" \"yarn sass:dev\"",
  "prod": "yarn build && yarn sass:prod",

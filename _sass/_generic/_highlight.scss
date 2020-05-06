@@ -1,45 +1,17 @@
-// All code
-.highlighter-rouge {
-  color: color(mono, white);
+// html, sass, markdown, yaml, bash, hbs, css
 
-  background-color: color(mono, black);
-}
-
-// inline code
-code.highlighter-rouge {
-  padding: 3px 4px;
-
-  font-size: type(font-size, p)  * 0.8;
-}
-
-// block code wrapper
-div.highlighter-rouge {
-  position: relative;
-  margin-bottom: spacing();
-
-  border-radius: spacing(2);
-  box-shadow: container(box-shadow, 1);
-
-  overflow: hidden;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: spacing(1);
-    right: spacing(2);
-    width: 8px;
-    height: 8px;
-
-    background-color: color(action, dark);
-    border-radius: 100%;
-  }
-
-  &::after {
-    right: spacing(5);
-    background-color: color(primary, light);
-  }
-}
+$highlight-languages: (
+  'html': #ff977d,
+  'hbs': #fda,
+  'markdown': #332d31,
+  'css': #053bb9,
+  'scss': #bf4080,
+  'javascript': #f7df1e,
+  'json': #fcf4a3,
+  'yaml': #be93d4,
+  'ruby': #a91401,
+  'bash': #aaa
+);
 
 // block code
 .highlight pre {
@@ -52,6 +24,85 @@ div.highlighter-rouge {
   border-top: spacing(4) solid #c5c5d0;
 
   overflow-x: scroll;
+}
+
+// block code wrapper
+div.highlighter-rouge {
+  position: relative;
+  margin-bottom: spacing();
+
+  border-radius: spacing(2);
+  box-shadow: container(box-shadow, 1);
+
+  overflow: hidden;
+
+  // Text
+  &::before {
+    content: 'Code';
+    position: absolute;
+    top: 3px;
+    left: spacing(4);
+
+    text-transform: uppercase;
+    color: color(mono, black);
+    font-family: type(font-family, mono);
+    font-size: type(font-size, xtiny);
+  }
+
+  // Button
+  &::after {
+    content: '';
+    position: absolute;
+    top: spacing(1);
+    right: spacing(2);
+    width: 8px;
+    height: 8px;
+
+    border-radius: 100%;
+    background-color: color(primary, dark);
+  }
+}
+
+@each $language, $color in $highlight-languages {
+  $text-color: '';
+  $button-bg: '';
+
+  @if (lightness($color) > 50) {
+    $text-color: color(mono, black);
+    $button-bg: color(primary, dark);
+  } @else {
+    $text-color: color(mono, white);
+    $button-bg: color(primary, light);
+  }
+
+  div.language-#{$language} {
+    .highlight pre {
+      border-color: $color;
+    }
+
+    &::after {
+      background-color: $button-bg;
+    }
+
+    &::before {
+      content: $language;
+      color: $text-color;
+    }
+  }
+}
+
+// All code
+.highlighter-rouge {
+  color: color(mono, white);
+
+  background-color: color(mono, black);
+}
+
+// inline code
+code.highlighter-rouge {
+  padding: 3px 4px;
+
+  font-size: type(font-size, p)  * 0.8;
 }
 
 .highlight .hll { background-color: color(mono, black); }

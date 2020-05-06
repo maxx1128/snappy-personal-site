@@ -67,7 +67,7 @@ Get in the habit of using these values when needed while developing. Need to add
 
 Here's an example of organizing global color variables in a [Sass map](https://www.sitepoint.com/using-sass-maps/) and how to reference them:
 
-```sass
+```scss
 $g-color--shade: 25%;
 
 // Map for storing all color variables

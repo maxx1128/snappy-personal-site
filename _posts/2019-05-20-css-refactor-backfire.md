@@ -30,7 +30,7 @@ First, I wanted `md` added to the class name differently. Atomic classes should 
 
 Second, the Sass generating this is too WET. The code for the breakpoints and media queries are DRY enough, as you can see here.
 
-```sass
+```scss
 // Map for the breakpoints and max width
 $breakpoint-map: (
   xs: 0px,
@@ -53,7 +53,7 @@ $breakpoint-map: (
 
 However, if I want to make a new group of classes responsive, I need to rewrite the below logic for making and adding the class name labels each time.
 
-```sass
+```scss
 @each $bp-label, $bp in $breakpoint-map {
 
   $bp-label-final: '';
@@ -80,7 +80,7 @@ _Little did I know the Sass code didn't agree with my plans..._
 
 Setting aside the CSS plot twist for now, this was my first attempt at the "responsive class name" mixin.
 
-```sass
+```scss
 @mixin rsp-class($class-name) {
   @each $bp-label, $bp in $breakpoint-map {
 
@@ -100,7 +100,7 @@ It's a pretty straightforward move of pulling that logic into a reusable mixin, 
 
 You'll also see the other refactor goal reached in this line.
 
-```sass
+```scss
 @if ($bp-label != 'xs') { $bp-label-final: \: + $bp-label; }
 ```
 
@@ -108,7 +108,7 @@ The breakpoint label is being added with a namespaced colon, making it end with 
 
 All that's left is replacing the repeated logic in the codebase, like with the responsive classes that add margins.
 
-```sass
+```scss
 @each $label, $length in $spacing-map {
   @include rsp-class('m-#{$label}') { margin: $length; }
   @include rsp-class('mt-#{$label}') { margin-top: $length; }
@@ -120,7 +120,7 @@ All that's left is replacing the repeated logic in the codebase, like with the r
 
 This reads even better with simpler responsive classes, like those for text alignment.
 
-```sass
+```scss
 @include rsp-class('text-center') { text-align: center; }
 @include rsp-class('text-right') { text-align: right; }
 @include rsp-class('text-left') { text-align: left; }
@@ -226,7 +226,7 @@ Whenever someone says CSS is easy or "not a real programming language," remember
 
 As with most cases of over-fitting I've encountered, I needed to take some steps backward. Moving both the naming logic and breakpoints loop into the mixin was too much. So I had the mixin only deal with naming.
 
-```sass
+```scss
 @mixin rsp-class($bp-label, $class-name) {
   $bp-label-final: '';
   @if ($bp-label != 'xs') { $bp-label-final: \: + $bp-label; }
@@ -241,7 +241,7 @@ As with most cases of over-fitting I've encountered, I needed to take some steps
 
 This change means when I want responsive classes, I need to loop through my breakpoint map again. I also need to pass in the breakpoint label to make the right class name.
 
-```sass
+```scss
 // For Margin classes
 @each $bp-label, $bp in $breakpoint-map {
   @each $label, $length in $spacing-map {
