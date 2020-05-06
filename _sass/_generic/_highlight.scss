@@ -1,10 +1,8 @@
-$highlight-bg: #272822;
-
 // All code
 .highlighter-rouge {
   color: color(mono, white);
 
-  background-color: $highlight-bg;
+  background-color: color(mono, black);
 }
 
 // inline code
@@ -56,7 +54,7 @@ div.highlighter-rouge {
   overflow-x: scroll;
 }
 
-.highlight .hll { background-color: $highlight-bg; }
+.highlight .hll { background-color: color(mono, black); }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */
