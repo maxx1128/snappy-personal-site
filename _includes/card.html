@@ -3,7 +3,6 @@
 {% assign excerpt = include.excerpt %}
 {% assign image = include.image %}
 {% assign image_subpath = "featured" %}
-{% assign external = include.external %}
 {% assign url = include.url %}
 {% assign link = include.link %}
 {% assign tags = include.tags %}
@@ -15,11 +14,7 @@
       {{ date | date: '%B %d, %Y' }}
     </tiny>
     <h3 class="card__header mt-2">
-      {% if external %}
-        <a href="{{ link }}" target="_blank" rel="noopener">
-      {% else %}
-        <a href="{{ url }}">
-      {% endif %}
+      <a href="{{ url }}">
         {{ title }}
       </a>
     </h3>
