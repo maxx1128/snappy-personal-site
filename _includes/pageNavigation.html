@@ -1,0 +1,57 @@
+{% if page.postLabel == "Note" %}
+  {% assign isNote = true %}
+  {% assign contentType = 'Note' %}
+{% else %}
+  {% assign contentType = 'Post' %}
+{% endif %}
+
+{% if page.next or page.previous %}
+  <div class="post-navigation__wrapper pt-4 xl--pb-6 bg-contrast-primary-dark">
+    <ul class="post-navigation resp-max-width flex flex-column xl--flex-row flex-justify-between list-reset">
+      <li class="flex-item-full mb-6 xl--mb-0 xl--mr-8">
+        <span class="block text-small font-weight-bold">
+          Next {{ contentType }}:
+        </span>
+        {% if page.next.url %}
+          <a class="random-navigator__next-link text-action-light" href="{{page.next.url}}">
+            {% if isNote %}
+              {{ page.next.date | date: '%B %d, %Y' }}
+            {% else %}
+              {{ page.next.title }}
+            {% endif %}
+          </a>
+        {% else %}
+          <span class="italic">
+            You're at the most recent post!
+          </span>
+        {% endif %}
+      </li>
+
+      <li id="random-navigator-wrapper" class="flex-item-full mb-6 xl--mb-0 xl--mr-8 random-navigator-wrapper--{{ contentType | downcase }} hidden">
+        <span class="block text-small font-weight-bold">
+          Random {{ contentType }}:
+        </span>
+        <a class="text-action-light" href="javascript:void();"></a>
+      </li>
+
+      <li class="flex-item-full mb-6 xl--mb-0">
+        <span class="block text-small font-weight-bold">
+          Previous {{ contentType }}:
+        </span>
+        {% if page.previous.url %}
+          <a class="random-navigator__previous-link text-action-light" href="{{page.previous.url}}">
+            {% if isNote %}
+              {{ page.previous.date | date: '%B %d, %Y' }}
+            {% else %}
+              {{ page.previous.title }}
+            {% endif %}
+          </a>
+        {% else %}
+          <span class="italic">
+            You're at the first post!
+          </span>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+{% endif %}
