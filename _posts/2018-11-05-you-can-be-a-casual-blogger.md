@@ -1,9 +1,9 @@
 ---
 title: "You Can Be a Casual Blogger"
 date: "2018-11-05"
-excerpt: "Seeing so many professional writers emerge on Dev.To has helped me see, and  accept, my casual blogger habits."
+excerpt: "Seeing so many professional writers emerge on Dev.To has helped me see, and accept, my casual blogger habits."
 image: 'casualblogger.png'
-tags: ['programming', 'writing']
+tags: ['career', 'writing', 'mental health']
 ---
 I've been feeling many things watching the Dev.To community and its writing pick up steam - enjoyment, curiosity, better informed, and mild synesthesia. But between reading new articles and tasting pie whenever I see the color blue, another feeling has popped up: a twinge of jealousy.
 
@@ -16,7 +16,7 @@ What could have caused these feelings? Here are some recent examples:
 * Noticing popular writers who have been here for less time, yet written up to or more than twice as many posts at a more consistent pace
 * Listening to [writers branch to different mediums and start podcasts](https://dev.to/dangolant/devto-review-6-top-7-of-the-week-discussed-2oa3)
 
-I know I'm not some nobody in terms of writing here. Most of my posts have been well-received, with some getting surprising amounts of attention. But I still sometimes feel insecure seeing so many professional bloggers moving past me. So I can only imagine how coders with no experience or knowledge of their writing feel.
+I know I'm not some nobody in terms of writing at Dev.To. Most of my posts have been well-received, with some getting surprising amounts of attention. But I still sometimes feel insecure seeing so many professional bloggers moving past me. So I can only imagine how coders with no experience or knowledge of their writing feel.
 
 The message I have for these anxious people is the same I arrived at after some brooding, drinking, sighing, and more drinking (as is standard for all self-proclaimed writers, albeit with less drinking than usual). That message is **you can, like I have, be more casual with your writing and still find success.** You don't need to get the huge audience, the speaking engagement, the book deal, or the town square statue to be a good blogger.
 

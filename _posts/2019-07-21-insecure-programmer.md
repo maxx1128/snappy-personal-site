@@ -3,7 +3,7 @@ title: "On Being a Hopelessly Insecure Programmer"
 date: "2019-07-21"
 excerpt: "Being insecure about my career and skills likely won't change anytime soon. Finding the positives is something I can do now."
 image: 'insecure-programmer.jpg'
-tags: ['programming', 'personal', 'mental health']
+tags: ['career', 'personal', 'mental health']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1545946'
 ---
 

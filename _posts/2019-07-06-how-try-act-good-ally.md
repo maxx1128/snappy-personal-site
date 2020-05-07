@@ -3,7 +3,7 @@ title: "Nine Ways I (Try to) Act as a Tech Ally"
 date: "2019-07-06"
 excerpt: "I don't consider myself a tech ally, but have several ways I try to act as one."
 image: 'good-ally.jpg'
-tags: ['programming', 'personal', 'tough stuff']
+tags: ['personal', 'tough stuff']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2502431'
 ---
 

@@ -2,7 +2,7 @@
 title: "It's Not About You"
 date: "2018-06-21"
 excerpt: "When getting feedback from coworkers about your code, don't let your ego stop you from doing better."
-tags: ['programming', 'mental health']
+tags: ['career', 'mental health']
 ---
 In [a post I wrote about career principles](https://dev.to/maxwell_dev/the-career-adventures-of-johnny-javascript-1cc3), one principle was **"it's not about you."** I wrote about writing code for other people can use for something - people will rarely look at it only to look at it. This, I figured, was the best takeaway I could share here.
 
