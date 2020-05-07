@@ -1,14 +1,28 @@
 {% assign current_pagination_path = page.url | split: 'index.html' %}
 {% assign relative_pagination_path = current_pagination_path[0] %}
 
+{% if paginator.first_page and paginator.first_page_path != relative_pagination_path %}
+  {% assign newest_link = true %}
+{% else %}
+  {% assign newest_link = false %}
+{% endif %}
+
+{% if paginator.last_page and paginator.last_page_path != relative_pagination_path %}
+  {% assign oldest_link = true %}
+{% else %}
+  {% assign oldest_link = false %}
+{% endif %}
+
 {% if paginator.total_pages > 1 %}
   <ul class="pagination list-reset flex flex-column sm--flex-row flex-align-center py-2 text-tiny">
     <span class="flex py-2 sm--mr-auto">
-      {% if paginator.first_page and paginator.first_page_path != relative_pagination_path %}
-        <li class="m-0">
-          <a class="py-2 px-3 bg-action-dark no-underline text-mono-white border-radius-base box-shadow-1" href="{{ paginator.first_page_path | prepend: site.baseurl }}">Newest</a>
-        </li>
-      {% endif %}
+      <li class="m-0">
+        <a
+          class="pagination__end-link {% unless newest_link %}pagination__end-link--disabled{% endunless %} py-2 px-3 bg-action-dark no-underline text-mono-white border-radius-base box-shadow-1"
+          href="{% if newest_link %}{{ paginator.first_page_path | prepend: site.baseurl }}{% else %}javascript:void(0){% endif %}">
+            Newest
+        </a>
+      </li>
     </span>
 
     <span class="flex py-2">
@@ -30,11 +44,13 @@
     </span>
 
     <span class="flex py-2 sm--ml-auto">
-      {% if paginator.last_page and paginator.last_page_path != relative_pagination_path %}
-        <li class="m-0">
-          <a class="py-2 px-3 bg-action-dark no-underline text-mono-white border-radius-base box-shadow-1" href="{{ paginator.last_page_path | prepend: site.baseurl }}">Oldest</a>
-        </li>
-      {% endif %}
+      <li class="m-0">
+        <a
+          class="pagination__end-link {% unless oldest_link %}pagination__end-link--disabled{% endunless %} py-2 px-3 bg-action-dark no-underline text-mono-white border-radius-base box-shadow-1"
+          href="{% if oldest_link %}{{ paginator.last_page_path | prepend: site.baseurl }}{% else %}javascript:void(0){% endif %}">
+            Oldest
+        </a>
+      </li>
     </span>
   </ul>
 {% endif %}
