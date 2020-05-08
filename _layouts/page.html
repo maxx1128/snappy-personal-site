@@ -14,11 +14,24 @@ layout: default
   {% assign has_date = false %}
 {% endif %}
 
-<header class="{% if page.image %}header-with-image{% else %}bg-topography--dark{% endif %} width-100 py-3 text-mono-white" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+{% assign header_class = "" %}
+
+{% if page.postLabel == "Note" %}
+  {% assign header_class = header_class | append: " header--no-shadow pt-2" %}
+{% else %}
+  {% assign header_class = header_class | append: " py-3" %}
+  {% if page.image %}
+    {% assign header_class = header_class | append: " header-with-image" %}
+  {% else %}
+    {% assign header_class = header_class | append: " bg-topography--dark" %}
+  {% endif %}
+{% endif %}
+
+<header class="{{ header_class }} width-100" {% if page.image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="resp-max-width">
     <div class="relative py-4">
       {% if page.postLabel %}
-        <small class="block mb-2 font-weight-bold">
+        <small class="block {% if page.postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
           {{ page.postLabel }}{% if has_date %} from {{ page.date | date: '%B %d, %Y' }}{% endif %}
         </small>
       {% endif %}

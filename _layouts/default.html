@@ -9,11 +9,11 @@
 
     {% include nav.html %}
 
-    <main>
+    <main class="{% if page.postLabel == 'Note' %}note-styler note-coloring--4{% endif %} flex flex-column">
       {{ content }}
-    </main>
 
-    {% include pageNavigation.html %}
+      {% include pageNavigation.html %}
+    </main>
 
     {% include footer.html %}
     {% include footerscripts.html %}
