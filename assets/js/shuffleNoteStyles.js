@@ -19,8 +19,6 @@
     const numberOfPalettes = 14,
           classIndexes     = shuffle([...Array(numberOfPalettes * 2).keys()]);
 
-    console.log(classIndexes);
-
     for (let note of noteElements) {
       removeNoteStyleClass(note);
       note.classList.add(`note-coloring--${classIndexes[0]}`);
