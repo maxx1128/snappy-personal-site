@@ -1,38 +1,78 @@
 $note-colors: (
   // Vaporeon
-  1: (
-    color: #104a62,
-    background-color: #83deff
+  0: (
+    dark: #104a62,
+    light: #5DD0FA
   ),
   // Jolteon
-  2: (
-    color: #ffff8b,
-    background-color: #836a29
+  1: (
+    dark: #836a29,
+    light: #ffff8b
   ),
   // Flareon
-  3: (
-    color: #C52B3D,
-    background-color: #ffeea4
+  2: (
+    dark: #C52B3D,
+    light: #ffeea4
   ),
   // Espeon
-  4: (
-    color: #EEBDEE,
-    background-color: #314173
+  3: (
+    dark: #314173,
+    light: #EEBDEE
   ),
   // Umbreon
-  5: (
-    color: #414152,
-    background-color: #eed552
+  4: (
+    dark: #0a0a61,
+    light: #eed552
   ),
-  // Glaceon
-  6: (
-    color: #415a6a,
-    background-color: #94e6ee
+  // Reshiram
+  5: (
+    dark: #4a4a6a,
+    light: #D0D0E1
   ),
   // Leafeon
+  6: (
+    dark: #31625a,
+    light: #eed59c
+  ),
+  // Porygon-Z
   7: (
-    color: #eed59c,
-    background-color: #31625a
+    dark: #753354,
+    light: #A8DFFF
+  ),
+  // Gallade
+  8: (
+    dark: #314e4e,
+    light: rgb(201, 231, 223)
+  ),
+  // Mewtwo
+  9: (
+    dark: #6a319c,
+    light: #ded5e6
+  ),
+  // Blaziken
+  10: (
+    dark: #7E2525,
+    light: #F8C47B
+  ),
+  // Typhlosion
+  11: (
+    dark: #415A94,
+    light: #F1E183
+  ),
+  // Chandelure
+  12: (
+    dark: #3D27AA,
+    light: #C8BEF9
+  ),
+  // Flygon
+  13: (
+    dark: #7a2932,
+    light: rgb(183, 250, 187)
+  ),
+  // Zekrom
+  14: (
+    dark: #181820,
+    light: #6AF6FF
   )
 );
 
@@ -54,16 +94,35 @@ $note-colors: (
   }
 }
 
+// Default Note List stylings
 @each $index, $styles in $note-colors {
-  $text: map-get($styles, color);
-  $bg: map-get($styles, background-color);
+  $text: map-get($styles, dark);
+  $bg: map-get($styles, light);
   $length: length($note-colors);
 
-  .note:nth-of-type(#{$length}n+#{$index}) {
-    @include note-colors($text, $bg);
-  }
+  $even-item: $index % 2 == 0;
 
-  .note:nth-of-type(#{$length}n+#{$index + $length}) {
-    @include note-colors($bg, $text);
+  @if ($even-item) {
+    $nth-first: $index + $length;
+    $nth-second: $index;
+
+    .note-coloring--#{$nth-second} {
+      @include note-colors($bg, $text);
+    }
+
+    .note-coloring--#{$nth-first} {
+      @include note-colors($text, $bg);
+    }
+  } @else {
+    $nth-first: $index;
+    $nth-second: $index + $length;
+
+    .note-coloring--#{$nth-first} {
+      @include note-colors($text, $bg);
+    }
+
+    .note-coloring--#{$nth-second} {
+      @include note-colors($bg, $text);
+    }
   }
 }

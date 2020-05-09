@@ -1,8 +1,9 @@
 {% assign date = include.date | date: '%B %d, %Y' %}
 {% assign content = include.content | markdownify %}
 {% assign url = include.url %}
+{% assign index = include.index | default: 1 %}
 
-<article class="note">
+<article class="note-styler note-coloring--{{ index }}">
   <div class="resp-max-width py-4">
     <h3 class="mt-0">
       <a href="{{ url }}">

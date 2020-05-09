@@ -10,6 +10,16 @@ pagination:
   per_page: 14
 ---
 
+<div class="pt-4 resp-max-width">
+  <p>
+    Sometimes I want to write things that can't work as a blog post, I don't want to lose amid Twitter, or don't make any sense. For all these stream of conscious, I have my Notes section. They have lots of colors to match how across the board they get.
+  </p>
+
+  <p>
+    Keep scrolling to read my notes in order. <a class="hidden" id="random-post-link">Or surprise yourself with a random note.</a>
+  </p>
+</div>
+
 <section id="notes">
   {% assign notes = paginator.posts | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
@@ -17,6 +27,7 @@ pagination:
       date=note.date
       content=note.content
       url=note.url
+      index=forloop.index
     %}
   {% endfor %}
 </section>

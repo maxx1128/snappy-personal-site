@@ -7,6 +7,7 @@
 
 .bg-topography--dark {
   @include make-topography-bg(color(primary, dark), tint(color(primary, dark), 15%));
+  color: color(mono, white);
 }
 
 .bg-topography--light {

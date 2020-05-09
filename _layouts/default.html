@@ -9,26 +9,14 @@
 
     {% include nav.html %}
 
-    <main>
+    <main class="{% if page.postLabel == 'Note' %}note-styler note-coloring--4{% endif %} flex flex-column">
       {{ content }}
+
+      {% include pageNavigation.html %}
     </main>
 
-    {% include pageNavigation.html %}
-
     {% include footer.html %}
-
-    <script type="text/javascript" src="/assets/js/getContentData.js" charset="utf8" ></script>
-    {% include gatherposts.html %}
-    {% include gathernotes.html %}
-    <script>
-      const postData = document.getElementById("post-data").innerHTML;
-      const noteData = document.getElementById("note-data").innerHTML;
-      window.ContentData.init(JSON.parse(postData), JSON.parse(noteData));
-    </script>
-
-    <script type="text/javascript" src="/assets/js/mobileMenu.js" charset="utf8" ></script>
-    <script type="text/javascript" src="/assets/js/randomPostButton.js" charset="utf8" ></script>
-    <script type="text/javascript" src="/assets/js/randomLinkNavigator.js" charset="utf8" ></script>
+    {% include footerscripts.html %}
   </body>
 
   <script>
