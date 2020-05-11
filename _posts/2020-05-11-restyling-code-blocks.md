@@ -257,6 +257,6 @@ def links
 end
 ```
 
-[Here''s the full Sass partial with all these styles, including the code syntax styling I skipped over](https://github.com/maxx1128/snappy-personal-site/blob/master/_sass/_generic/_highlight.scss). It's a bit long for me to copy in a snippet here, even with the new look. Although later if I want to support long snippets better, I may add a max height with a vertical scroll. There are almost always more ways to improve one's code.
+[Here's the full Sass partial with all these styles, including the code syntax styling I skipped over](https://github.com/maxx1128/snappy-personal-site/blob/master/_sass/_generic/_highlight.scss). It's a bit long for me to copy in a snippet here, even with the new look. Although later if I want to support long snippets better, I may add a max height with a vertical scroll. There are almost always more ways to improve one's code.
 
 I encourage coders reading this to play around with how they style their code snippets. Or take this styling as a starting point and then restyle it for their site. Like all good redesigns, it makes me more eager to write posts and share code here.
