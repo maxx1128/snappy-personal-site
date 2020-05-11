@@ -1,6 +1,3 @@
-- name: Homepage
-  link: '/'
-
 - name: About
   link: '/about.html'
 
@@ -15,7 +12,9 @@
 
 - name: Celebrations
   link: '/celebrations.html'
+  secondary: true
 
 - name: Exocortex
   link: 'https://max-antonucci.gitbook.io/study-notebook/'
+  secondary: true
   external: true

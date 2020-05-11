@@ -1,7 +1,9 @@
 <nav id="navigation" class="width-100 flex flex-column mx-auto text-mono-white bg-mono-black border-b border-b-w-1 border-mono-black">
   <div class="resp-max-width py-2 flex flex-column flex-align-center md--flex-align-start">
     <h1 class="my-0 mr-4 text-h6">
-      Max Antonucci
+      <a class="text-mono-white" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
+        Max Antonucci
+      </a>
     </h1>
     <p class="my-0 text-tiny italic">
       {{site.description}}
@@ -15,34 +17,36 @@
   <div class="nav__main-menu-wrapper bg-primary-dark">
     <ul id="navigation-menu" class="nav__main-menu resp-max-width list-reset flex flex-wrap md--flex-justify-between mb-0">
       {% for menu_item in site.data.menu %}
-        {% if menu_item.link == page.url %}
-          {% assign active_page = true %}
-          {% assign current_page = true %}
-        {% elsif page.path contains 'posts' and menu_item.link == '/writing/' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% elsif page.url contains '/writing/' and menu_item.link contains '/writing/' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% elsif page.url contains 'tag' and menu_item.link == '/writing/' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% elsif page.path contains 'notes' and menu_item.link == '/notes/' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% elsif page.url contains '/notes/' and menu_item.link contains '/notes/' %}
-          {% assign active_page = true %}
-          {% assign current_page = false %}
-        {% else %}
-          {% assign active_page = false %}
-          {% assign current_page = false %}
-        {% endif %}
 
-        <li class="inline-block mb-0 text-center">
-          <a class="block p-2 text-mono-white text-small {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
-            {{ menu_item.name }}
-          </a>
-        </li>
+          {% if menu_item.link == page.url %}
+            {% assign active_page = true %}
+            {% assign current_page = true %}
+          {% elsif page.path contains 'posts' and menu_item.link == '/writing/' %}
+            {% assign active_page = true %}
+            {% assign current_page = false %}
+          {% elsif page.url contains '/writing/' and menu_item.link contains '/writing/' %}
+            {% assign active_page = true %}
+            {% assign current_page = false %}
+          {% elsif page.url contains 'tag' and menu_item.link == '/writing/' %}
+            {% assign active_page = true %}
+            {% assign current_page = false %}
+          {% elsif page.path contains 'notes' and menu_item.link == '/notes/' %}
+            {% assign active_page = true %}
+            {% assign current_page = false %}
+          {% elsif page.url contains '/notes/' and menu_item.link contains '/notes/' %}
+            {% assign active_page = true %}
+            {% assign current_page = false %}
+          {% else %}
+            {% assign active_page = false %}
+            {% assign current_page = false %}
+          {% endif %}
+
+          <li class="inline-block mb-0 text-center">
+            <a class="block p-2 text-mono-white text-small {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+              {{ menu_item.name }}
+            </a>
+          </li>
+
       {% endfor %}
     </ul>
   </div>

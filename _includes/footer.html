@@ -1,16 +1,49 @@
 <footer class="bg-mono-black">
-  <div class="resp-max-width">
-    <h3 class="my-0 py-4 text-mono-white text-h5">
-      Find more of me on the interwebs at:
-    </h3>
-    <ul class="list-reset flex flex-column md--flex-row flex-justify-start mb-0 pb-2 text-small">
-      {% for social in site.data.social %}
-        <li class="inline-block mb-0 p-2 {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %}">
-          <a class="text-action-light" href="{{ social.url }}" target="_blank" rel="noopener">
-            {{ social.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class="resp-max-width py-6 text-mono-white">
+    {% unless page.title == 'About Me' %}
+      <img class="logo logo--footer ml-4 mb-4 border-radius-full hidden-md-down" src="/assets/images/global/profile.jpg" alt="" />
+
+      <h2 class="mt-0 text-h5">
+        About Myself
+      </h2>
+
+      <p>
+        I'm Max Antonucci, a front-end developer from Connecticut. I work at SeeClickFix, a civic tech app that lets citizens report local issues to municipal governments. I also enjoy writing, reading, boxing, video games, and escaping our shared physical reality to a realm of pure energy. Then doing some more reading.
+      </p>
+    {% endunless %}
+
+    <div class="flex flex-column md--flex-row">
+      <div class="flex-item-full">
+        <h3 class="mt-0 mb-2 text-h6">
+          Explore my Site
+        </h3>
+
+        <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
+          {% for menu in site.data.menu %}
+            <li class="inline-block mb-2">
+              <a class="text-action-light" href="{{ menu.link }}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+                {{ menu.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="flex-item-full">
+        <h3 class="mt-0 mb-2 text-h6">
+          Find me on the Interwebs
+        </h3>
+
+        <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
+          {% for social in site.data.social %}
+            <li class="inline-block mb-2">
+              <a class="text-action-light" href="{{ social.url }}" target="_blank" rel="noopener">
+                {{ social.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
