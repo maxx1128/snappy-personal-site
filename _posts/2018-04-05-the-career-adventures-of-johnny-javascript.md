@@ -56,22 +56,6 @@ Unsurprisingly, this never happened.
 
 Then I made a [repo of markdown files full of notes about programming](https://github.com/maxx1128/Webdev-Study-Notes) - syntaxes, tips, reminders, etc. I even included some nonfiction notes to record valuable insights. I made it to better retain knowledge yes, but I also made it thinking others would find it useful.
 
-```markdown
-// An example of my notes:
-// a small snippet from my notes on Ember Models
-
-##### Loading Multiple Models
-
-If you need to load multiple models as a single promise object, the `RSVP.hash` tool lets you do this. It accepts a hash, where each value is a promise. This way you can have a promise activate once all the promises are resolved, such as a loading screen being toggled off.
-
-model(params) {
-  return Ember.RSVP.hash({
-    character: this.store.findRecord('character', params.character),
-    teams: this.store.findAll('team')
-  });
-}
-```
-
 It was my first real repo I made not just focused around my work. It's also my most popular repo by far, with over 40 stars and several forks.
 
 I never noticed what all this meant until I read this lesson from the book:
