@@ -5,6 +5,26 @@
   {% assign contentType = 'Post' %}
 {% endif %}
 
+{% if page.tags and page.postLabel != "Note" %}
+  <div class="bg-contrast-primary-dark">
+    <div class="resp-max-width flex flex-justify-between py-2 px-4 md--px-6">
+      {% include tags.html
+        tags=page.tags
+        wrapper_classes='mb-0 mr-auto flex-justify-start'
+        tag_classes='mb-0 bg-mono-white'
+      %}
+
+      {% if page.featured_image_link %}
+        <a rel="noopener" class="text-mono-white hidden-sm-down" href="{{ page.featured_image_link }}" target="_blank" rel="noopener">
+          <tiny>
+            Featured image courtesy of this page.
+          </tiny>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
 {% if page.next or page.previous %}
   <div class="post-navigation__wrapper pt-4 xl--pb-6 mt-auto {% unless isNote %}bg-contrast-primary-dark{% endunless %}">
     <ul class="post-navigation resp-max-width flex flex-column xl--flex-row flex-justify-between list-reset">

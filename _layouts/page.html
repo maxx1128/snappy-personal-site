@@ -59,27 +59,6 @@ layout: default
   </div>
 </header>
 
-{% if page.tags and page.postLabel != "Note" %}
-  <div class="bg-action-dark">
-    <div class="resp-max-width flex flex-justify-between py-2 px-4 md--px-6">
-      {% if page.featured_image_link %}
-        <a rel="noopener" class="text-mono-white hidden-sm-down md--inline-block" href="{{ page.featured_image_link }}" target="_blank">
-          <tiny>
-            Featured image courtesy of this page.
-          </tiny>
-        </a>
-      {% endif %}
-
-      {% include tags.html
-        tags=page.tags
-        wrapper_classes='mb-0 ml-auto flex-justify-end'
-        tag_classes='mb-0 bg-mono-white'
-        link_classes='text-tiny'
-      %}
-    </div>
-  </div>
-{% endif %}
-
 <article id="content" class="width-100 {% unless page.no-padding %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width mx-auto{% endunless %}">
   {{content}}
 </article>
