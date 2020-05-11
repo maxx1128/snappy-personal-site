@@ -39,7 +39,7 @@
         {% endif %}
 
         <li class="inline-block mb-0 text-center">
-          <a class="block p-2 text-mono-white {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+          <a class="block p-2 text-mono-white text-small {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{%endif%}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
             {{ menu_item.name }}
           </a>
         </li>
