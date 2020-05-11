@@ -6,19 +6,25 @@
 {% endif %}
 
 {% if page.tags and page.postLabel != "Note" %}
+  {% assign tag_wrapper_classes = 'mb-0 mr-auto flex-justify-start' %}
+
+  {% unless page.featured_image_link %}
+    {% assign tag_wrapper_classes = tag_wrapper_classes | append: ' ml-auto' %}
+  {% endunless %}
+
   <div class="bg-contrast-primary-dark">
     <div class="resp-max-width flex flex-justify-between py-2 px-4 md--px-6">
       {% include tags.html
         tags=page.tags
-        wrapper_classes='mb-0 mr-auto flex-justify-start'
+        wrapper_classes=tag_wrapper_classes
         tag_classes='mb-0 bg-mono-white'
       %}
 
       {% if page.featured_image_link %}
         <a rel="noopener" class="text-mono-white hidden-sm-down" href="{{ page.featured_image_link }}" target="_blank" rel="noopener">
-          <tiny>
+          <small>
             Featured image courtesy of this page.
-          </tiny>
+          </small>
         </a>
       {% endif %}
     </div>
