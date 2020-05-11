@@ -137,7 +137,7 @@ Most of these are easy to figure out, as the first two functions are about addin
 
 Turns out, making a bigger sparkle takes a respectively bigger amount of magic to hold in the function. Repeating that function across every sparkle object uses lots of magic in bulk, and she's back at the same problem! So to solve that, she moved the function to the wand instead. Now that function only needs to be created once and called on the wand with the needed sparkle. Lots of magic is saved and the same problem is avoided.
 
-At its heart, this is the problem the Flyweight solves: **making and managing lots of objects with as little energy spent as possible.** The objects here (the sparkles) are only made up of properties unique to themselves like the type of spark. This is the flyweight object's _intrinsic state._ Anything the same for each spark, like the function to call a big one, is shared in a single object that's only called once to manage them. Everything outside of the intrinsic state (the want) is the _extrinsic_ state.
+At its heart, this is the problem the Flyweight solves: **making and managing lots of objects with as little energy spent as possible.** The objects here (the sparkles) are only made up of properties unique to themselves like the type of spark. This is the flyweight object's _intrinsic state._ Anything the same for each spark, like the function to call a big one, is shared in a single object that's only called once to manage them. Everything outside of the intrinsic state (the wand) is the _extrinsic_ state.
 
 We can see the benefits in action when the FG makes an instance of her wand and starts making sparks for her spell.
 
