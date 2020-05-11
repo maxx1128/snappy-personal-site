@@ -39,7 +39,7 @@ These notes help me remember a big reason I like writing: it's a simple, enjoyab
 
 Every time I tried a blogging schedule, I failed. Even "I will schedule 5 tweets a day" fell apart in less than a week.
 
-I blamed my lack of commitment for a while. Then I realized I just don't have enough good ideas to justify that much writing. Some weeks I'm too busy with other commitments. Other I just want to focus on learning skills or reading cruise ship murder mysteries. Lately I've had weeks where I want to play Puyo Puyo Tetris until I've crushed Ess because I WILL NOT LOSE TO HER AT TETRIS AGAIN!
+I blamed my lack of commitment for a while. Then I realized I just don't have enough good ideas to justify that much writing. Some weeks I'm too busy with other commitments. On others I just want to learn skills or read cruise ship murder mysteries. Lately I've had weeks where I want to play Puyo Puyo Tetris until I've crushed Ess because I WILL NOT LOSE TO HER AT TETRIS AGAIN!
 
 _Ahem,_ more importantly, **I've found when I force my writing, I can't stand by it. It can be better to write when you feel good inspiration strike naturally.** My routine's gone better when I'm living my life and being curious until a good idea hits me. I scrawl my thoughts in a notebook (digital or paper) so they don't fade away. Then I fine-tune them when I have the time, and I have a post. It can be days, or weeks, until this happens again. But that's okay, because posting on that natural schedule may help you (and others) like your writing more.
 
