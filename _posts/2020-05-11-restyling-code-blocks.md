@@ -1,5 +1,5 @@
 ---
-title: "Restyling by Site's Code Snippets in Quarantine"
+title: "Restyling my Site's Code Snippets in Quarantine"
 date: "2020-05-11"
 excerpt: "Working on my personal site has helped keep me sane in quarantine. This includes a long-overdue style update for my site's code snippets to make them sleeker and clearer."
 image: "restyled-code-blocks.png"
