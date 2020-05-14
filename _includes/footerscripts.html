@@ -3,15 +3,23 @@
 {% include gathernotes.html %}
 
 <!-- Save JS Data to window -->
-<script type="text/javascript" src="/assets/js/getContentData.js" charset="utf8" ></script>
 <script>
-  const postData = document.getElementById("post-data").innerHTML;
-  const noteData = document.getElementById("note-data").innerHTML;
-  window.ContentData.init(JSON.parse(postData), JSON.parse(noteData));
+  (function() {
+    const ContentData = window.ContentData || {};
+    const postData = document.getElementById("post-data").innerHTML;
+    const noteData = document.getElementById("note-data").innerHTML;
+
+    const setPostData = data => ContentData.posts = data;
+    const setNoteData = data => ContentData.notes = data;
+
+    ContentData.init = (postData, noteData) => {
+      setPostData(postData);
+      setNoteData(noteData);
+    };
+
+    window.ContentData = ContentData;
+    window.ContentData.init(JSON.parse(postData), JSON.parse(noteData));
+  })();
 </script>
 
-<!-- Include external JS files -->
-<script type="text/javascript" src="/assets/js/mobileMenu.js" charset="utf8" ></script>
-<script type="text/javascript" src="/assets/js/shuffleNoteStyles.js" charset="utf8" ></script>
-<script type="text/javascript" src="/assets/js/randomLinkButton.js" charset="utf8" ></script>
-<script type="text/javascript" src="/assets/js/randomLinkNavigator.js" charset="utf8" ></script>
+<script type="text/javascript" src="/assets/js/developer.js" charset="utf8" ></script>

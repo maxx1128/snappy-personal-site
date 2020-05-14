@@ -21,11 +21,7 @@ addEventListener('install', installEvent => {
         // Need to Cache
         return staticCache.addAll([
           '/assets/css/main.css',
-          '/assets/js/mobileMenu.js',
-          '/assets/js/getContentData.js',
-          '/assets/js/randomLinkButton.js',
-          '/assets/js/shuffleNoteStyles.js',
-          '/assets/js/randomLinkNavigator.js'
+          '/assets/js/developer.js'
         ]);
       })
   );

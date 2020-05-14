@@ -1,5 +1,5 @@
 {
-  "name": "SnappyPersonalSite",
+  "name": "snappy-personal-site",
   "version": "2.0.0",
   "main": "index.html",
   "repository": "Personal Website built on Jekyll, Tailwind, and Turbolinks",
@@ -22,8 +22,8 @@
     "purgecss": "^1.4.1"
   },
   "scripts": {
-    "dev": "concurrently -n jekyll, \"yarn write\" \"yarn sass:dev\"",
-    "prod": "yarn build && yarn sass:prod",
+    "dev": "concurrently -n jekyll, \"yarn write\" \"yarn sass:dev\" \"yarn js:dev\"",
+    "prod": "yarn build && yarn sass:prod && yarn js:build",
     "write": "jekyll serve --incremental --watch",
     "build": "jekyll build",
     "sass:dev": "yarn sass && npm-run-all sass-dev:*",
@@ -31,6 +31,10 @@
     "sass": "node-sass --output-style compressed _sass/ -o assets/css",
     "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'",
     "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
-    "sass-prod:purgecss": "purgecss --css assets/css/*.css --content _site/**/**/*.html --out assets/css"
+    "sass-prod:purgecss": "purgecss --css assets/css/*.css --content _site/**/**/*.html --out assets/css",
+    "js:dev": "yarn js:build && yarn js:watch",
+    "js:watch": "chokidar '_javascript/**/*.js' -c \"yarn js:build\"",
+    "js:build": "npm-run-all -p js-build:*",
+    "js-build:developer": "cat _javascript/shared/*.js _javascript/developer/*.js > assets/js/developer.js"
   }
 }

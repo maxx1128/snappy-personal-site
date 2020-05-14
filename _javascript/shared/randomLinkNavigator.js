@@ -1,10 +1,3 @@
-// Check if it is post or note data, and load up the needed data
-  // random-navigator-wrapper--post or random-navigator-wrapper--note
-// Filter out the current page based on if the data url contains the current relative url
-// Grab a random link from the remaining data
-  // // randomPost = posts[Math.floor(Math.random() * posts.length)]
-// Make the link visible and adjust the link href and content
-
 (function() {
   const getContentData = () => linkWrapper.classList.contains('random-navigator-wrapper--note') ? window.ContentData.notes : window.ContentData.posts
 
