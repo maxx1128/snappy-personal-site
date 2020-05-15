@@ -1,4 +1,3 @@
-
 @each $palette, $swatches in $color-map {
   @each $label, $color in $swatches {
     .bg-#{$palette}-#{$label} { background-color: $color; }
