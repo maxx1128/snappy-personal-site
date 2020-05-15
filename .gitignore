@@ -5,3 +5,5 @@ feed.xml
 node_modules
 yarn-error.log
 drafts/
+assets/css/*.css
+assets/js/*.js
