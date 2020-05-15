@@ -30,14 +30,6 @@ exclude: [
   'node_modules'
 ]
 
-include: [
-  'assets/css/main.css'
-]
-
-keep_files: [
-  'assets/css/main.css'
-]
-
 # Build settings
 markdown: kramdown
 kramdown:
