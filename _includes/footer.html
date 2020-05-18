@@ -1,5 +1,5 @@
-<footer class="bg-mono-black">
-  <div class="resp-max-width pt-8 pb-4 text-mono-white">
+<footer class="bg-primary-darkest">
+  <div class="resp-max-width pt-8 pb-4 text-primary-lightest">
     {% unless page.title == 'About Me' %}
       <img class="logo logo--footer ml-4 mb-4 border-radius-full hidden-md-down" src="/assets/images/global/profile.jpg" alt="" />
 
@@ -21,7 +21,7 @@
         <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
           {% for menu in site.data.menu %}
             <li class="inline-block mb-1">
-              <a class="text-action-light" href="{{ menu.link }}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+              <a class="text-action-lighter" href="{{ menu.link }}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
                 {{ menu.name }}
               </a>
             </li>
@@ -37,7 +37,7 @@
         <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
           {% for social in site.data.social %}
             <li class="inline-block mb-1">
-              <a class="text-action-light" href="{{ social.url }}" target="_blank" rel="noopener">
+              <a class="text-action-lighter" href="{{ social.url }}" target="_blank" rel="noopener">
                 {{ social.name }}
               </a>
             </li>

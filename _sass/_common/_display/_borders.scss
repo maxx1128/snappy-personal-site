@@ -1,9 +1,9 @@
 
-.border-a { border: 1px solid color(mono, black); }
-.border-t { border-top: 1px solid color(mono, black); }
-.border-r { border-right: 1px solid color(mono, black); }
-.border-b { border-bottom: 1px solid color(mono, black); }
-.border-l { border-left: 1px solid color(mono, black); }
+.border-a { border: 1px solid color(primary, darkest); }
+.border-t { border-top: 1px solid color(primary, darkest); }
+.border-r { border-right: 1px solid color(primary, darkest); }
+.border-b { border-bottom: 1px solid color(primary, darkest); }
+.border-l { border-left: 1px solid color(primary, darkest); }
 
 @each $palette, $swatches in $color-map {
   @each $label, $color in $swatches {

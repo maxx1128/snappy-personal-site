@@ -53,7 +53,7 @@ This post only looks at the code blocks, but my site also has inline code snippe
 ```scss
 // All code
 .highlighter-rouge {
-  color: color(mono, white);
+  color: color(primary, lightest);
 
   background-color: color(mono, black);
 }
@@ -194,7 +194,7 @@ I've hit a similar issue before, so I know Sass has a built-in function for meas
     $text-color: color(mono, black);
     $button-bg: color(primary, dark);
   } @else {
-    $text-color: color(mono, white);
+    $text-color: color(primary, lightest);
     $button-bg: color(primary, light);
   }
 
@@ -216,7 +216,7 @@ All that's left is the relatively simple task of overriding some CSS properties.
     $text-color: color(mono, black);
     $button-bg: color(primary, dark);
   } @else {
-    $text-color: color(mono, white);
+    $text-color: color(primary, lightest);
     $button-bg: color(primary, light);
   }
 

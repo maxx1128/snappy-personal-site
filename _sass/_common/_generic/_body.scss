@@ -10,9 +10,9 @@ body {
 
   font-weight: type(font-weight, base);
   font-family: type(font-family);
-  color: color(mono, black);
+  color: color(primary, darkest);
 
-  background-color: color(mono, white);
+  background-color: color(primary, lightest);
 
   @include larger-than(md) {
     font-size: 110%;

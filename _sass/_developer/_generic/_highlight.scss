@@ -15,9 +15,9 @@ $highlight-languages: (
 
 // All code
 .highlighter-rouge {
-  color: color(mono, white);
+  color: color(primary, lightest);
 
-  background-color: color(mono, black);
+  background-color: color(primary, darkest);
 }
 
 // inline code
@@ -45,7 +45,7 @@ div.highlighter-rouge {
     left: spacing(4);
 
     text-transform: uppercase;
-    color: color(mono, black);
+    color: color(primary, darkest);
     font-family: type(font-family, mono);
     font-size: type(font-size, xtiny);
   }
@@ -83,10 +83,10 @@ div.highlighter-rouge {
   $button-bg: '';
 
   @if (lightness($color) > 50) {
-    $text-color: color(mono, black);
+    $text-color: color(primary, darkest);
     $button-bg: color(primary, dark);
   } @else {
-    $text-color: color(mono, white);
+    $text-color: color(primary, lightest);
     $button-bg: color(primary, light);
   }
 
@@ -106,7 +106,7 @@ div.highlighter-rouge {
   }
 }
 
-.highlight .hll { background-color: color(mono, black); }
+.highlight .hll { background-color: color(primary, darkest); }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */

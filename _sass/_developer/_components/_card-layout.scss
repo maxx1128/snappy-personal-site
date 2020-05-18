@@ -33,7 +33,7 @@
     }
 
     .card__banner + .card__excerpt {
-      margin-top: spacing();
+      padding-top: spacing();
     }
   }
 
@@ -57,10 +57,6 @@
       &:nth-of-type(5n+4) {
         .card__banner {
           display: none;
-        }
-
-        .card__banner + .card__excerpt {
-          margin-top: 0;
         }
       }
 
