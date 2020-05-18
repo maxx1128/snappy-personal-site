@@ -6,10 +6,18 @@
 }
 
 .bg-topography--dark {
-  @include make-topography-bg(color(primary, dark), tint(color(primary, dark), 15%));
-  color: color(mono, white);
+  @include make-topography-bg(
+    color(primary, darker),
+    color(primary, darkest)
+  );
+  color: color(primary, lightest);
 }
 
 .bg-topography--light {
-  @include make-topography-bg(color(primary, light), color(primary, dark));
+  @include make-topography-bg(
+    color(primary, lighter),
+    color(primary, lightest)
+  );
+
+  box-shadow: container(box-shadow, 1) !important;
 }

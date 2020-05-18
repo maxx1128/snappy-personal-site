@@ -5,9 +5,9 @@ header {
 }
 
 .header-with-image {
-  color: color(mono, white);
+  color: color(primary, lightest);
 
-  box-shadow: inset 0 0 0 1000px rgba(color(mono, black), 0.915);
+  box-shadow: inset 0 0 0 1000px rgba(color(primary, darkest), 0.915);
 }
 
 .header--no-shadow {
