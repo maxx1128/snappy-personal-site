@@ -1,0 +1,17 @@
+name: Merge Schedule
+uses: gr2m/merge-schedule-action@v1.0.2
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+  schedule:
+    # At 06:00
+    - cron: 0 6 * * *
+
+jobs:
+  merge_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: gr2m/merge-schedule-action@v1.x
