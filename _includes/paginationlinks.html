@@ -18,7 +18,7 @@
     <span class="flex py-2 sm--mr-auto">
       <li class="m-0">
         <a
-          class="pagination__end-link {% unless newest_link %}pagination__end-link--disabled{% endunless %} py-2 px-3 bg-action-dark no-underline text-mono-white border-radius-base box-shadow-1"
+          class="pagination__end-link {% unless newest_link %}pagination__end-link--disabled{% endunless %} py-2 px-3 bg-action-darker no-underline text-primary-lightest border-radius-base box-shadow-1"
           href="{% if newest_link %}{{ paginator.first_page_path | prepend: site.baseurl }}{% else %}javascript:void(0){% endif %}">
             Newest
         </a>
@@ -30,7 +30,7 @@
         {% for trail in paginator.page_trail %}
           <li class="m-1">
               {% if page.url == trail.path %}
-                <span class="pagination__dot-link box-shadow-1 bg-action-dark text-mono-white border-radius-circle flex-center" aria-label="Current page: {{ trail.num }}">
+                <span class="pagination__dot-link box-shadow-1 bg-action-dark text-primary-lightest border-radius-circle flex-center" aria-label="Current page: {{ trail.num }}">
                   {{ trail.num }}
                 </span>
               {% else %}
@@ -46,7 +46,7 @@
     <span class="flex py-2 sm--ml-auto">
       <li class="m-0">
         <a
-          class="pagination__end-link {% unless oldest_link %}pagination__end-link--disabled{% endunless %} py-2 px-3 bg-action-dark no-underline text-mono-white border-radius-base box-shadow-1"
+          class="pagination__end-link {% unless oldest_link %}pagination__end-link--disabled{% endunless %} py-2 px-3 bg-action-darker no-underline text-primary-lightest border-radius-base box-shadow-1"
           href="{% if oldest_link %}{{ paginator.last_page_path | prepend: site.baseurl }}{% else %}javascript:void(0){% endif %}">
             Oldest
         </a>
