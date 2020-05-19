@@ -3,37 +3,35 @@ layout: default
 title: Homepage
 ---
 
-<div id="content" class="py-4 text-primary-lightest bg-topography--dark box-shadow-1">
-  <div class="resp-max-width">
-    <h1 class="mt-0">
+<div id="content" class="homepage-opener">
+  <div class="homepage-opener__inner-wrapper">
+    <h1 class="homepage-opener__header">
       Hello Readers.
     </h1>
 
-    <p class="text-h6">
+    <p class="homepage-opener__intro">
       I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
     </p>
 
-    <p>
+    <p class="homepage-opener__descripter">
       <strong>As a programmer</strong>, I code for the front-end and focus on JavaScript and web accessibility. But lately I've also been writing more Ruby and Ruby and Rails.
     </p>
 
-    <p>
+    <p class="homepage-opener__descripter">
       <strong>As a writer</strong>, I write to remember lessons I've learned in programming, mental health, philosophy, and life in general. Or random things I need to get out of my head.
     </p>
 
-    <p class="mb-0">
+    <p class="homepage-opener__descripter">
       <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist. I don't juggle chainsaws since '06.
     </p>
   </div>
 </div>
 
-<div class="resp-max-width">
-  <h2>
-    Recent Writing
-  </h2>
-</div>
+<h2 class="homepage-recent-writing__title">
+  Recent Writing
+</h2>
 
-<section class="resp-max-width card-layout mb-4">
+<section class="homepage-recent-writing__cards card-layout">
   {% for post in site.posts limit: 5 %}
     {% include card.html
       class="card--layout-item"
@@ -48,17 +46,15 @@ title: Homepage
   {% endfor %}
 </section>
 
-<div class="resp-max-width pt-4">
-  <p class="mb-0">
-    <a href="/writing/">Read more of my blog posts.</a> <a class="hidden" id="random-post-link">Or read a completely random blog post.</a>
-  </p>
+<p class="homepage-recent-writing__follower">
+  <a href="/writing/">Read more of my blog posts.</a> <a class="hidden" id="random-post-link">Or read a completely random blog post.</a>
+</p>
 
-  <h2>
-    Recent Notes
-  </h2>
-</div>
+<h2 class="homepage-recent-notes__title">
+  Recent Notes
+</h2>
 
-<section id="notes">
+<section id="notes" class="homepage-recent-notes__items">
   {% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
   {% for note in notes %}
     {% if forloop.index < 3 %}
@@ -72,8 +68,6 @@ title: Homepage
   {% endfor %}
 </section>
 
-<div class="resp-max-width py-4">
-  <p class="mb-0">
-    <a href="/notes/">Read more of my notes.</a> <a class="hidden" id="random-note-link">Or read a completely random note.</a>
-  </p>
-</div>
+<p class="homepage-recent-notes__follower">
+  <a href="/notes/">Read more of my notes.</a> <a class="hidden" id="random-note-link">Or read a completely random note.</a>
+</p>

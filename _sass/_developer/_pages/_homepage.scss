@@ -1,0 +1,60 @@
+.homepage-opener {
+  @include topography-dark();
+  padding-top: spacing();
+  padding-bottom: spacing();
+
+  color: color(primary, lightest);
+
+  box-shadow: container(box-shadow, 1);
+}
+
+.homepage-opener__inner-wrapper {
+  @include resp-max-width();
+}
+
+.homepage-opener__header {
+  margin-top: 0;
+}
+
+.homepage-opener__intro {
+  font-size: type(font-size, h6);
+}
+
+.homepage-opener__descripter {
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.homepage-recent-writing__title {
+  @include resp-max-width();
+  padding-top: spacing();
+  padding-bottom: spacing(2);
+}
+
+.homepage-recent-writing__cards {
+  @include resp-max-width();
+
+  margin-bottom: spacing();
+}
+
+.homepage-recent-writing__follower {
+  @include resp-max-width();
+
+  padding-top: spacing();
+  margin-bottom: 0;
+}
+
+.homepage-recent-notes__title {
+  @include resp-max-width();
+  padding-top: spacing();
+  padding-bottom: spacing(2);
+}
+
+.homepage-recent-notes__follower {
+  @include resp-max-width();
+  padding-top: spacing();
+  padding-bottom: spacing();
+  margin-bottom: 0;
+}

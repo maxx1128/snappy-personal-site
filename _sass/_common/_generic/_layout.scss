@@ -7,6 +7,20 @@ main {
   flex: 1 1 auto;
 }
 
+@mixin resp-max-width() {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: spacing();
+  padding-left: spacing();
+  max-width: breakpoint(md);
+
+  @include larger-than(xl) {
+    max-width: breakpoint(lg);
+  }
+}
+
+
+// FIXME Remove this
 .resp-max-width {
   width: 100%;
   margin: 0 auto;

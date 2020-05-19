@@ -49,6 +49,14 @@ kbd { font-family: type(font-family, mono); }
 
 .list-style-disc { list-style: disc; }
 
+@mixin list-reset() {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+// FIXME
 .list-reset {
   padding: 0;
   margin: 0;

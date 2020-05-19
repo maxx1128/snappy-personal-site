@@ -4,5 +4,13 @@
 }
 
 .logo--footer {
+  margin-bottom: spacing();
+  margin-left: spacing();
   max-width: 150px;
+
+  border-radius: 100%;
+
+  @include smaller-than(md) {
+    display: none;
+  }
 }
