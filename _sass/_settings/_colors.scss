@@ -14,7 +14,7 @@ $color-map: (
     base: #0BB0BE,
     light: #5dbfd6,
     lighter: #bbe0f0,
-    lightest: #e9f4f9
+    lightest: #c1d8e2
   ),
 
   action: (
@@ -23,5 +23,10 @@ $color-map: (
     base: #EA1D0C,
     light: #f3856f,
     lighter: #f9bfa6
+  ),
+
+  mono: (
+    black: #111111,
+    white: #f4fefd
   )
 );

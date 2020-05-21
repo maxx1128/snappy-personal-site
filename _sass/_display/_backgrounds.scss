@@ -10,13 +10,13 @@
     color(primary, darker),
     color(primary, darkest)
   );
-  color: color(primary, lightest);
+  color: color(mono, white);
 }
 
 .bg-topography--light {
   @include make-topography-bg(
     color(primary, lighter),
-    color(primary, lightest)
+    color(mono, white)
   );
 
   box-shadow: container(box-shadow, 1) !important;

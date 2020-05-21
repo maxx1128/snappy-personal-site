@@ -3,13 +3,13 @@ blockquote {
   margin: spacing(8) 0;
 
   font-style: italic;
-  color: color(primary, lightest);
+  color: color(mono, white);
 
   background: color(primary, dark);
   box-shadow: container(box-shadow, 2);
 
   a {
-    color: color(primary, lightest);
+    color: color(mono, white);
   }
 
   & > p {
