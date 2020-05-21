@@ -12,16 +12,16 @@
     {% assign tag_wrapper_classes = tag_wrapper_classes | append: ' ml-auto' %}
   {% endunless %}
 
-  <div class="bg-primary-dark text-mono-white">
+  <div class="bg-primary-lightest">
     <div class="resp-max-width flex flex-justify-between py-2">
       {% include tags.html
         tags=page.tags
         wrapper_classes=tag_wrapper_classes
-        tag_classes='mb-0 bg-primary-lightest'
+        tag_classes='mb-0 bg-mono-white'
       %}
 
       {% if page.featured_image_link %}
-        <a rel="noopener" class="text-primary-lightest hidden-sm-down" href="{{ page.featured_image_link }}" target="_blank" rel="noopener">
+        <a rel="noopener" class="hidden-sm-down" href="{{ page.featured_image_link }}" target="_blank" rel="noopener">
           <small>
             Featured image courtesy of this page.
           </small>
@@ -32,14 +32,14 @@
 {% endif %}
 
 {% if page.next or page.previous %}
-  <div class="post-navigation__wrapper pt-4 xl--pb-6 mt-auto {% unless isNote %}bg-primary-darker text-mono-white{% endunless %}">
+  <div class="post-navigation__wrapper pt-4 xl--pb-6 mt-auto {% unless isNote %}bg-primary-lighter{% endunless %}">
     <ul class="post-navigation resp-max-width flex flex-column xl--flex-row flex-justify-between list-reset">
       <li class="flex-item-full mb-6 xl--mb-0 xl--mr-8">
         <span class="block text-small font-weight-bold">
           Next {{ contentType }}:
         </span>
         {% if page.next.url %}
-          <a class="random-navigator__next-link text-action-light" href="{{page.next.url}}">
+          <a class="random-navigator__next-link" href="{{page.next.url}}">
             {% if isNote %}
               {{ page.next.date | date: '%B %d, %Y' }}
             {% else %}
@@ -57,7 +57,7 @@
         <span class="block text-small font-weight-bold">
           Random {{ contentType }}:
         </span>
-        <a class="text-action-light" href="javascript:void();"></a>
+        <a href="javascript:void();"></a>
       </li>
 
       <li class="flex-item-full mb-6 xl--mb-0">
@@ -65,7 +65,7 @@
           Previous {{ contentType }}:
         </span>
         {% if page.previous.url %}
-          <a class="random-navigator__previous-link text-action-light" href="{{page.previous.url}}">
+          <a class="random-navigator__previous-link" href="{{page.previous.url}}">
             {% if isNote %}
               {{ page.previous.date | date: '%B %d, %Y' }}
             {% else %}
