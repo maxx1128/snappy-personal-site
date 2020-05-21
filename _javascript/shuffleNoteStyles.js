@@ -17,7 +17,7 @@
     }
 
     const numberOfPalettes = 14,
-          classIndexes     = shuffle([...Array(numberOfPalettes * 2).keys()]);
+          classIndexes     = shuffle([...Array(numberOfPalettes).keys()]);
 
     for (let note of noteElements) {
       removeNoteStyleClass(note);

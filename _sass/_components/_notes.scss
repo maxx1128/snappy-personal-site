@@ -4,117 +4,92 @@
 }
 
 $note-colors: (
-  // Vaporeon
-  0: (
-    dark: #104a62,
-    light: #5DD0FA
-  ),
   // Jolteon
+  0: (
+    dark: #5a2c1a,
+    light: #f5f593
+  ),
+  // Uxie
   1: (
-    dark: #836a29,
-    light: #ffff8b
-  ),
-  // Flareon
-  2: (
-    dark: #C52B3D,
-    light: #ffeea4
-  ),
-  // Espeon
-  3: (
-    dark: #314173,
-    light: #EEBDEE
-  ),
-  // Umbreon
-  4: (
-    dark: #0a0a61,
-    light: #eed552
-  ),
-  // Reshiram
-  5: (
-    dark: #4a4a6a,
-    light: #D0D0E1
-  ),
-  // Leafeon
-  6: (
-    dark: #31625a,
-    light: #eed59c
-  ),
-  // Porygon-Z
-  7: (
-    dark: #753354,
-    light: #A8DFFF
-  ),
-  // Gallade
-  8: (
-    dark: #314e4e,
-    light: rgb(201, 231, 223)
-  ),
-  // Mewtwo
-  9: (
-    dark: #6a319c,
-    light: #ded5e6
-  ),
-  // Blaziken
-  10: (
-    dark: #7E2525,
-    light: #F8C47B
-  ),
-  // Typhlosion
-  11: (
-    dark: #415A94,
-    light: #F1E183
-  ),
-  // Chandelure
-  12: (
-    dark: #3D27AA,
-    light: #C8BEF9
-  ),
-  // Flygon
-  13: (
-    dark: #7a2932,
-    light: rgb(183, 250, 187)
-  ),
-  // Zekrom
-  14: (
-    dark: #181820,
-    light: #6AF6FF
-  )
+     dark: #8d3a4f,
+     light: #ffde9c
+   ),
+   // Charizard
+   2: (
+     dark: #084152,
+     light: #eeb45a
+   ),
+   // Espeon
+   3: (
+     dark: #314173,
+     light: #eebdee
+   ),
+   // Umbreon
+   4: (
+     dark: #02020f,
+     light: #eed552
+   ),
+   // Zoroark
+   5: (
+     dark: #202031,
+     light: #e6d8d8
+   ),
+   // Leafeon
+   6: (
+     dark: #254e47,
+     light: #f3dca7
+   ),
+   // Chandelure
+   7: (
+     dark: #3d27aa,
+     light: #c8bef9
+   ),
+   // Mewtwo
+   8: (
+     dark: #521786,
+     light: #ded5e6
+   ),
+   // Blaziken
+   9: (
+     dark: #7e2525,
+     light: #f8c47b
+   ),
+   // Ivysaur
+   10: (
+     dark: #104a39,
+     light: #fabbb6
+   ),
+   // Gallade
+   11: (
+     dark: #314e4e,
+    light: #c9e7df
+   ),
+   // Flygon
+   12: (
+     dark: #7a2932,
+    light: #9bffa2
+   ),
+   // Zekrom
+   13: (
+     dark: #1d1d27,
+     light: #6af6ff
+   ),
+   // Porygon-Z
+   14: (
+     dark: #753354,
+     light: #a8dfff
+   )
 );
 
 // Default Note List stylings
 @each $index, $styles in $note-colors {
-  $text: map-get($styles, dark);
-  $bg: map-get($styles, light);
-  $length: length($note-colors);
+  $dark: map-get($styles, dark);
+  $light: map-get($styles, light);
 
-  $even-item: $index % 2 == 0;
 
-  @if ($even-item) {
-    $nth-first: $index + $length;
-    $nth-second: $index;
-
-    .note-coloring--#{$nth-second} {
-      --note-text-color: #{$text};
-      --note-background-color: #{$bg};
-    }
-
-    .note-coloring--#{$nth-first} {
-      --note-text-color: #{$bg};
-      --note-background-color: #{$text};
-    }
-  } @else {
-    $nth-first: $index;
-    $nth-second: $index + $length;
-
-    .note-coloring--#{$nth-first} {
-      --note-text-color: #{$bg};
-      --note-background-color: #{$text};
-    }
-
-    .note-coloring--#{$nth-second} {
-      --note-text-color: #{$text};
-      --note-background-color: #{$bg};
-    }
+  .note-coloring--#{$index} {
+    --note-text-color: #{$dark};
+    --note-background-color: #{$light};
   }
 }
 
