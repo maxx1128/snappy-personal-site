@@ -1,3 +1,32 @@
+@function derive-rgb-values-from-hex($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+$mono-black: #111111;
+$primary-lightest: #c1d8e2;
+
+:root {
+  --color-primary-darkest: #003f32;
+  --color-primary-darker: #015a4f;
+  --color-primary-dark: #057d7e;
+  --color-primary-base: #0BB0BE;
+  --color-primary-light: #5dbfd6;
+  --color-primary-lighter: #bbe0f0;
+  --color-primary-lightest: #{$primary-lightest};
+
+  --color-action-darker: #7c0502;
+  --color-action-dark: #a10e06;
+  --color-action-base: #EA1D0C;
+  --color-action-light: #f3856f;
+  --color-action-lighter: #f9bfa6;
+
+  --color-mono-black: #{$mono-black};
+  --color-mono-white: #f4fefd;
+
+  --color-shadow-dark: #{derive-rgb-values-from-hex($mono-black)};
+  --color-shadow-light: #{derive-rgb-values-from-hex($primary-lightest)};
+}
+
 // This function pulls specific color values from the below map
 @function color($color, $tone: base) {
   @if map-has-key($color-map, $color) {
@@ -8,25 +37,30 @@
 // Map for storing all color variables
 $color-map: (
   primary: (
-    darkest: #003f32,
-    darker: #015a4f,
-    dark: #057d7e,
-    base: #0BB0BE,
-    light: #5dbfd6,
-    lighter: #bbe0f0,
-    lightest: #c1d8e2
+    darkest: var(--color-primary-darkest),
+    darker: var(--color-primary-darker),
+    dark: var(--color-primary-dark),
+    base: var(--color-primary-base),
+    light: var(--color-primary-light),
+    lighter: var(--color-primary-lighter),
+    lightest: var(--color-primary-lightest)
   ),
 
   action: (
-    darker: #7c0502,
-    dark: #a10e06,
-    base: #EA1D0C,
-    light: #f3856f,
-    lighter: #f9bfa6
+    darker: var(--color-action-darker),
+    dark: var(--color-action-dark),
+    base: var(--color-action-base),
+    light: var(--color-action-light),
+    lighter: var(--color-action-lighter)
   ),
 
   mono: (
-    black: #111111,
-    white: #f4fefd
+    black: var(--color-mono-black),
+    white: var(--color-mono-white)
+  ),
+
+  shadow: (
+    dark: var(--color-shadow-dark),
+    light: var(--color-shadow-light)
   )
 );
