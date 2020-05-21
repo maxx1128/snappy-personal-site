@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), 0.92), container(box-shadow, 2);
+  box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity), container(box-shadow, 2);
 }
 
 .card--photo {

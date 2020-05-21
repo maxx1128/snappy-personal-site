@@ -4,5 +4,5 @@
   background-size: cover;
   background-image: url("/assets/images/global/header-default.jpg");
 
-  box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), 0.935);
+  box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
 }
