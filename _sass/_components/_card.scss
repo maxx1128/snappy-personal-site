@@ -25,7 +25,7 @@
 
 .card__banner {
   display: none;
-  margin: auto (spacing() * -1);
+  margin: auto spacing(neg4);
   min-height: 8rem;
   max-height: 16rem;
   flex: 1 1 auto;
