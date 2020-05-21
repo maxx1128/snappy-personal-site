@@ -10,34 +10,35 @@
   }
 }
 
-// For pulling z-index values
-@function z-index($index: 'default') {
-  @if map-has-key($z-layers, $index) {
-    @return map-get($z-layers, $index);
-  }
-}
-
 $g-base-spacing: rem(16px);
 
-$spacing-map: (
-  none : 0,
-  0    : 0,
-  px   : 1px,
-  1    : decimal-round(($g-base-spacing / 4), 2),
-  2    : decimal-round(($g-base-spacing / 2), 2),
-  3    : decimal-round(($g-base-spacing * 0.75), 2),
-  4    : decimal-round($g-base-spacing, 2),
-  5    : decimal-round(($g-base-spacing * 1.25), 2),
-  6    : decimal-round(($g-base-spacing * 1.5), 2),
-  8    : decimal-round(($g-base-spacing * 2), 2),
-  10   : decimal-round(($g-base-spacing * 2.5), 2),
-  12   : decimal-round(($g-base-spacing * 3), 2)
-);
+:root {
+  --spacing-none  : 0;
+  --spacing-px    : 1px;
+  --spacing-1     : #{decimal-round(($g-base-spacing / 4), 2)};
+  --spacing-2     : #{decimal-round(($g-base-spacing / 2), 2)};
+  --spacing-3     : #{decimal-round(($g-base-spacing * 0.75), 2)};
+  --spacing-4     : #{decimal-round($g-base-spacing, 2)};
+  --spacing-neg-4 : #{decimal-round($g-base-spacing, 2) * -1};
+  --spacing-5     : #{decimal-round(($g-base-spacing * 1.25), 2)};
+  --spacing-6     : #{decimal-round(($g-base-spacing * 1.5), 2)};
+  --spacing-8     : #{decimal-round(($g-base-spacing * 2), 2)};
+  --spacing-10    : #{decimal-round(($g-base-spacing * 2.5), 2)};
+  --spacing-12    : #{decimal-round(($g-base-spacing * 3), 2)};
+}
 
-$z-layers: (
-  bottomless-pit: -9999,
-  default: 1,
-  dropdown: 3000,
-  overlay: 4000,
-  modal: 4001
+$spacing-map: (
+  none : var(--spacing-none),
+  0    : var(--spacing-none),
+  px   : var(--spacing-px),
+  1    : var(--spacing-1),
+  2    : var(--spacing-2),
+  3    : var(--spacing-3),
+  4    : var(--spacing-4),
+  neg4 : var(--spacing-neg-4),
+  5    : var(--spacing-5),
+  6    : var(--spacing-6),
+  8    : var(--spacing-8),
+  10   : var(--spacing-10),
+  12   : var(--spacing-12)
 );

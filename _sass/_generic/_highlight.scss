@@ -24,7 +24,7 @@ $highlight-languages: (
 code.highlighter-rouge {
   padding: 3px 4px;
 
-  font-size: type(font-size, p)  * 0.8;
+  font-size: calc(#{type(font-size, p)} * 0.8);
 }
 
 // block code wrapper
