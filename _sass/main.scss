@@ -10,9 +10,10 @@
 @import "_tools/modular-scale";
 @import "_tools/selectors";
 
-@import "_components/content-skip";
-@import "_components/logo";
-@import "_components/video-wrapper";
+@import "_layout/abs-pos";
+@import "_layout/flexbox";
+@import "_layout/grid";
+@import "_layout/spacing";
 
 @import "_display/borders";
 @import "_display/colors";
@@ -24,16 +25,11 @@
 @import "_generic/images";
 @import "_generic/layout";
 @import "_generic/text";
-
-@import "_layout/abs-pos";
-@import "_layout/flexbox";
-@import "_layout/grid";
-@import "_layout/spacing";
-
-@import "_display/backgrounds";
-
 @import "_generic/highlight";
 
+@import "_components/content-skip";
+@import "_components/logo";
+@import "_components/video-wrapper";
 @import "_components/_blockquote";
 @import "_components/_card-layout";
 @import "_components/_card";
