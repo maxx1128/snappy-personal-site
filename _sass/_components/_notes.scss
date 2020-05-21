@@ -1,3 +1,8 @@
+:root {
+  --note-text-color: #181820;
+  --note-background-color: #6AF6FF;
+}
+
 $note-colors: (
   // Vaporeon
   0: (
@@ -76,24 +81,6 @@ $note-colors: (
   )
 );
 
-@mixin note-colors($text, $bg) {
-  color: $text;
-  background-color: $bg;
-
-  a {
-    color: mix(white, $text, 30%);
-  }
-
-  blockquote {
-    color: $bg;
-    background-color: $text;
-
-    a {
-      color: mix(black, $bg, 30%);
-    }
-  }
-}
-
 // Default Note List stylings
 @each $index, $styles in $note-colors {
   $text: map-get($styles, dark);
@@ -107,22 +94,44 @@ $note-colors: (
     $nth-second: $index;
 
     .note-coloring--#{$nth-second} {
-      @include note-colors($bg, $text);
+      --note-text-color: #{$text};
+      --note-background-color: #{$bg};
     }
 
     .note-coloring--#{$nth-first} {
-      @include note-colors($text, $bg);
+      --note-text-color: #{$bg};
+      --note-background-color: #{$text};
     }
   } @else {
     $nth-first: $index;
     $nth-second: $index + $length;
 
     .note-coloring--#{$nth-first} {
-      @include note-colors($text, $bg);
+      --note-text-color: #{$bg};
+      --note-background-color: #{$text};
     }
 
     .note-coloring--#{$nth-second} {
-      @include note-colors($bg, $text);
+      --note-text-color: #{$text};
+      --note-background-color: #{$bg};
+    }
+  }
+}
+
+.note-styler {
+  color: var(--note-text-color);
+  background-color: var(--note-background-color);
+
+  a {
+    color: var(--note-text-color);
+  }
+
+  blockquote {
+    color: var(--note-background-color);
+    background-color: var(--note-text-color);
+
+    a {
+      color: var(--note-background-color);
     }
   }
 }
