@@ -30,8 +30,7 @@
     "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'",
     "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
     "js:dev": "yarn js:build && yarn js:watch",
-    "js:watch": "chokidar '_javascript/**/*.js' -c \"yarn js:build\"",
-    "js:build": "npm-run-all -p js-build:*",
-    "js-build:developer": "cat _javascript/shared/*.js _javascript/developer/*.js > assets/js/developer.js"
+    "js:watch": "chokidar '_javascript/*.js' -c \"yarn js:build\"",
+    "js:build": "cat _javascript/*.js > assets/js/main.js"
   }
 }
