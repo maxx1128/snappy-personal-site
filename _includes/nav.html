@@ -1,4 +1,4 @@
-<nav id="navigation" class="width-100 flex flex-column mx-auto text-mono-white bg-primary-darkest border-b border-b-w-1 border-mono-black">
+<nav id="navigation" class="width-100 flex flex-column mx-auto pb-1 text-mono-white bg-primary-darkest">
   <div class="resp-max-width py-2 flex flex-column flex-align-center md--flex-align-start">
     <h1 class="my-0 mr-4 text-h6">
       <a class="text-mono-white" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
@@ -10,11 +10,11 @@
     </p>
   </div>
 
-  <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu bg-primary-dark">
+  <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu bg-primary-darker">
     Menu
   </button>
 
-  <div class="nav__main-menu-wrapper bg-primary-dark">
+  <div class="nav__main-menu-wrapper bg-primary-darker">
     <ul id="navigation-menu" class="nav__main-menu resp-max-width list-reset flex flex-wrap md--flex-justify-between mb-0">
       {% for menu_item in site.data.menu %}
 

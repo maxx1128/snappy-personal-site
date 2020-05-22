@@ -2,17 +2,17 @@
   @return red($hex), green($hex), blue($hex);
 }
 
-$mono-black: #111111;
-$primary-lightest: #c1d8e2;
+$primary-darker: #026754;
+$primary-lighter: #a6dee8;
 
 :root {
-  --color-primary-darkest: #003f32;
-  --color-primary-darker: #015a4f;
-  --color-primary-dark: #057d7e;
-  --color-primary-base: #0BB0BE;
-  --color-primary-light: #5dbfd6;
-  --color-primary-lighter: #bbe0f0;
-  --color-primary-lightest: #{$primary-lightest};
+  --color-primary-darkest: #00392a;
+  --color-primary-darker: #{$primary-darker};
+  --color-primary-dark: #07a291;
+  --color-primary-base: #0BBEB7;
+  --color-primary-light: #65cdd5;
+  --color-primary-lighter: #{$primary-lighter};
+  --color-primary-lightest: #d4ecf4;
 
   --color-action-darker: #7c0502;
   --color-action-dark: #a10e06;
@@ -20,11 +20,11 @@ $primary-lightest: #c1d8e2;
   --color-action-light: #f3856f;
   --color-action-lighter: #f9bfa6;
 
-  --color-mono-black: #{$mono-black};
+  --color-mono-black: #111111;
   --color-mono-white: #f4fefd;
 
-  --color-shadow-dark: #{derive-rgb-values-from-hex($mono-black)};
-  --color-shadow-light: #{derive-rgb-values-from-hex($primary-lightest)};
+  --color-shadow-dark: #{derive-rgb-values-from-hex($primary-darker)};
+  --color-shadow-light: #{derive-rgb-values-from-hex($primary-lighter)};
 }
 
 // This function pulls specific color values from the below map
