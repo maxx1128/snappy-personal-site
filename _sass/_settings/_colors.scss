@@ -12,7 +12,7 @@ $primary-lightest: #d0effa;
   --color-primary-base: #0BBEB7;
   --color-primary-light: #65cdd5;
   --color-primary-lighter: #a6dee8;
-  --color-primary-lightest: $primary-lightest;
+  --color-primary-lightest: #{$primary-lightest};
 
   --color-action-darker: #7c0502;
   --color-action-dark: #a10e06;
