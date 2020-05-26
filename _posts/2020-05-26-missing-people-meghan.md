@@ -33,7 +33,7 @@ Like everyone there she laughed and found the dogs cute. Even when one had an "a
 
 ## The Importance of Firm Limits when Helping
 
-To me, Meagan is a woman who has seen firsthand, perhaps more than anyone I know, that doing good things can spiral into someone walking all over you. Others may think this means it's not worth doing anything good at all. I think Meagan instead sees the importance of being firm with your limits for helping, in life and in work. This lets her give as much as she can without sacrificing herself. To do those few good things you can and as well as you can, but refuse to let people take even more. To help keep others warm without setting herself on fire.
+To me, Meagan is a woman who has seen firsthand, perhaps more than anyone I know, that doing good things can spiral into someone walking all over you. Others may think this means it's not worth doing anything good at all. I think Meagan instead sees the importance of being firm with your limits for helping, in life and in work. This lets her give as much as she can without sacrificing herself. **To do those few good things you can and as well as you can, but refuse to let people take even more. To help keep others warm without setting oneself on fire.**
 
 I think that trait has let Meagan help more people than most of us will in their lifetimes. To me, she's a reminder that selfishness and selflessness aren't a binary choice.
 
