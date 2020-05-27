@@ -13,6 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.maxwellantonucci.com" # the base hostname & protocol for your site
 author: Max Antonucci
 plugins: [jekyll-paginate-v2]
+future: false
 
 svg_color: "#38A89D"
 
@@ -39,6 +40,7 @@ kramdown:
 collections:
   notes:
     output: true
+    future: false
 
 feed:
   path: rss.xml

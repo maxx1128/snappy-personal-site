@@ -1,8 +1,14 @@
 ---
 title : RSS Feed
 ---
+
+{% capture now %}
+  {{ 'now' | date: '%s' | plus: 0 }}
+{% endcapture %}
+
 {% assign posts = site.posts %}
-{% assign notes = site.notes %}
+{% assign notes = site.notes | sort: 'date' | where_exp:"note", "note.date < site.time" %}
+
 {% assign feed = posts | concat: notes | sort: "date" | reverse %}
 
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -31,23 +37,29 @@ title : RSS Feed
       {% assign featured_image = site.url | append: "/assets/images/global/profile.jpg" %}
     {% endif %}
 
-    <entry>
-      <title type="html">{{ title }}</title>
-      <link href="{{ url }}" rel="alternate" type="text/html" title="{{ title }}"/>
-      <published>{{ post.date }}</published>
-      <id>{{ url }}</id>
-      <content type="html" xml:base="{{ url }}"/>
-      <author><name>{{ site.author }}</name></author>
+    {% capture date %}
+      {{post.date | date: '%s' | plus: 0 }}
+    {% endcapture %}
 
-      <image>
-        <url>{{ featured_image }}</url>
-        <title>{{ title }}</title>
-        <link>{{ site.url }}</link>
-      </image>
+    {% if date < now %}
+      <entry>
+        <title type="html">{{ title }}</title>
+        <link href="{{ url }}" rel="alternate" type="text/html" title="{{ title }}"/>
+        <published>{{ post.date }}</published>
+        <id>{{ url }}</id>
+        <content type="html" xml:base="{{ url }}"/>
+        <author><name>{{ site.author }}</name></author>
 
-      {% if post.excerpt %}
-        <summary type="html">{{ post.excerpt }}</summary>
-      {% endif %}
-    </entry>
+        <image>
+          <url>{{ featured_image }}</url>
+          <title>{{ title }}</title>
+          <link>{{ site.url }}</link>
+        </image>
+
+        {% if post.excerpt %}
+          <summary type="html">{{ post.excerpt }}</summary>
+        {% endif %}
+      </entry>
+    {% endif %}
   {% endfor %}
 </feed>
