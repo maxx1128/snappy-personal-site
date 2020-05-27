@@ -16,7 +16,7 @@
       return array;
     }
 
-    const numberOfPalettes = 14,
+    const numberOfPalettes = 15,
           classIndexes     = shuffle([...Array(numberOfPalettes).keys()]);
 
     for (let note of noteElements) {

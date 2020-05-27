@@ -7,7 +7,6 @@ no-padding: true
 pagination:
   enabled: true
   collection: notes
-  per_page: 14
 ---
 
 <div class="pt-4 resp-max-width">
@@ -21,7 +20,7 @@ pagination:
 </div>
 
 <section id="notes">
-  {% assign notes = paginator.posts | sort: 'date' | where_exp:"note", "note.date < site.time" | reverse %}
+  {% assign notes = paginator.posts | where_exp:"note", "note.date < site.time" %}
   {% for note in notes %}
     {% include note.html
       date=note.date
