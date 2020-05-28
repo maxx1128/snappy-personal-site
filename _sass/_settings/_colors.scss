@@ -14,17 +14,42 @@ $primary-lightest: #d0effa;
   --color-primary-lighter: #a6dee8;
   --color-primary-lightest: #{$primary-lightest};
 
-  --color-action-darker: #7c0502;
-  --color-action-dark: #a10e06;
-  --color-action-base: #EA1D0C;
-  --color-action-light: #f3856f;
-  --color-action-lighter: #f9bfa6;
+  --color-action-darker: #800206;
+  --color-action-dark: #ad1019;
+  --color-action-base: #E2252A;
+  --color-action-light: #ec897d;
+  --color-action-lighter: #f7d5cb;
 
   --color-mono-black: #111111;
   --color-mono-white: #f4fefd;
 
   --color-shadow-dark: #{derive-rgb-values-from-hex($primary-darker)};
   --color-shadow-light: #{derive-rgb-values-from-hex($primary-lightest)};
+}
+
+$dark-theme-primary-darkest: #d4ddf4;
+$dark-theme-primary-lighter: #003d53;
+
+.theme-dark {
+  --color-primary-darkest: #{$dark-theme-primary-darkest};
+  --color-primary-darker: #9db7e5;
+  --color-primary-dark: #5995d4;
+  --color-primary-base: #005b92;
+  --color-primary-light: #005b92;
+  --color-primary-lighter: #{$dark-theme-primary-lighter};
+  --color-primary-lightest: #002a34;
+
+  --color-action-darker: #c7f7f6;
+  --color-action-dark: #67dac8;
+  --color-action-base: #00BD89;
+  --color-action-light: #007849;
+  --color-action-lighter: #00451e;
+
+  --color-mono-black: #f4fefd;
+  --color-mono-white: #181820;
+
+  --color-shadow-dark: #{derive-rgb-values-from-hex($dark-theme-primary-darkest)};
+  --color-shadow-light: #{derive-rgb-values-from-hex($dark-theme-primary-lighter)};
 }
 
 // This function pulls specific color values from the below map
