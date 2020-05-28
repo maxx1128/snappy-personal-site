@@ -45,15 +45,15 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   --line-height-tight: 1.325;
   --line-height-normal: 1.45;
 
-  --font-margin-h1: #{0 0 spacing(2)};
-  --font-margin-h2: #{0 0 spacing(2)};
-  --font-margin-h3: #{0 0 spacing(2)};
-  --font-margin-h4: #{0 0 spacing(3)};
-  --font-margin-h5: #{0 0 spacing(3)};
-  --font-margin-h6: #{0 0 spacing(3)};
-  --font-margin-p: #{0 0 spacing() 0};
-  --font-margin-small: #{0 0 spacing(2)};
-  --font-margin-tiny: #{0 0 spacing(2)};
+  --font-margin-h1: #{0 0 decimal-round(modular-scale(-3), 2)};
+  --font-margin-h2: #{0 0 decimal-round(modular-scale(-3), 2)};
+  --font-margin-h3: #{0 0 decimal-round(modular-scale(-3), 2)};
+  --font-margin-h4: #{0 0 decimal-round(modular-scale(-1), 2)};
+  --font-margin-h5: #{0 0 decimal-round(modular-scale(-1), 2)};
+  --font-margin-h6: #{0 0 decimal-round(modular-scale(-1), 2)};
+  --font-margin-p: #{0 0 decimal-round(modular-scale(0), 2) 0};
+  --font-margin-small: #{0 0 decimal-round(modular-scale(-3), 2)};
+  --font-margin-tiny: #{0 0 decimal-round(modular-scale(-3), 2)};
 }
 
 $typography-map: (
