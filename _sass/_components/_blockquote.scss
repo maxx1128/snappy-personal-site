@@ -17,6 +17,12 @@ blockquote {
   }
 }
 
+.theme-dark {
+  blockquote {
+    border-radius: container(border-radius, base);
+  }
+}
+
 .twitter-tweet {
   margin: 0 auto 1rem;
 }

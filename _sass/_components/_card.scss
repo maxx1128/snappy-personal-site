@@ -35,3 +35,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.theme-dark {
+  .card__tags {
+    --color-action-dark: #{color(action, light)};
+    --color-action-darker: #{color(primary, lightest)};
+    --color-mono-white: #{color(primary, darkest)};
+  }
+}

@@ -54,3 +54,13 @@
     }
   }
 }
+
+.theme-dark {
+  .nav__header {
+    --color-primary-darkest: #{color(primary, lightest)};
+    --color-primary-darker: #{color(primary, lighter)};
+
+    --color-mono-black: #{color(mono, white)};
+    --color-mono-white: #{color(mono, black)};
+  }
+}
