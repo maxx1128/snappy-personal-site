@@ -20,6 +20,13 @@ $highlight-languages: (
   background-color: color(mono, black);
 }
 
+.theme-dark {
+  .highlighter-rouge {
+    --color-mono-black: #{color(primary, lighter)};
+    --color-mono-white: #{color(primary, darkest)};
+  }
+}
+
 // inline code
 code.highlighter-rouge {
   padding: 3px 4px;
@@ -69,12 +76,13 @@ div.highlighter-rouge {
   margin: 0;
   padding: spacing(4);
   max-width: 100%;
+  max-height: rem(500px);
 
   font-size: type(font-size, small);
 
   border-top: spacing(4) solid #c5c5d0;
 
-  overflow-x: scroll;
+  overflow: scroll;
 }
 
 // Block code for specific languages

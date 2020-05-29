@@ -91,6 +91,13 @@ $note-colors: (
     --note-text-color: #{$dark};
     --note-background-color: #{$light};
   }
+
+  .theme-dark {
+    .note-coloring--#{$index} {
+      --note-text-color: #{$light};
+      --note-background-color: #{$dark};
+    }
+  }
 }
 
 .note-styler {
