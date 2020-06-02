@@ -1,3 +1,9 @@
+- title: "Theme Switcher"
+  date: "2020-05-27"
+  description: "A theme switcher on my personal site with a dark mode, and potentially more later on."
+  image: "theme-switcher.png"
+  type: Code Project
+
 - title: "SeeClickFix Inverted Cut"
   date: "2019-12-10"
   description: "A laser cut of the SeeClickFix logo, with a list of cities using it inverted over it. Now on display at the company offices."
