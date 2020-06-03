@@ -1,16 +1,32 @@
 <head>
+  {% if page.postLabel == "Exocortex" %}
+    {% assign isExocortex = true %}
+
+    {% if page.category_page == true %}
+      {% assign isExocortexCategory = true %}
+    {% endif %}
+  {% endif %}
+
   {% if page.postLabel == "Note" %}
     {% assign title = page.date | date: '%B %d, %Y' | prepend: "Note on " | append: " - " | append: site.title %}
+  {% elsif isExocortex %}
+    {% assign title = page.title | append: " - Exocortex - " | append: site.title %}
   {% elsif page.title %}
     {% assign title = page.title | append: " - " | append: site.title %}
   {% else %}
     {% assign title = site.title %}
   {% endif %}
 
-  {% if page.tagline %}
+  {% if page.tagline and page.tagline != '' %}
     {% assign description = page.tagline %}
-  {% elsif page.excerpt %}
+  {% elsif page.excerpt and page.excerpt != '' %}
     {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+  {% elsif isExocortex %}
+    {% if isExocortexCategory %}
+      {% assign description = "List of saved documents related to " | append: page.category | append: "." %}
+    {% else %}
+      {% assign description = "Saved notes on " | append: page.title | append: " from the " | append: page.category | append: " folder." %}
+    {% endif %}
   {% else %}
     {% assign description = site.description %}
   {% endif %}
