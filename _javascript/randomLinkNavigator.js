@@ -1,5 +1,15 @@
 (function() {
-  const getContentData = () => linkWrapper.classList.contains('random-navigator-wrapper--note') ? window.ContentData.notes : window.ContentData.posts
+  const getContentData = () => {
+    if (linkWrapper.classList.contains('random-navigator-wrapper--note')) {
+      return window.ContentData.notes;
+    }
+
+    if (linkWrapper.classList.contains('random-navigator-wrapper--document')) {
+      return window.ContentData.documents;
+    }
+
+    return window.ContentData.posts;
+  }
 
   const filterContent = (data) => {
     const nextLink     = document.getElementsByClassName('random-navigator__next-link')[0],
