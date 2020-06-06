@@ -1,0 +1,23 @@
+
+{% assign collection = include.collection %}
+{% assign category = include.category | default: false %}
+{% assign showCategory = include.showCategory | default: false %}
+{% assign limit = include.limit | default: 999 %}
+
+<section class="exocortex-cards__wrapper {% if category %}exocortex-cards__wrapper--category{% endif %} py-6">
+  {% for document in collection limit: limit %}
+    <article class="exocortex-cards__item {% if category %}exocortex-cards__item--category{% endif %} py-3 px-8 flex flex-column flex-justify-center text-center bg-primary-lightest box-shadow-2">
+      {% if showCategory %}
+        <small class="mb-0">
+          {{ document.category }}
+        </small>
+      {% endif %}
+
+      <h3 class="text-h4 my-0">
+        <a href="{{ document.url }}">
+          {{ document.title }}
+        </a>
+      </h3>
+    </article>
+  {% endfor %}
+</section>
