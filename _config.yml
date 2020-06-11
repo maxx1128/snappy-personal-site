@@ -40,7 +40,8 @@ kramdown:
 collections:
   notes:
     output: true
-    future: false
+  exocortex:
+    output: true
 
 feed:
   path: rss.xml
@@ -63,3 +64,11 @@ defaults:
       layout: "page"
       excerpt: ""
       postLabel: "Note"
+  -
+    scope:
+      path: ""
+      type: "exocortex"
+    values:
+      layout: "exocortex"
+      excerpt: ""
+      postLabel: "Exocortex"

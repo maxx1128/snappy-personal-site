@@ -1,0 +1,11 @@
+---
+layout: exocortex
+---
+
+{{content}}
+
+{% assign documents = site.exocortex | where: "category", page.category | where_exp: "item", "item.category_page != true" %}
+
+{% include exocortexCards.html
+  collection = documents
+%}

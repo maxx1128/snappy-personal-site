@@ -16,19 +16,31 @@ layout: default
   {% assign has_date = false %}
 {% endif %}
 
+{% if page.postLabel == "Exocortex" %}
+  {% assign isExocortex = true %}
+{% endif %}
+
 {% if page.postLabel == "Note" %}
   {% assign header_class = header_class | append: " pt-2" %}
 {% else %}
   {% assign header_class = header_class | append: " header--with-image py-3" %}
 {% endif %}
 
+{% if isExocortex %}
+  {% assign header_class = header_class | append: " header--exocortex" %}
+{% endif %}
+
 <header class="{{ header_class }} width-100" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="resp-max-width">
     <div class="relative py-4">
-      {% if page.postLabel %}
-        <small class="block {% if page.postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
-          {{ page.postLabel }}{% if has_date %} from {{ page.date | date: '%B %d, %Y' }}{% endif %}
-        </small>
+      {% if isExocortex %}
+        {% include exocortexBreadcrumb.html %}
+      {% else %}
+        {% if page.postLabel %}
+          <small class="block {% if page.postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
+            {{ page.postLabel }}{% if has_date %} from {{ page.date | date: '%B %d, %Y' }}{% endif %}
+          </small>
+        {% endif %}
       {% endif %}
 
       <h1 class="my-0">
@@ -54,6 +66,6 @@ layout: default
   </div>
 </header>
 
-<article id="content" class="width-100 {% unless page.no-padding %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width mx-auto{% endunless %}">
+<article id="content" class="post-content width-100 {% unless page.no-padding %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width{% endunless %}">
   {{content}}
 </article>

@@ -1,0 +1,23 @@
+<nav aria-label="Breadcrumb">
+  <ol class="list-reset flex text-small">
+    {% if page.category %}
+      <li class="flex flex-align-center m-0">
+        <a href="/exocortex.html">
+          Exocortex
+        </a>
+      </li>
+    {% endif %}
+
+    {% unless page.category_page == true %}
+      {% assign category_page = site.exocortex | where: "category", page.category | where_exp: "item", "item.category_page == true" %}
+      {% for category in category_page %}
+        <li class="flex flex-align-center m-0">
+          <span class="px-2">></span>
+          <a href="{{ category.url }}">
+            {{ category.title }}
+          </a>
+        </li>
+      {% endfor %}
+    {% endunless %}
+  </ol>
+</nav>

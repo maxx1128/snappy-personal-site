@@ -7,14 +7,11 @@
 - name: Writing
   link: '/writing/'
 
+- name: Exocortex
+  link: '/exocortex.html'
+
 - name: Notes
   link: '/notes/'
 
 - name: Celebrations
   link: '/celebrations.html'
-  secondary: true
-
-- name: Exocortex
-  link: 'https://max-antonucci.gitbook.io/study-notebook/'
-  secondary: true
-  external: true

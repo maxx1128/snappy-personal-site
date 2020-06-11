@@ -1,6 +1,9 @@
 {% if page.postLabel == "Note" %}
   {% assign isNote = true %}
   {% assign contentType = 'Note' %}
+{% elsif page.postLabel == "Exocortex" %}
+  {% assign isExocortex = true %}
+  {% assign contentType = 'Document' %}
 {% else %}
   {% assign contentType = 'Post' %}
 {% endif %}
@@ -14,18 +17,22 @@
 
   <div class="bg-primary-lightest">
     <div class="resp-max-width flex flex-align-center flex-justify-between py-2">
-      {% include tags.html
-        tags=page.tags
-        wrapper_classes=tag_wrapper_classes
-        tag_classes='mb-0 bg-mono-white'
-      %}
+      {% if page.postLabel == "Exocortex" %}
+        {% include exocortexBreadcrumb.html %}
+      {% else %}
+        {% include tags.html
+          tags=page.tags
+          wrapper_classes=tag_wrapper_classes
+          tag_classes='mb-0 bg-mono-white'
+        %}
 
-      {% if page.featured_image_link %}
-        <a rel="noopener" class="hidden-sm-down" href="{{ page.featured_image_link }}" target="_blank" rel="noopener">
-          <small>
-            Featured image courtesy of this page.
-          </small>
-        </a>
+        {% if page.featured_image_link %}
+          <a rel="noopener" class="hidden-sm-down" href="{{ page.featured_image_link }}" target="_blank" rel="noopener">
+            <small>
+              Featured image courtesy of this page.
+            </small>
+          </a>
+        {% endif %}
       {% endif %}
     </div>
   </div>
@@ -42,6 +49,8 @@
           <a class="random-navigator__next-link" href="{{page.next.url}}">
             {% if isNote %}
               {{ page.next.date | date: '%B %d, %Y' }}
+            {% elsif isExocortex %}
+              {{ page.next.title }}{% if page.next.category_page != true %} - {{ page.next.category }}{% endif %}
             {% else %}
               {{ page.next.title }}
             {% endif %}
@@ -68,6 +77,8 @@
           <a class="random-navigator__previous-link" href="{{page.previous.url}}">
             {% if isNote %}
               {{ page.previous.date | date: '%B %d, %Y' }}
+            {% elsif isExocortex %}
+              {{ page.previous.title }}{% if page.previous.category_page != true %} - {{ page.previous.category }}{% endif %}
             {% else %}
               {{ page.previous.title }}
             {% endif %}

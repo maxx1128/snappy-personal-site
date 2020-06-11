@@ -1,0 +1,10 @@
+<script type="application/json" id="exocortex-data">
+  [
+    {% for doc in site.exocortex %}
+      {
+        "title" : "{{ doc.title }}{% unless doc.category_page == true %} - {{ doc.category }}{% endunless %}",
+        "url"   : "{{ doc.url }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+</script>

@@ -8,6 +8,10 @@ h6 {
   margin: spacing(10) 0 spacing();
   font-family: type(font-family, header);
   font-weight: type(font-weight, header);
+
+  .post-content &:first-child {
+    margin-top: 0;
+  }
 }
 
 tiny {
@@ -61,6 +65,11 @@ ul {
 
   @include larger-than(md) {
     padding-left: spacing(8);
+  }
+
+  ul,
+  ol {
+    margin-top: spacing();
   }
 }
 

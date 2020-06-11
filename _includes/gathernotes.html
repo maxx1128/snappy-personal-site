@@ -3,7 +3,7 @@
     {% for note in site.notes %}
       {
         "title" : "{{ note.date | date: '%B %d, %Y' }}",
-        "url"   : "{{ note.url | prepend: site.url }}"
+        "url"   : "{{ note.url }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
