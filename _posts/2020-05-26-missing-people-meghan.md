@@ -4,7 +4,7 @@ date: "2020-05-26"
 excerpt: "Sheltering in place made me realize how much I miss many people in my life. One of them a woman whose unyielding personality helps fuel her selfless work in a soup kitchen."
 image: "missing-people-meghan.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2545555"
-tags: ["coronavirus"]
+tags: ["coronavirus", "tough stuff"]
 ---
 
 While I've mostly adjusted well to sheltering in place, some parts have been tough. I miss socializing and crafting at MakeHaven. I miss visiting bookstores downtown. I miss sitting on other people's comfortable chairs, although I ordered some bean bags that may help.
