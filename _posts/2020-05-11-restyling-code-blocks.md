@@ -149,9 +149,9 @@ This is some code! It looks nice and fancy and impressive, right?
 
 ## Adding Language Labels
 
-I noticed code snippets has classes for specific languages. For example, a JavaScript snipper has `language-javascript` on several elements. That gave me an idea to layer on new colors and labels for code blocks using specific languages.
+I noticed code snippets has classes for specific languages. For example, a JavaScript snippet has `language-javascript` on several elements. That gave me an idea to layer on new colors and labels for code blocks using specific languages.
 
-First, each language snippet needs a label and color. A Sass map meets that need perfectly. I did a quick regex search of the different language I used, and either found or made up related colors for them.
+First, each language snippet needs a label and color. A Sass map meets that need perfectly. I did a quick regex search of the different languages I used, and either found or made up related colors for them.
 
 ```scss
 $highlight-languages: (

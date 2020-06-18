@@ -43,8 +43,8 @@ If a vacation is about lowering stress over anything else, I advise keep it clos
 
 A common argument I hear against staying local is finding different people and cultures. I'd say that's great as long as I meet two conditions:
 
-1) I actually _want_ to experience more of this other culture. I'd love to see more Japanese and Italian culture in person someday. Culture from places like Russia or Saudi Arabia? Intriguing in a sense, but probably not worth it.
-2) I'm getting the real culture, not some prepackaged and sanitized version often included with a resort. I'd be better off finding a random flight somewhere, checking into the closest hostel, and wandering into a new city each day. Which would be lots of fun, but sounds better to me as a day trip instead of a week-long vacation.
+1. I actually _want_ to experience more of this other culture. I'd love to see more Japanese and Italian culture in person someday. Culture from places like Russia or Saudi Arabia? Intriguing in a sense, but probably not worth it.
+2. I'm getting the real culture, not some prepackaged and sanitized version often included with a resort. I'd be better off finding a random flight somewhere, checking into the closest hostel, and wandering into a new city each day. Which would be lots of fun, but sounds better to me as a day trip instead of a week-long vacation.
 
 My point is that long-distance vacations aren't universally better. Unless I have a good, specific reason for going someone far away, sticking closer to home is better for low stress.
 
