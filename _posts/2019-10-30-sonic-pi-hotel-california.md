@@ -104,7 +104,7 @@ These properties likely seem weird but are pretty straightforward:
 2. `sustain` is the time at full volume.
 3. `release` is the time from full volume to silence.
 
-The respective default values for these are `0, 0, 1`, so my changes stretch the chord quite a bit. It sounds more like a gentle howling in the wind then someone banging keyboard notes. This is good, but still sounds too plan. I want to layer on something else for extra texture.
+The respective default values for these are `0, 0, 1`, so my changes stretch the chord quite a bit. It sounds more like a gentle howling in the wind then someone banging keyboard notes. This is good, but still sounds too plain. I want to layer on something else for extra texture.
 
 I'll spare you the experimenting and cut to the end. Before I explain, try to guess what this code does.
 
@@ -129,11 +129,11 @@ live_loop :opening_deep do
 end
 ```
 
-The result is a simple yet haunting melody, with the notes grouped in a way that still works.
+The result is a simple yet haunting melody, with the notes grouped in a way that still work.
 
 ## Use the Chorus for the Atmosphere
 
-I have the opening chords for the melody, but still, want to use the chorus chords. The melody is already the music's main focus, so I used these chords for some ambiance. To get this effect, I used two other Sonic Pi tools - synths and sound effects.
+I have the opening chords for the melody, but I still want to make use the chorus chords. The melody is already the music's main focus, so I used these chords for some ambiance. To get this effect, I used two other Sonic Pi tools - synths and sound effects.
 
 **Synths are the sounds Sonic Pi uses to executed sounds composed from notes and chords.** So far I've been using the default `beep` synth since it fit with what I wanted. But there are dozens to choose from, from pianos to chip noises to pulses to whatever. In this case, the `hollow` synth fits perfectly. It's described as "a hollow breathy sound constructed from random noise." That's great for a fog-like effect, and can be set within specific loops.
 
@@ -146,7 +146,7 @@ live_loop :ambience do
 end
 ```
 
-**Sound effects are filters you can run anything through.** This includes changing echoes, pitches, frequencies, sample rates, and more. I don't understand them all but understand a good amount. I went with two for the ambiance loop: `gverb` for a spacious and outdoorsy feel, and `flanger` for a whooshing wind effect.
+**Sound effects are filters you can run anything through.** This includes changing echoes, pitches, frequencies, sample rates, and more. I don't understand them all but understand a good amount of them. I went with two for the ambiance loop: `gverb` for a spacious and outdoorsy feel, and `flanger` for a whooshing wind effect.
 
 ```ruby
 live_loop :ambience do
@@ -160,7 +160,7 @@ live_loop :ambience do
 end
 ```
 
-The result is a distant, echoing effect that feels vaguely disturbing but keeps the sing's spirit.
+The result is a distant, echoing effect that feels vaguely disturbing but keeps the song's spirit.
 
 ## Add Samples for Variety
 
