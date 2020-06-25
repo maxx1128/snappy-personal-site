@@ -1,7 +1,7 @@
 ---
 title: Resources
 category: Front-end
-date: 2020-06-08
+date: 2020-06-25
 ---
 
 ## General
@@ -73,6 +73,8 @@ date: 2020-06-08
   * Free vector illustrations grouped by patterns and their distinctive styles
 * [Free Illustrations](https://lukaszadam.com/illustrations)
   * An independent designers' free collection of vector art illustrations and icons
+* [Blush, Illustrations for everyone](https://blush.design/)
+  * Create, mix, and customize illustrations made by artists around the world.
 
 ## Colors
 
