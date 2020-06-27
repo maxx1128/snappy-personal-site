@@ -42,11 +42,6 @@ kbd { font-family: type(font-family, mono); }
   .line-height-#{$label} { line-height: strip-unit($line-height); }
 }
 
-@each $label, $margin in map-get($typography-map, margin) {
-  #{$label},
-  .type-margin-#{$label} { margin: $margin; }
-}
-
 .list-style-disc { list-style: disc; }
 
 .list-reset {
