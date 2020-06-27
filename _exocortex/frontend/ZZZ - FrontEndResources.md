@@ -1,7 +1,7 @@
 ---
 title: Resources
 category: Front-end
-date: 2020-06-25
+date: 2020-06-27
 ---
 
 ## General
@@ -90,3 +90,8 @@ date: 2020-06-25
   * Generate and apply accessible color palettes to your UI, then export it to sketch or the most used programming languages
 * [100 Color Combinations](https://www.canva.com/learn/100-color-combinations/)
   * 100 color combinations and how to apply them to your designs
+
+## Typography
+
+* [Rostype](http://rostype.com/)
+  * Cool and unique custom fonts available for free, for personal and professional use.
