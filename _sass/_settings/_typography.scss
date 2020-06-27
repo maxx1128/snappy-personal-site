@@ -30,7 +30,7 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   --font-size-h4: #{decimal-round(modular-scale(1), 2)};
   --font-size-h5: #{decimal-round(modular-scale(0), 2)};
   --font-size-h6: #{decimal-round(modular-scale(0), 2)};
-  --font-size-large: #{decimal-round(modular-scale(0), 2)};
+  --font-size-large: #{decimal-round(modular-scale(1), 2)};
   --font-size-p: #{decimal-round(modular-scale(0), 2)};
   --font-size-small: #{decimal-round(modular-scale(-1), 2)};
   --font-size-tiny: #{decimal-round(modular-scale(-2), 2)};
@@ -73,7 +73,7 @@ $g-modular-scale--ratio: 1.25; // Major third
   --font-size-h4: #{decimal-round(modular-scale(1), 2)};
   --font-size-h5: #{decimal-round(modular-scale(0), 2)};
   --font-size-h6: #{decimal-round(modular-scale(0), 2)};
-  --font-size-large: #{decimal-round(modular-scale(0), 2)};
+  --font-size-large: #{decimal-round(modular-scale(1), 2)};
   --font-size-p: #{decimal-round(modular-scale(0), 2)};
   --font-size-small: #{decimal-round(modular-scale(-1), 2)};
   --font-size-tiny: #{decimal-round(modular-scale(-2), 2)};
