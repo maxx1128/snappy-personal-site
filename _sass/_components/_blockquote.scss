@@ -3,17 +3,20 @@ blockquote {
   margin: spacing(8) 0;
 
   font-style: italic;
-  color: color(mono, white);
 
-  background: color(primary, dark);
-  box-shadow: container(box-shadow, 2);
+  border-left: spacing(2) solid color(primary, dark);
 
-  a {
-    color: color(mono, white);
+  p {
+    margin: 0;
   }
 
-  & > p {
-    margin-bottom: 0;
+  @include larger-than(md) {
+    padding: spacing() spacing(6);
+
+    p {
+      font-size: type(font-size, large);
+    }
+  }
   }
 }
 
