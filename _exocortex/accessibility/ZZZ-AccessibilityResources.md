@@ -1,13 +1,25 @@
 ---
 title: Resources
 category: Accessibility
-date: 2020-06-08
+date: 2020-06-27
 ---
 
 ## General
 
 * [Using Progressive Enhancement to Design for Accessibility](https://www.sitepen.com/blog/using-progressive-enhancement-to-design-for-accessibility/)
   * A progressive enhancement approach for designing accessible components from a strong baseline.
+* [Patterns & Strategies for accessible web-apps](https://accessible-app.com/)
+  * This guide gives good rules to follow for JavaScript applications in general, and specific code patterns to follow for some frameworks.
+* [Inclusive Components](https://inclusive-components.design/)
+  * A blog/style guide breaking down common components with walkthroughs on making them inclusively
+* [Accessible Components with JS](https://github.com/scottaohara/accessible_components)
+  * Simple and useful accessible components with needed JavaScript
+* [Accessibility Guidelines Posters](https://github.com/UKHomeOffice/posters/blob/master/accessibility/dos-donts/posters_en-UK/accessibility-posters-set.pdf)
+  * Several posters with broad principles to guide you with designing and development accessible websites.
+* [Web Accessibility Guide](https://webaccessibility.guide/)
+  * A curated collection of web accessibility tips, tricks, and best practices. Let's make the web a better place for everyone.
+* [Inclusive Design Principles](https://inclusivedesignprinciples.org/)
+  * Principles about designing for the needs of people with permanent, temporary, situational, or changing disabilities — all of us,s really.
 
 ## Colors
 
@@ -28,16 +40,3 @@ date: 2020-06-08
 
 * [Defining Toast Messages](https://adrianroselli.com/2020/01/defining-toast-messages.html)
   * A deep dive into defining "toast" components and handling their many accessibility concerns
-
-## Guides and Patterns
-
-* [Patterns & Strategies for accessible web-apps](https://accessible-app.com/)
-  * This guide gives good rules to follow for JavaScript applications in general, and specific code patterns to follow for some frameworks.
-* [Inclusive Components](https://inclusive-components.design/)
-  * A blog/style guide breaking down common components with walkthroughs on making them inclusively
-* [Accessible Components with JS](https://github.com/scottaohara/accessible_components)
-  * Simple and useful accessible components with needed JavaScript
-* [Accessibility Guidelines Posters](https://github.com/UKHomeOffice/posters/blob/master/accessibility/dos-donts/posters_en-UK/accessibility-posters-set.pdf)
-  * Several posters with broad principles to guide you with designing and development accessible websites.
-* [Web Accessibility Guide](https://webaccessibility.guide/)
-  * A curated collection of web accessibility tips, tricks, and best practices. Let's make the web a better place for everyone.

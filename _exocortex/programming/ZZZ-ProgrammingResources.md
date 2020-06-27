@@ -1,7 +1,7 @@
 ---
 title: Resources
 category: Programming
-date: 2020-06-08
+date: 2020-06-27
 ---
 
 ## General
@@ -22,6 +22,14 @@ date: 2020-06-08
   * Learn how to design large-scale systems. Useful for application development and architecture
 * [Tiny Helpers](https://tiny-helpers.dev/color/)
   * From colors to security to Regex, a growing list of useful, single-purpose tools for developers
+* [Project Awesome](https://project-awesome.org/)
+  * A curated list of awesome lists for many programming topics
+* [Free Programming Books](https://github.com/EbookFoundation/free-programming-books)
+  * A large list of free books on virtually every programming topic and language
+* [The Art of Command Line](https://github.com/jslevy/the-art-of-command-line)
+  * Master the command line, in one pages
+* [Dash Dash](https://dashdash.io/)
+  * Dash Dash takes the Unix (Linux, BSD, macOS) open source manual pages and sets the content in a beautiful set of typefaces while adding just a bit of animation and design.
 
 ## Computer Science
 
@@ -53,7 +61,7 @@ APIs, or Application Programming Interfaces, which provide lots of information a
 * [Rapid API](https://rapidapi.com/collection/list-of-free-apis)
   * 30 free and interesting API for developers
 
-## Miscellaneous
+## Diversity
 
 * [So You Just Learned](https://github.com/sublimemarch/so-you-just-learned)
   * So you learned there's systemic problems around gender, race, and other areas with the tech industry. What now? Great article resource for educating yourself.
