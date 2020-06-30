@@ -64,7 +64,7 @@
         grid-column: span 3;
 
         .card__banner {
-          min-height: 12rem;
+          min-height: 15rem;
         }
       }
 
@@ -72,12 +72,6 @@
       &:nth-of-type(5n+5) {
         grid-column: span 2;
       }
-    }
-  }
-
-  @include larger-than(xxl) {
-    .card-layout {
-      max-width: breakpoint(xl);
     }
   }
 }
