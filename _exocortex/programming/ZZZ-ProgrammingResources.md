@@ -26,7 +26,7 @@ date: 2020-06-27
   * A curated list of awesome lists for many programming topics
 * [Free Programming Books](https://github.com/EbookFoundation/free-programming-books)
   * A large list of free books on virtually every programming topic and language
-* [The Art of Command Line](https://github.com/jslevy/the-art-of-command-line)
+* [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
   * Master the command line, in one pages
 * [Dash Dash](https://dashdash.io/)
   * Dash Dash takes the Unix (Linux, BSD, macOS) open source manual pages and sets the content in a beautiful set of typefaces while adding just a bit of animation and design.
