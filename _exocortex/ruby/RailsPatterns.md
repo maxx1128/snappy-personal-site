@@ -88,7 +88,7 @@ articles:
 
 You can then access and organize this data as needed in a models file. This is technically organizing and creating a data structure, which is why it'd fit well in the Models folder.
 
-There's many different approaches here, and ways to filter and modify the data. This example simply uses a [Struct](./../../ruby/Structs.md) to get all the basic info and return an array of hashes.
+There's many different approaches here, and ways to filter and modify the data. This example simply uses a [Struct](./../ruby/Structs.html) to get all the basic info and return an array of hashes.
 
 ```ruby
 # app/models/articles.rb

@@ -27,7 +27,7 @@ alias mysite="cd ~/Documents/gatsby-blog && code . && yarn develop"
 ```
 
 * First it navigates to the folder with my site's code
-* Then it uses a [VSC code shortcut](./../LearningProgress/SmallWins.md#07-11-2018) to open up the repo
+* Then it uses a VSC code shortcut to open up the repo
 * Runs `yarn develop`, which is the repo's script to spin up the site
 
 Viola! One command to get you into working mode.

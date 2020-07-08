@@ -4,7 +4,7 @@ category: Ruby
 date: 2020-06-08
 ---
 
-[Regexes](./../programming/Regexes.md) are complex enough on their own, but also have a few specific rules for using them in Ruby.
+[Regexes](./../programming/Regexes.html) are complex enough on their own, but also have a few specific rules for using them in Ruby.
 
 ## Making a Regular Expression
 

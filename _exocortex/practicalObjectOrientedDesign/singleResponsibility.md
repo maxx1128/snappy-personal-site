@@ -52,13 +52,13 @@ A class's behavior is its methods. They're better for change since methods are d
 
 ### Instance Variables
 
-Classes have instance variables (or data) that are passed into a specific instance of a class object. Do not reference instance variables directly in any method. Changes to those variables will need to be changed in many places. Wrapping them in [accessor methods](./../Ruby/Accessors.md) creates methods to use them through, and changes can be done in those methods.
+Classes have instance variables (or data) that are passed into a specific instance of a class object. Do not reference instance variables directly in any method. Changes to those variables will need to be changed in many places. Wrapping them in [accessor methods](./../Ruby/Accessors.html) creates methods to use them through, and changes can be done in those methods.
 
 ### Data Structures
 
 Classes shouldn't rely on complex data to have a specific structure to use them correctly. Data may be passed in as a complicated array today, but a more complicated hash tomorrow. All objects taking in that data as an array will now need to take them as a hash. Each class taking that data will need to update how it interprets it, creating a possible cascade of failures. It also obscures what the data is so its harder for other developers to understand it.
 
-If you can control the data being passed between objects, simplifying the data structure is a better bet. But if that's not possible, one way to address this is by using a [Struct](./../Ruby/Structs.md). They let you bundle several attributes together in a kind of mini class. Structs can be used to make lightweight objects that understand a data structure, isolating the code within a class relying on the data structure into a single, more understandable place. Accessible parts of a data structure become the same as calling methods on another object. Structs also make it possible to isolate and better manage the mess so it's easier to change.
+If you can control the data being passed between objects, simplifying the data structure is a better bet. But if that's not possible, one way to address this is by using a [Struct](./../Ruby/Structs.html). They let you bundle several attributes together in a kind of mini class. Structs can be used to make lightweight objects that understand a data structure, isolating the code within a class relying on the data structure into a single, more understandable place. Accessible parts of a data structure become the same as calling methods on another object. Structs also make it possible to isolate and better manage the mess so it's easier to change.
 
 ## Enforce Single Responsibility Everywhere
 
