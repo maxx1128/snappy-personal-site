@@ -34,11 +34,14 @@ pagination:
 
 <section class="resp-max-width card-layout">
   {% for post in paginator.posts %}
+    {% assign number_of_words = post.content | number_of_words %}
+
     {% include card.html
       class="card--layout-item"
       title=post.title
       date=post.date
       excerpt=post.excerpt
+      size=number_of_words
       image=post.image
       url=post.url
       tags=post.tags

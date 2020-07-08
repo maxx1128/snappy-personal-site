@@ -1,6 +1,4 @@
 .card {
-  margin: spacing(2) 0 spacing();
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,20 +18,28 @@
   flex-direction: column;
 }
 
-.card__header {
-  font-size: type(font-size, h4);
-}
-
 .card__banner {
   display: none;
-  margin: auto spacing(neg4);
-  min-height: 8rem;
+  margin: 0 spacing(neg4) auto;
+  padding-top: 35%;
   max-height: 15rem;
   flex: 1 1 auto;
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@include larger-than(md) {
+  .card__excerpt {
+    font-size: type(font-size, small);
+  }
+}
+
+@include larger-than(lg) {
+  .card__banner {
+    display: block;
+  }
 }
 
 .theme-dark {

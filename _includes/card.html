@@ -6,35 +6,49 @@
 {% assign url = include.url %}
 {% assign link = include.link %}
 {% assign tags = include.tags %}
+{% assign size = include.size | default: 600 %}
 {% assign background_image = "background-image: url('/assets/images/" | append: image_subpath | append: "/" | append: image | append: "');" %}
 
-<article class="card card--layout-item box-shadow-2 {% if image %}bg-primary-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
-  <div class="card__body px-4 py-px">
-    <tiny class="block mt-2 mb-0 italic">
-      {{ date | date: '%B %d, %Y' }}
-    </tiny>
-    <h3 class="card__header mt-2">
-      <a href="{{ url }}">
-        {{ title }}
-      </a>
-    </h3>
+{% if size > 1700 %}
+  {% assign size_class = "card-wrapper--xlarge" %}
+{% elsif size > 800 %}
+  {% assign size_class = "card-wrapper--large" %}
+{% elsif size > 500 %}
+  {% assign size_class = "card-wrapper--medium" %}
+{% else %}
+  {% assign size_class = "card-wrapper--small" %}
+{% endif %}
 
-    {% if image %}
-      <div class="card__banner" style="{{ background_image }}"></div>
+<div class="card-wrapper {{ size_class }}">
+  <article class="card card--layout-item flex flex-column box-shadow-2 {% if image %}bg-primary-light{% else %}bg-topography--light{% endif %}" {% if image %}style="{{ background_image }}"{% endif %}>
+    <div class="card__body px-4 py-px">
+      {% if image %}
+        <div class="card__banner" style="{{ background_image }}"></div>
+      {% endif %}
+
+      <tiny class="block mt-2 mb-0 italic">
+        {{ date | date: '%B %d, %Y' }}
+      </tiny>
+
+      <h3 class="card__header mt-1 mb-2 text-h4">
+        <a href="{{ url }}">
+          {{ title }}
+        </a>
+      </h3>
+
+      {% if excerpt %}
+        <p class="card__excerpt mt-auto">
+          {{ excerpt }}
+        </p>
+      {% endif %}
+    </div>
+
+    {% if tags %}
+      {% include tags.html
+        tags=tags
+        wrapper_classes='card__tags px-2 mt-auto bg-action-darker flex-justify-end'
+        tag_classes='mb-0 bg-mono-white'
+      %}
     {% endif %}
-
-    {% if excerpt %}
-      <p class="card__excerpt mt-auto">
-        {{ excerpt }}
-      </p>
-    {% endif %}
-  </div>
-
-  {% if tags %}
-    {% include tags.html
-      tags=tags
-      wrapper_classes='card__tags px-2 py-1 bg-action-darker flex-justify-end'
-      tag_classes='mb-0 bg-mono-white'
-    %}
-  {% endif %}
-</article>
+  </article>
+</div>
