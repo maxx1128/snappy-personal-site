@@ -58,7 +58,7 @@ console.log(alphabet.indexOf('h'));
 // -1
 ```
 
-## .toUpperCase() & .toLowerCase()
+## .toUpperCase() and .toLowerCase()
 
 These respective functions turn a string to all lowercase and uppercase letters. Pretty self-explanatory.
 

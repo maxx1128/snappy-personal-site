@@ -80,8 +80,8 @@ date: 2020-06-27
 
 * [The New Defaults](https://dudleystorey.github.io/thenewdefaults/)
   * A large collection of pleasant, standard color swatches and hex codes for building palettes
-* [Colors & Fonts](https://www.colorsandfonts.com/)
-  * Curated library of colors and fonts for web developers & digital designers
+* [Colors and Fonts](https://www.colorsandfonts.com/)
+  * Curated library of colors and fonts for web developers and digital designers
 * [Image Color Picker](https://image-color.com/)
   * An easy online tool to pick individual colors from images
 * [Canva Color Wheel](https://www.canva.com/colors/color-wheel/)

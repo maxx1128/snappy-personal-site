@@ -20,4 +20,4 @@ Also, talk about accessibility more! Consider it a constant consideration for ho
 * Inclusive Design Patterns - Book of accessible front-end patterns
 * [All Technology is Assisstive: Six Design Rules on 'Disability.' By Sara Hendron.](https://www.wired.com/2014/10/all-technology-is-assistive/)
 * [5 Powerful Tips And Tricks For Print Style Sheets. By Dudley Storey.](https://www.smashingmagazine.com/2013/03/tips-and-tricks-for-print-style-sheets/)
-* [Accessibility APIs: A Key To Web Accessibility. By Léonie Watson & Chaals McCathie Nevile.](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)
+* [Accessibility APIs: A Key To Web Accessibility. By Léonie Watson and Chaals McCathie Nevile.](https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/)

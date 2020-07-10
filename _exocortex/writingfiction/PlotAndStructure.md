@@ -1,8 +1,8 @@
 ---
-title: Plot & Structure
+title: Plot and Structure
 category: Writing Fiction
 resources:
-  - name: "Plot & Structure: Techniques and Exercises for Crafting a Plot That Grips Readers from Start to Finish"
+  - name: "Plot and Structure: Techniques and Exercises for Crafting a Plot That Grips Readers from Start to Finish"
     url: https://www.amazon.com/Plot-Structure-Techniques-Exercises-Crafting/dp/158297294X
 date: 2020-06-08
 ---

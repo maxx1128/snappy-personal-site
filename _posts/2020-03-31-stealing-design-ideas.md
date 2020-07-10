@@ -53,7 +53,7 @@ So naturally, you should not use any designs you see on my website. However, I f
 
 Some sites are made for the developer to steal design decisions. They know none of this is easy, so some reliable design foundations are packaged and ready-made to go.
 
-Do you need site layouts? Try [EveryLayout.dev](https://every-layout.dev/) or [Grid by Example](https://gridbyexample.com/). What about color palettes? Check out [Coolors](https://coolors.co/), [100 Color Combinations](https://www.canva.com/learn/100-color-combinations/), or [Color & Fonts' palette selection](https://www.colorsandfonts.com/palettes.html). There's also [FontPair](https://fontpair.co/) and another [Color & Fonts page of typography pairing for typography](https://www.colorsandfonts.com/fonts.html).
+Do you need site layouts? Try [EveryLayout.dev](https://every-layout.dev/) or [Grid by Example](https://gridbyexample.com/). What about color palettes? Check out [Coolors](https://coolors.co/), [100 Color Combinations](https://www.canva.com/learn/100-color-combinations/), or [Color and Fonts' palette selection](https://www.colorsandfonts.com/palettes.html). There's also [FontPair](https://fontpair.co/) and another [Color and Fonts page of typography pairing for typography](https://www.colorsandfonts.com/fonts.html).
 
 I've referenced one from each of these categories for my site. Don't think I'm the one who came up with the colors and typography you're seeing. All taken from sites more than happy to give the inspiration out. The most I had to do was decide which decisions worked well together to create the effect I wanted. That itself isn't easy, but having all those options before me helped a lot. I even steal color and typography for smaller projects, like this pen of a simple UI design.
 

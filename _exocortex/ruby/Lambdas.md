@@ -2,7 +2,7 @@
 title: Lambdas
 category: Ruby
 resources:
-  - name: The Ultimate Guide to Blocks, Procs & Lambdas
+  - name: The Ultimate Guide to Blocks, Procs and Lambdas
     url: https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/
   - name: Ruby Lambdas
     url: https://gist.github.com/Integralist/9994331
