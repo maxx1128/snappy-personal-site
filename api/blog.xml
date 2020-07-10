@@ -1,0 +1,19 @@
+---
+title: Blog Feed
+layout: api
+---
+
+{% assign posts = site.posts %}
+
+{% for post in posts %}
+  {% assign url = post.url | prepend: site.url %}
+
+  <entry>
+    <title type="html">{{ post.title }}</title>
+    <link href="{{ url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
+
+    <content type="html" xml:base="{{ url }}">
+      {{ post.content | xml_escape }}
+    </content>
+  </entry>
+{% endfor %}

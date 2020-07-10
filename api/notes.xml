@@ -1,0 +1,20 @@
+---
+title: Notes Feed
+layout: api
+---
+
+{% assign notes = site.notes %}
+
+{% for note in notes %}
+  {% assign url = note.url | prepend: site.url %}
+  {% assign title = note.date | date: '%B %d, %Y' %}
+
+  <entry>
+    <title type="html">{{ title | prepend: "Note from " }}</title>
+    <link href="{{ url }}" rel="alternate" type="text/html" title="{{ title }}"/>
+
+    <content type="html" xml:base="{{ url }}">
+      {{ note.content | xml_escape }}
+    </content>
+  </entry>
+{% endfor %}

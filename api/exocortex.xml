@@ -1,0 +1,19 @@
+---
+title: Exocortex Feed
+layout: api
+---
+
+{% assign exocortexs = site.exocortex | where_exp: "item", "item.category_page != true" | where_exp: "item", "item.title == 'Buttons'" %}
+
+{% for exocortex in exocortexs %}
+  {% assign url = exocortex.url | prepend: site.url %}
+
+  <entry>
+    <title type="html">{{ exocortex.category }} - {{ exocortex.title }}</title>
+    <link href="{{ url }}" rel="alternate" type="text/html" title="{{ exocortex.title }}"/>
+
+    <content type="html" xml:base="{{ url }}">
+      {{ exocortex.content | xml_escape }}
+    </content>
+  </entry>
+{% endfor %}
