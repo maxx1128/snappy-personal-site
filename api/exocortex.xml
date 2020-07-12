@@ -3,7 +3,7 @@ title: Exocortex Feed
 layout: api
 ---
 
-{% assign exocortexs = site.exocortex | where_exp: "item", "item.category_page != true" | where_exp: "item", "item.title == 'Buttons'" %}
+{% assign exocortexs = site.exocortex | where_exp: "item", "item.category_page != true" | where_exp: "item", "item.title != 'Resources'" %}
 
 {% for exocortex in exocortexs %}
   {% assign url = exocortex.url | prepend: site.url %}
