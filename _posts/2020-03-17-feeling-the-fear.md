@@ -38,7 +38,7 @@ Fear only helps when it's backed by good information. Bad info risks me doing to
 * Don't get sucked into a media wormhole. If you already learned what you needed to, or feel your head literally start spinning, take a break. Or a drink. Whatever helps most.
 * Value statistical data that leaves less room for slant and bias. The usual spin is still possible, but it's always better than pundits. Some great examples I found are [infographics about the virus's health risks](https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/), and [visual statistic models showing how the virus spreads](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/).
 
-Good research can be a hard step to take, since it means acknowledging and accepting the cause of the fear. Here that means accepting the coronavirus as legitimate instead of hype or sabotage. But accepting the problem is always the first step in addressing it right. You can't crush the cockroach until you accept its there. Then you can squash it, yell in glee, and move on with life.
+Good research can be a hard step to take, since it means acknowledging and accepting the cause of the fear. Here that means accepting the coronavirus as legitimate instead of hype or sabotage. But accepting the problem is always the first step in addressing it right. You can't crush the cockroach until you accept it's there. Then you can squash it, yell in glee, and move on with life.
 
 ## Allow Yourself Some Joy
 
@@ -95,7 +95,7 @@ If the coronavirus wasn't threatening us today, any number of things could forev
 
 And those only cover the commonplace horrors we rarely think of each day.
 
-Pining for a sense of normality and stability is pointless, as it don't exist. At best we have the illusion of it. That's comforting but is at odds with reality. So keeping that illusion going is a constant source of anxiety and fear pulling at our lives. Even if we did somehow reach that "normal," we'd get used to it. We'd pine for a new "normal" above what we had, via hedonic adaptation. Clinging to "normal" and "routine" is an endless, draining quest and a recipe for misery.
+Pining for a sense of normality and stability is pointless, as it doesn't exist. At best we have the illusion of it. That's comforting but is at odds with reality. So keeping that illusion going is a constant source of anxiety and fear pulling at our lives. Even if we did somehow reach that "normal," we'd get used to it. We'd pine for a new "normal" above what we had, via hedonic adaptation. Clinging to "normal" and "routine" is an endless, draining quest and a recipe for misery.
 
 So I'm reminding myself that coronavirus isn't a disruption from what's "normal." It's one of the many parts of life I have little control over. I'm just riding the wave of chaos the Earth is serving up. It's not always good, and it's not always bad, but it always is what it is.
 

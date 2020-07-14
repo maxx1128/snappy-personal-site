@@ -11,7 +11,7 @@ tags: ['mental health', 'coronavirus']
 
 I can't control how many people get infected by COVID-19. Or how many people experience life-threatening symptoms or die from it.
 
-I can't control the national response to COVIC-19, such as closing non-essential businesses or social distancing. Or how right or wrong those responses may be.
+I can't control the national response to COVID-19, such as closing non-essential businesses or social distancing. Or how right or wrong those responses may be.
 
 I can't control how other people handle the disruption or stress from this global pandemic. Or if they don't take it seriously at all.
 

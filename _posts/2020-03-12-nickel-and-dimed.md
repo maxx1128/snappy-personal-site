@@ -31,12 +31,12 @@ Even worse is trying to pay rent.
 
 ### Rent is Expensive. Motels are Worse.
 
-For a typical rented apartment, you often need to put down a deposit and two months' rent at the start. [For many in the working poor they'll never have that much saved up rely on Motels](https://www.thenation.com/article/archive/these-motel-rooms-are-last-resort-families-without-homes/). Motels charge by the day so don't need as much money upfront. But the long-term cost usually adds up to more. Especially when you consider how motel prices fluctuate according to the tourist season. Or how a motel you're staying at may kick you out to make room for wealthier tourists without notice.
+For a typical rented apartment, you often need to put down a deposit and two months' rent at the start. [For many in the working poor they'll never have that much saved up, and so they rely on motels](https://www.thenation.com/article/archive/these-motel-rooms-are-last-resort-families-without-homes/). Motels charge by the day so don't need as much money upfront. But the long-term cost usually adds up to more. Especially when you consider how motel prices fluctuate according to the tourist season. Or how a motel you're staying at may kick you out to make room for wealthier tourists without notice.
 
 There are even more factors that worsen this.
 
 * Lower-cost rents are often pushed further outside the city as the rents inside it rise. That means longer commutes which cost more time and money to make, whether by car or bus.
-* High rent of housing costs are such high priority they can chip away at other important expenses. Buying a better yet pricer medication is pointless if you have to live in your car afterward.
+* High rent or housing costs are such high priority they can chip away at other important expenses. Buying a better yet pricer medication is pointless if you have to live in your car afterward.
 * Many people split smaller living spaces among more people. This can create an endless variety of other problems with roommates and neighbors.
 
 This adds up to the most important part of life, a place to live, pulling too many resources from everything else.
@@ -108,7 +108,7 @@ Imagine balancing all the following:
 * Bad health
 * Heavy work stress
 * Limited means for storing and making food
-* Juggling home issues of rent prices and Motels
+* Juggling home issues of rent prices and motels
 
 All while working a job that will pull as much time and energy from you for as little pay as possible. You may feel you have the special "spirit of hard work and determination" to escape poverty. **But not when enough factors get stacked against you. All that effort almost certainly gets used up keeping your head above water.**
 
