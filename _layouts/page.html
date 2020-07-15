@@ -5,6 +5,7 @@ layout: default
 {% assign header_class = "" %}
 
 {% if page.image %}
+  {% assign header_class = header_class | append: " header--with-custom-image" %}
   {% assign banner_image = "/assets/images/featured/" | append: page.image | prepend: site.url %}
 {% else %}
   {% assign banner_image = false %}
@@ -31,7 +32,7 @@ layout: default
 {% endif %}
 
 <header class="{{ header_class }} width-100" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
-  <div class="resp-max-width">
+  <div class="header__text resp-max-width">
     <div class="relative py-4">
       {% if isExocortex %}
         {% include exocortexBreadcrumb.html %}
@@ -43,7 +44,7 @@ layout: default
         {% endif %}
       {% endif %}
 
-      <h1 class="my-0">
+      <h1 class="my-0 text-h2">
         {% if page.postLabel == "Note" %}
           {{ page.date | date: '%B %d, %Y' }}
         {% else %}

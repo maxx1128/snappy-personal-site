@@ -8,6 +8,22 @@
   box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
 }
 
+.header--with-custom-image {
+  @include larger-than(md) {
+    padding-top: 30vh;
+    margin-bottom: 9%;
+
+    box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity-light);
+
+    .header__text {
+      padding-bottom: spacing(2);
+      margin-bottom: -12%;
+
+      box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
+    }
+  }
+}
+
 .theme-dark {
   .header--with-image {
     background-image: url("/assets/images/global/header-dark.jpg");
