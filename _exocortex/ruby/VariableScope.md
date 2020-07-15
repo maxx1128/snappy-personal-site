@@ -1,7 +1,7 @@
 ---
 title: Variable Scope
 category: Ruby
-date: 2020-06-08
+date: 2020-07-15
 ---
 
 The different Ruby scopes and how to access them, mostly to control what's in the global scope.
@@ -28,6 +28,23 @@ Instance variables (`@`), only available to instances of specific classes
 class NewClass
   initialize(string) do
     @string = string
+  end
+end
+
+NewClassInstance = NewClass.new('I is a string')   # would be initialized as "@string" in the class
+puts NewClassInstance.string
+# I is a string
+```
+
+Another way to do this is by assigning the same value to `self`, although it will need `attr_accessor` too.
+
+```ruby
+class NewClass
+
+  attr_accessor :comment
+
+  initialize(string) do
+    self.string = string
   end
 end
 
