@@ -8,7 +8,7 @@ Hope is a great help for desperate times. When we need the drive to make things 
 
 ## Hope's Flaws
 
-First off, **hope is never a guarantee to make things better** due to the structure of human emotions. We form identities and beliefs formative emotional experiences when we're younger. For example, someone may get hit a lot as a child. Their emotional brain may frame this as "I can't fight back since I deserve the pain." This forms a narrative around their identity until another formative experience changes that. Hope isn't enough to help someone with an ingrained, hopeless mindset.
+First off, **hope is never a guarantee to make things better** due to the structure of human emotions. We form identities and beliefs from formative emotional experiences when we're younger. For example, someone may get hit a lot as a child. Their emotional brain may frame this as "I can't fight back since I deserve the pain." This forms a narrative around their identity until another formative experience changes that. Hope isn't enough to help someone with an ingrained, hopeless mindset.
 
 And like any belief, **hope is vulnerable to becoming a twisted, corrupt belief system.** You can't trust a belief or group only because it's built on hope. So many belief systems go with the following pattern:
 
