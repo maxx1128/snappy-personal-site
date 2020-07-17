@@ -67,6 +67,6 @@ layout: default
   </div>
 </header>
 
-<article id="content" class="post-content width-100 {% unless page.no-padding %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width{% endunless %}">
+<article id="content" class="post-content width-100 {% unless page.no-padding or page.postLabel == 'Note' %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless page.no-max-width %}resp-max-width{% endunless %}">
   {{content}}
 </article>
