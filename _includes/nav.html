@@ -1,4 +1,4 @@
-<nav id="navigation" class="nav__header width-100 flex flex-column mx-auto pb-1 text-mono-white bg-primary-darkest">
+<nav class="nav__header width-100 flex flex-column mx-auto pb-1 text-mono-white bg-primary-darkest">
   <div class="resp-max-width py-2 flex flex-column flex-align-center md--flex-align-start">
     <h1 class="my-0 mr-4 text-h6">
       <a class="text-mono-white" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
@@ -10,12 +10,8 @@
     </p>
   </div>
 
-  <button id="toggle" aria-controls="navigation-menu" class="nav__toggle-menu bg-primary-darker">
-    Menu
-  </button>
-
   <div class="nav__main-menu-wrapper bg-primary-darker">
-    <ul id="navigation-menu" class="nav__main-menu resp-max-width list-reset flex flex-wrap md--flex-justify-between mb-0">
+    <ul id="navigation-menu" class="nav__main-menu resp-max-width mb-0 py-1 md--py-0 flex flex-justify-between list-reset">
       {% for menu_item in site.data.menu %}
 
           {% if menu_item.link == page.url %}
@@ -44,12 +40,11 @@
             {% assign current_page = false %}
           {% endif %}
 
-          <li class="inline-block mb-0 text-center">
+          <li class="inline-block mb-0 text-center {% unless forloop.last %}mr-4{% endunless %}">
             <a class="block p-2 text-mono-white text-small {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
               {{ menu_item.name }}
             </a>
           </li>
-
       {% endfor %}
     </ul>
   </div>
