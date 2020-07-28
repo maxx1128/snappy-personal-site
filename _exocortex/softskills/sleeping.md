@@ -1,7 +1,7 @@
 ---
 title: Sleeping
 category: Soft Skills
-date: 2020-06-08
+date: 2020-07-28
 ---
 
 Rest ain't laziness when it keeps you awake on the job
@@ -14,9 +14,11 @@ One hour of sleep is several hours of energy and focus the next day. **Never thi
 
 Being constantly reminded of the time only creates anxiety about how much sleep you haven't gotten yet. You can still hear the alarm no matter what direction it faces.
 
-### Avoid Screens an Hour Before Bed
+### Unwind your Mind an Hour Before Bed
 
 Phones or televisions put your brain on high alert. Step away from them so your mind has time to cool down. This includes keeping your phone away from the bed - put it in another room while you sleep. The hour before bed should be whatever you can to put your stresses behind you and unwind.
+
+Reading is good to relax your mind, as long as the book doesn't activate your thoughts or imagination too much. Gripping narratives that pull you in are great to read, but will get your mind buzzing right before bed. Nonfiction or reference books are usually better to entertain your mind while relaxing it.
 
 ### Avoid Unfamiliar Scents
 
@@ -34,6 +36,6 @@ The more your bed is only associated with feelings of rest, the faster you can f
 
 If you're in bed at least 20 minutes and can't sleep, don't stew in the sheets. Get up and do something else to relax your mind, like read a book or stretch. Once you feel calmer, give the bed another shot.
 
-### Check for Pre-Bed Caffeine
+### Check for Pre-Bed Stimulants
 
-Some painkillers or other medicine have caffeine, which will be listed as an active ingredient. Always check the label and avoid it if possible.
+Some painkillers or other medicine have caffeine, which will be listed as an active ingredient. Always check the label and avoid it if possible. Also avoid alcohol or anything high in sugar.
